@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -122,8 +122,8 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ada252b0d1c54c165a668d3bb1bee06c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada252b0d1c54c165a668d3bb1bee06c1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>RGBA8</b>(r, g, b, a)&#160;&#160;&#160;((((r)&amp;0xFF)&lt;&lt;24) | (((g)&amp;0xFF)&lt;&lt;16) | (((b)&amp;0xFF)&lt;&lt;8) | (((a)&amp;0xFF)&lt;&lt;0))</td></tr>
+<tr class="memitem:ada252b0d1c54c165a668d3bb1bee06c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#ada252b0d1c54c165a668d3bb1bee06c1">RGBA8</a>(r, g, b, a)&#160;&#160;&#160;((((r)&amp;0xFF)&lt;&lt;24) | (((g)&amp;0xFF)&lt;&lt;16) | (((b)&amp;0xFF)&lt;&lt;8) | (((a)&amp;0xFF)&lt;&lt;0))</td></tr>
+<tr class="memdesc:ada252b0d1c54c165a668d3bb1bee06c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new RGBA8 color.  <a href="#ada252b0d1c54c165a668d3bb1bee06c1">More...</a><br/></td></tr>
 <tr class="separator:ada252b0d1c54c165a668d3bb1bee06c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -172,8 +172,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 <tr class="memitem:aec970054d30e326ab9bc616ecab6aff9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#aec970054d30e326ab9bc616ecab6aff9">sf2d_draw_rectangle</a> (int x, int y, int w, int h, u32 color)</td></tr>
 <tr class="memdesc:aec970054d30e326ab9bc616ecab6aff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a rectangle.  <a href="#aec970054d30e326ab9bc616ecab6aff9">More...</a><br/></td></tr>
 <tr class="separator:aec970054d30e326ab9bc616ecab6aff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c7a8d299f8e9577fbdecf792e7b4b5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a8c7a8d299f8e9577fbdecf792e7b4b5b">sf2d_draw_rectangle_rotate</a> (int x, int y, int w, int h, u32 color, float rad)</td></tr>
+<tr class="memdesc:a8c7a8d299f8e9577fbdecf792e7b4b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a rotated rectangle.  <a href="#a8c7a8d299f8e9577fbdecf792e7b4b5b">More...</a><br/></td></tr>
+<tr class="separator:a8c7a8d299f8e9577fbdecf792e7b4b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2d2bf527f988eea5763f122a69c83c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#aa2d2bf527f988eea5763f122a69c83c5">sf2d_create_texture</a> (int width, int height, GPU_TEXCOLOR pixel_format, <a class="el" href="sf2d_8h.html#a07951fad547d423a4cf6521c2e5171ea">sf2d_place</a> place)</td></tr>
-<tr class="memdesc:aa2d2bf527f988eea5763f122a69c83c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty texture.  <a href="#aa2d2bf527f988eea5763f122a69c83c5">More...</a><br/></td></tr>
+<tr class="memdesc:aa2d2bf527f988eea5763f122a69c83c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty texture The returned texture has the data allocated, this means that the raw pixel data can be filled just after the return.  <a href="#aa2d2bf527f988eea5763f122a69c83c5">More...</a><br/></td></tr>
 <tr class="separator:aa2d2bf527f988eea5763f122a69c83c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cda3052688d26cdf0b238d4da1be74a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a7cda3052688d26cdf0b238d4da1be74a">sf2d_free_texture</a> (<a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture)</td></tr>
 <tr class="memdesc:a7cda3052688d26cdf0b238d4da1be74a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a texture.  <a href="#a7cda3052688d26cdf0b238d4da1be74a">More...</a><br/></td></tr>
@@ -198,7 +201,57 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 <div class="textblock"><p>sf2dlib header </p>
 <dl class="section author"><dt>Author</dt><dd>Sergi Granell (xerpi) </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>22 March 2015 </dd></dl>
-</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ada252b0d1c54c165a668d3bb1bee06c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RGBA8</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">r, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">g, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((((r)&amp;0xFF)&lt;&lt;24) | (((g)&amp;0xFF)&lt;&lt;16) | (((b)&amp;0xFF)&lt;&lt;8) | (((a)&amp;0xFF)&lt;&lt;0))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new RGBA8 color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>the red component of the color to create </td></tr>
+    <tr><td class="paramname">g</td><td>the green component of the color to create </td></tr>
+    <tr><td class="paramname">b</td><td>the blue component of the color to create </td></tr>
+    <tr><td class="paramname">a</td><td>the alpha component of the color to create </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="a07951fad547d423a4cf6521c2e5171ea"></a>
 <div class="memitem">
 <div class="memproto">
@@ -293,7 +346,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
       </table>
 </div><div class="memdoc">
 
-<p>Creates an empty texture. </p>
+<p>Creates an empty texture The returned texture has the data allocated, this means that the raw pixel data can be filled just after the return. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">width</td><td>the width of the texture </td></tr>
@@ -413,6 +466,69 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
     <tr><td class="paramname">w</td><td>rectangle width </td></tr>
     <tr><td class="paramname">w</td><td>rectangle height </td></tr>
     <tr><td class="paramname">color</td><td>the color to draw the rectangle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8c7a8d299f8e9577fbdecf792e7b4b5b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf2d_draw_rectangle_rotate </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>rad</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a rotated rectangle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>x coordinate of the top left corner of the rectangle </td></tr>
+    <tr><td class="paramname">y</td><td>y coordinate of the top left corner of the rectangle </td></tr>
+    <tr><td class="paramname">w</td><td>rectangle width </td></tr>
+    <tr><td class="paramname">w</td><td>rectangle height </td></tr>
+    <tr><td class="paramname">color</td><td>the color to draw the rectangle </td></tr>
+    <tr><td class="paramname">rad</td><td>rotation (in radians) to draw the rectangle </td></tr>
   </table>
   </dd>
 </dl>
@@ -757,7 +873,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
     <tr><td class="paramname">texture</td><td>the texture to tile </td></tr>
     <tr><td class="paramname">x</td><td>the x coordinate to draw the texture to </td></tr>
     <tr><td class="paramname">y</td><td>the y coordinate to draw the texture to </td></tr>
-    <tr><td class="paramname">rad</td><td>rotation (in radians) to draw the texture </td></tr>
   </table>
   </dd>
 </dl>
@@ -767,7 +882,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 23 2015 00:27:46 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 23 2015 21:55:11 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

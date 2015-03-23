@@ -25,9 +25,8 @@ struct \hyperlink{structsf2d__texture}{sf2d\-\_\-texture}
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{sf2d_8h_ada252b0d1c54c165a668d3bb1bee06c1}{\#define {\bfseries R\-G\-B\-A8}(r, g, b, a)~((((r)\&0x\-F\-F)$<$$<$24) $\vert$ (((g)\&0x\-F\-F)$<$$<$16) $\vert$ (((b)\&0x\-F\-F)$<$$<$8) $\vert$ (((a)\&0x\-F\-F)$<$$<$0))}\label{sf2d_8h_ada252b0d1c54c165a668d3bb1bee06c1}
-
-\end{DoxyCompactItemize}
+\#define \hyperlink{sf2d_8h_ada252b0d1c54c165a668d3bb1bee06c1}{R\-G\-B\-A8}(r, g, b, a)~((((r)\&0x\-F\-F)$<$$<$24) $\vert$ (((g)\&0x\-F\-F)$<$$<$16) $\vert$ (((b)\&0x\-F\-F)$<$$<$8) $\vert$ (((a)\&0x\-F\-F)$<$$<$0))
+\begin{DoxyCompactList}\small\item\em Creates a new R\-G\-B\-A8 color. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
@@ -63,8 +62,10 @@ void \hyperlink{sf2d_8h_ace95578f2bfe9f2e8b1753bdd816d96b}{sf2d\-\_\-draw\-\_\-l
 \begin{DoxyCompactList}\small\item\em Draws a line. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_aec970054d30e326ab9bc616ecab6aff9}{sf2d\-\_\-draw\-\_\-rectangle} (int x, int y, int w, int h, u32 color)
 \begin{DoxyCompactList}\small\item\em Draws a rectangle. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_a8c7a8d299f8e9577fbdecf792e7b4b5b}{sf2d\-\_\-draw\-\_\-rectangle\-\_\-rotate} (int x, int y, int w, int h, u32 color, float rad)
+\begin{DoxyCompactList}\small\item\em Draws a rotated rectangle. \end{DoxyCompactList}\item 
 \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$ \hyperlink{sf2d_8h_aa2d2bf527f988eea5763f122a69c83c5}{sf2d\-\_\-create\-\_\-texture} (int width, int height, G\-P\-U\-\_\-\-T\-E\-X\-C\-O\-L\-O\-R pixel\-\_\-format, \hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171ea}{sf2d\-\_\-place} place)
-\begin{DoxyCompactList}\small\item\em Creates an empty texture. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Creates an empty texture The returned texture has the data allocated, this means that the raw pixel data can be filled just after the return. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_a7cda3052688d26cdf0b238d4da1be74a}{sf2d\-\_\-free\-\_\-texture} (\hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture)
 \begin{DoxyCompactList}\small\item\em Frees a texture. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_ac06fd9ba922f84e9f50cac3ac0e5b5a4}{sf2d\-\_\-fill\-\_\-texture\-\_\-from\-\_\-\-R\-G\-B\-A8} (\hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$dst, const void $\ast$rgba8, int source\-\_\-w, int source\-\_\-h)
@@ -86,6 +87,34 @@ Sergi Granell (xerpi)
 \begin{DoxyDate}{Date}
 22 March 2015 
 \end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{sf2d_8h_ada252b0d1c54c165a668d3bb1bee06c1}{\index{sf2d.\-h@{sf2d.\-h}!R\-G\-B\-A8@{R\-G\-B\-A8}}
+\index{R\-G\-B\-A8@{R\-G\-B\-A8}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{R\-G\-B\-A8}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-G\-B\-A8(
+\begin{DoxyParamCaption}
+\item[{}]{r, }
+\item[{}]{g, }
+\item[{}]{b, }
+\item[{}]{a}
+\end{DoxyParamCaption}
+)~((((r)\&0x\-F\-F)$<$$<$24) $\vert$ (((g)\&0x\-F\-F)$<$$<$16) $\vert$ (((b)\&0x\-F\-F)$<$$<$8) $\vert$ (((a)\&0x\-F\-F)$<$$<$0))}}\label{sf2d_8h_ada252b0d1c54c165a668d3bb1bee06c1}
+
+
+Creates a new R\-G\-B\-A8 color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & the red component of the color to create \\
+\hline
+{\em g} & the green component of the color to create \\
+\hline
+{\em b} & the blue component of the color to create \\
+\hline
+{\em a} & the alpha component of the color to create \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Enumeration Type Documentation}
@@ -139,7 +168,7 @@ Binds a texture to a G\-P\-U texture unit.
 )}}\label{sf2d_8h_aa2d2bf527f988eea5763f122a69c83c5}
 
 
-Creates an empty texture. 
+Creates an empty texture The returned texture has the data allocated, this means that the raw pixel data can be filled just after the return. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -209,6 +238,37 @@ Draws a rectangle.
 {\em w} & rectangle height \\
 \hline
 {\em color} & the color to draw the rectangle \\
+\hline
+\end{DoxyParams}
+\hypertarget{sf2d_8h_a8c7a8d299f8e9577fbdecf792e7b4b5b}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-rectangle\-\_\-rotate@{sf2d\-\_\-draw\-\_\-rectangle\-\_\-rotate}}
+\index{sf2d\-\_\-draw\-\_\-rectangle\-\_\-rotate@{sf2d\-\_\-draw\-\_\-rectangle\-\_\-rotate}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-rectangle\-\_\-rotate}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-rectangle\-\_\-rotate (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{w, }
+\item[{int}]{h, }
+\item[{u32}]{color, }
+\item[{float}]{rad}
+\end{DoxyParamCaption}
+)}}\label{sf2d_8h_a8c7a8d299f8e9577fbdecf792e7b4b5b}
+
+
+Draws a rotated rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the top left corner of the rectangle \\
+\hline
+{\em y} & y coordinate of the top left corner of the rectangle \\
+\hline
+{\em w} & rectangle width \\
+\hline
+{\em w} & rectangle height \\
+\hline
+{\em color} & the color to draw the rectangle \\
+\hline
+{\em rad} & rotation (in radians) to draw the rectangle \\
 \hline
 \end{DoxyParams}
 \hypertarget{sf2d_8h_a09501d8d7c5319db00a39709f0cd18fa}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture@{sf2d\-\_\-draw\-\_\-texture}}
@@ -415,7 +475,5 @@ Tiles a texture.
 {\em x} & the x coordinate to draw the texture to \\
 \hline
 {\em y} & the y coordinate to draw the texture to \\
-\hline
-{\em rad} & rotation (in radians) to draw the texture \\
 \hline
 \end{DoxyParams}

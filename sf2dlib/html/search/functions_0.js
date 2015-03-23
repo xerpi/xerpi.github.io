@@ -4,6 +4,7 @@ var searchData=
   ['sf2d_5fcreate_5ftexture',['sf2d_create_texture',['../sf2d_8h.html#aa2d2bf527f988eea5763f122a69c83c5',1,'sf2d.h']]],
   ['sf2d_5fdraw_5fline',['sf2d_draw_line',['../sf2d_8h.html#ace95578f2bfe9f2e8b1753bdd816d96b',1,'sf2d.h']]],
   ['sf2d_5fdraw_5frectangle',['sf2d_draw_rectangle',['../sf2d_8h.html#aec970054d30e326ab9bc616ecab6aff9',1,'sf2d.h']]],
+  ['sf2d_5fdraw_5frectangle_5frotate',['sf2d_draw_rectangle_rotate',['../sf2d_8h.html#a8c7a8d299f8e9577fbdecf792e7b4b5b',1,'sf2d.h']]],
   ['sf2d_5fdraw_5ftexture',['sf2d_draw_texture',['../sf2d_8h.html#a09501d8d7c5319db00a39709f0cd18fa',1,'sf2d.h']]],
   ['sf2d_5fdraw_5ftexture_5frotate',['sf2d_draw_texture_rotate',['../sf2d_8h.html#affc6cf46e403ae0837ec2901c85b4464',1,'sf2d.h']]],
   ['sf2d_5fend_5fframe',['sf2d_end_frame',['../sf2d_8h.html#ab933b16f700958c78bd159c997b9124f',1,'sf2d.h']]],

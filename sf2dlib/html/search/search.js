@@ -7,13 +7,14 @@
 
 var indexSectionsWithContent =
 {
-  0: "dhpsw",
+  0: "dhprsw",
   1: "s",
   2: "s",
   3: "s",
   4: "dhpw",
   5: "s",
-  6: "s"
+  6: "s",
+  7: "r"
 };
 
 var indexSectionNames =
@@ -24,7 +25,8 @@ var indexSectionNames =
   3: "functions",
   4: "variables",
   5: "enums",
-  6: "enumvalues"
+  6: "enumvalues",
+  7: "defines"
 };
 
 function convertToId(search)
