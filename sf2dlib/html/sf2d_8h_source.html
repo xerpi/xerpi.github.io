@@ -189,13 +189,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="keywordtype">void</span> <a class="code" href="sf2d_8h.html#affc6cf46e403ae0837ec2901c85b4464">sf2d_draw_texture_rotate</a>(<span class="keyword">const</span> <a class="code" href="structsf2d__texture.html">sf2d_texture</a> *texture, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">float</span> rad);</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keywordtype">void</span> <a class="code" href="sf2d_8h.html#ab485210364f2285c265ec161196695b9">sf2d_texture_tile32</a>(<a class="code" href="structsf2d__texture.html">sf2d_texture</a> *texture);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="keywordtype">void</span> <a class="code" href="sf2d_8h.html#abdfae56c564b94d07bf7a1b54bd11453">sf2d_draw_texture_part</a>(<span class="keyword">const</span> <a class="code" href="structsf2d__texture.html">sf2d_texture</a> *texture, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> tex_x, <span class="keywordtype">int</span> tex_y, <span class="keywordtype">int</span> tex_w, <span class="keywordtype">int</span> tex_h);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keywordtype">void</span> <a class="code" href="sf2d_8h.html#ab485210364f2285c265ec161196695b9">sf2d_texture_tile32</a>(<a class="code" href="structsf2d__texture.html">sf2d_texture</a> *texture);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="structsf2d__texture_html_a312abd0ee8ab587825804132c136b253"><div class="ttname"><a href="structsf2d__texture.html#a312abd0ee8ab587825804132c136b253">sf2d_texture::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> sf2d.h:90</div></div>
 <div class="ttc" id="sf2d_8h_html_a5acbbcbe3d4aae913976d01302951e93"><div class="ttname"><a href="sf2d_8h.html#a5acbbcbe3d4aae913976d01302951e93">sf2d_bind_texture</a></div><div class="ttdeci">void sf2d_bind_texture(const sf2d_texture *texture, GPU_TEXUNIT unit)</div><div class="ttdoc">Binds a texture to a GPU texture unit. </div></div>
 <div class="ttc" id="sf2d_8h_html_a09501d8d7c5319db00a39709f0cd18fa"><div class="ttname"><a href="sf2d_8h.html#a09501d8d7c5319db00a39709f0cd18fa">sf2d_draw_texture</a></div><div class="ttdeci">void sf2d_draw_texture(const sf2d_texture *texture, int x, int y)</div><div class="ttdoc">Draws a texture. </div></div>
@@ -205,6 +207,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="sf2d_8h_html_aec970054d30e326ab9bc616ecab6aff9"><div class="ttname"><a href="sf2d_8h.html#aec970054d30e326ab9bc616ecab6aff9">sf2d_draw_rectangle</a></div><div class="ttdeci">void sf2d_draw_rectangle(int x, int y, int w, int h, u32 color)</div><div class="ttdoc">Draws a rectangle. </div></div>
 <div class="ttc" id="sf2d_8h_html_ab933b16f700958c78bd159c997b9124f"><div class="ttname"><a href="sf2d_8h.html#ab933b16f700958c78bd159c997b9124f">sf2d_end_frame</a></div><div class="ttdeci">void sf2d_end_frame()</div><div class="ttdoc">Ends a frame, should be called on pair with sf2d_start_frame. </div></div>
 <div class="ttc" id="sf2d_8h_html_aa14ff4b0b0b65e43d45bb838f90ff64e"><div class="ttname"><a href="sf2d_8h.html#aa14ff4b0b0b65e43d45bb838f90ff64e">sf2d_init</a></div><div class="ttdeci">int sf2d_init()</div><div class="ttdoc">Initializates the library. </div></div>
+<div class="ttc" id="sf2d_8h_html_abdfae56c564b94d07bf7a1b54bd11453"><div class="ttname"><a href="sf2d_8h.html#abdfae56c564b94d07bf7a1b54bd11453">sf2d_draw_texture_part</a></div><div class="ttdeci">void sf2d_draw_texture_part(const sf2d_texture *texture, int x, int y, int tex_x, int tex_y, int tex_w, int tex_h)</div><div class="ttdoc">Draws a part of a texture. </div></div>
 <div class="ttc" id="sf2d_8h_html_a07951fad547d423a4cf6521c2e5171eaa4e481aa581f839137a4b1fd0708666fb"><div class="ttname"><a href="sf2d_8h.html#a07951fad547d423a4cf6521c2e5171eaa4e481aa581f839137a4b1fd0708666fb">SF2D_PLACE_RAM</a></div><div class="ttdef"><b>Definition:</b> sf2d.h:35</div></div>
 <div class="ttc" id="structsf2d__vector__4f_html"><div class="ttname"><a href="structsf2d__vector__4f.html">sf2d_vector_4f</a></div><div class="ttdoc">Represents a four dimensional float vector. </div><div class="ttdef"><b>Definition:</b> sf2d.h:61</div></div>
 <div class="ttc" id="sf2d_8h_html_aa2d2bf527f988eea5763f122a69c83c5"><div class="ttname"><a href="sf2d_8h.html#aa2d2bf527f988eea5763f122a69c83c5">sf2d_create_texture</a></div><div class="ttdeci">sf2d_texture * sf2d_create_texture(int width, int height, GPU_TEXCOLOR pixel_format, sf2d_place place)</div><div class="ttdoc">Creates an empty texture. The returned texture has the data allocated, this means that the raw pixel ...</div></div>
@@ -237,7 +240,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 26 2015 19:46:49 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2015 22:05:54 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

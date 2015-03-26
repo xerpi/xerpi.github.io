@@ -81,6 +81,8 @@ void \hyperlink{sf2d_8h_a09501d8d7c5319db00a39709f0cd18fa}{sf2d\-\_\-draw\-\_\-t
 \begin{DoxyCompactList}\small\item\em Draws a texture. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_affc6cf46e403ae0837ec2901c85b4464}{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, float rad)
 \begin{DoxyCompactList}\small\item\em Draws a texture with rotation. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_abdfae56c564b94d07bf7a1b54bd11453}{sf2d\-\_\-draw\-\_\-texture\-\_\-part} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, int tex\-\_\-x, int tex\-\_\-y, int tex\-\_\-w, int tex\-\_\-h)
+\begin{DoxyCompactList}\small\item\em Draws a part of a texture. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_ab485210364f2285c265ec161196695b9}{sf2d\-\_\-texture\-\_\-tile32} (\hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture)
 \begin{DoxyCompactList}\small\item\em Tiles a texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -296,6 +298,40 @@ Draws a texture.
 {\em x} & the x coordinate to draw the texture to \\
 \hline
 {\em y} & the y coordinate to draw the texture to \\
+\hline
+\end{DoxyParams}
+\hypertarget{sf2d_8h_abdfae56c564b94d07bf7a1b54bd11453}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-part@{sf2d\-\_\-draw\-\_\-texture\-\_\-part}}
+\index{sf2d\-\_\-draw\-\_\-texture\-\_\-part@{sf2d\-\_\-draw\-\_\-texture\-\_\-part}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-texture\-\_\-part}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-texture\-\_\-part (
+\begin{DoxyParamCaption}
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{tex\-\_\-x, }
+\item[{int}]{tex\-\_\-y, }
+\item[{int}]{tex\-\_\-w, }
+\item[{int}]{tex\-\_\-h}
+\end{DoxyParamCaption}
+)}}\label{sf2d_8h_abdfae56c564b94d07bf7a1b54bd11453}
+
+
+Draws a part of a texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to draw \\
+\hline
+{\em x} & the x coordinate to draw the texture to \\
+\hline
+{\em y} & the y coordinate to draw the texture to \\
+\hline
+{\em tex\-\_\-x} & the starting point (x coordinate) where to start drawing \\
+\hline
+{\em tex\-\_\-y} & the starting point (y coordinate) where to start drawing \\
+\hline
+{\em tex\-\_\-w} & the width to draw from the starting point \\
+\hline
+{\em tex\-\_\-h} & the height to draw from the starting point \\
 \hline
 \end{DoxyParams}
 \hypertarget{sf2d_8h_affc6cf46e403ae0837ec2901c85b4464}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-rotate@{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate}}

@@ -201,6 +201,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 <tr class="memitem:affc6cf46e403ae0837ec2901c85b4464"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#affc6cf46e403ae0837ec2901c85b4464">sf2d_draw_texture_rotate</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, float rad)</td></tr>
 <tr class="memdesc:affc6cf46e403ae0837ec2901c85b4464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a texture with rotation.  <a href="#affc6cf46e403ae0837ec2901c85b4464">More...</a><br/></td></tr>
 <tr class="separator:affc6cf46e403ae0837ec2901c85b4464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdfae56c564b94d07bf7a1b54bd11453"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#abdfae56c564b94d07bf7a1b54bd11453">sf2d_draw_texture_part</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, int tex_x, int tex_y, int tex_w, int tex_h)</td></tr>
+<tr class="memdesc:abdfae56c564b94d07bf7a1b54bd11453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a part of a texture.  <a href="#abdfae56c564b94d07bf7a1b54bd11453">More...</a><br/></td></tr>
+<tr class="separator:abdfae56c564b94d07bf7a1b54bd11453"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab485210364f2285c265ec161196695b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#ab485210364f2285c265ec161196695b9">sf2d_texture_tile32</a> (<a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture)</td></tr>
 <tr class="memdesc:ab485210364f2285c265ec161196695b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tiles a texture.  <a href="#ab485210364f2285c265ec161196695b9">More...</a><br/></td></tr>
 <tr class="separator:ab485210364f2285c265ec161196695b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -585,6 +588,76 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 
 </div>
 </div>
+<a class="anchor" id="abdfae56c564b94d07bf7a1b54bd11453"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf2d_draw_texture_part </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tex_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tex_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tex_w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tex_h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a part of a texture. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>the texture to draw </td></tr>
+    <tr><td class="paramname">x</td><td>the x coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">y</td><td>the y coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">tex_x</td><td>the starting point (x coordinate) where to start drawing </td></tr>
+    <tr><td class="paramname">tex_y</td><td>the starting point (y coordinate) where to start drawing </td></tr>
+    <tr><td class="paramname">tex_w</td><td>the width to draw from the starting point </td></tr>
+    <tr><td class="paramname">tex_h</td><td>the height to draw from the starting point </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="affc6cf46e403ae0837ec2901c85b4464"></a>
 <div class="memitem">
 <div class="memproto">
@@ -914,7 +987,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 26 2015 19:46:49 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 26 2015 22:05:54 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
