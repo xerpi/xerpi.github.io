@@ -49,6 +49,11 @@ void \hyperlink{sf2d_8h_aebf0bffc5ec4230ba44ba6daeddcd040}{sf2d\-\_\-start\-\_\-
 \hypertarget{sf2d_8h_a88b5ab9a86f26417e04ad0305c8bddbd}{void \hyperlink{sf2d_8h_a88b5ab9a86f26417e04ad0305c8bddbd}{sf2d\-\_\-swapbuffers} ()}\label{sf2d_8h_a88b5ab9a86f26417e04ad0305c8bddbd}
 
 \begin{DoxyCompactList}\small\item\em Swaps the framebuffers, should be called once after all the frames has been finished. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_ac73776c4b7107cc201656ccdcf4c94b3}{sf2d\-\_\-set\-\_\-vblank\-\_\-wait} (int enable)
+\begin{DoxyCompactList}\small\item\em Enables or disables the V\-Blank waiting. \end{DoxyCompactList}\item 
+\hypertarget{sf2d_8h_a64f6d65b15e00a60967bd189a94bf1d0}{float \hyperlink{sf2d_8h_a64f6d65b15e00a60967bd189a94bf1d0}{sf2d\-\_\-get\-\_\-fps} ()}\label{sf2d_8h_a64f6d65b15e00a60967bd189a94bf1d0}
+
+\begin{DoxyCompactList}\small\item\em Returns the F\-P\-S (frames per second) \end{DoxyCompactList}\item 
 void $\ast$ \hyperlink{sf2d_8h_a62fe88879d163c0c69095944bd29a1b3}{sf2d\-\_\-pool\-\_\-malloc} (u32 size)
 \begin{DoxyCompactList}\small\item\em Allocates memory from a temporary pool. The pool will be emptied after a sf2d\-\_\-swapbuffers call. \end{DoxyCompactList}\item 
 void $\ast$ \hyperlink{sf2d_8h_a0d73cc225df3c071ef63dc4cb2a68edc}{sf2d\-\_\-pool\-\_\-memalign} (u32 size, u32 alignment)
@@ -65,7 +70,7 @@ void \hyperlink{sf2d_8h_aec970054d30e326ab9bc616ecab6aff9}{sf2d\-\_\-draw\-\_\-r
 void \hyperlink{sf2d_8h_a8c7a8d299f8e9577fbdecf792e7b4b5b}{sf2d\-\_\-draw\-\_\-rectangle\-\_\-rotate} (int x, int y, int w, int h, u32 color, float rad)
 \begin{DoxyCompactList}\small\item\em Draws a rotated rectangle. \end{DoxyCompactList}\item 
 \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$ \hyperlink{sf2d_8h_aa2d2bf527f988eea5763f122a69c83c5}{sf2d\-\_\-create\-\_\-texture} (int width, int height, G\-P\-U\-\_\-\-T\-E\-X\-C\-O\-L\-O\-R pixel\-\_\-format, \hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171ea}{sf2d\-\_\-place} place)
-\begin{DoxyCompactList}\small\item\em Creates an empty texture The returned texture has the data allocated, this means that the raw pixel data can be filled just after the return. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Creates an empty texture. The returned texture has the data allocated, this means that the raw pixel data can be filled just after the return. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_a7cda3052688d26cdf0b238d4da1be74a}{sf2d\-\_\-free\-\_\-texture} (\hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture)
 \begin{DoxyCompactList}\small\item\em Frees a texture. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_ac06fd9ba922f84e9f50cac3ac0e5b5a4}{sf2d\-\_\-fill\-\_\-texture\-\_\-from\-\_\-\-R\-G\-B\-A8} (\hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$dst, const void $\ast$rgba8, int source\-\_\-w, int source\-\_\-h)
@@ -168,7 +173,7 @@ Binds a texture to a G\-P\-U texture unit.
 )}}\label{sf2d_8h_aa2d2bf527f988eea5763f122a69c83c5}
 
 
-Creates an empty texture The returned texture has the data allocated, this means that the raw pixel data can be filled just after the return. 
+Creates an empty texture. The returned texture has the data allocated, this means that the raw pixel data can be filled just after the return. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -436,6 +441,22 @@ Sets the screen clear color.
 
 \begin{DoxyParams}{Parameters}
 {\em color} & the color \\
+\hline
+\end{DoxyParams}
+\hypertarget{sf2d_8h_ac73776c4b7107cc201656ccdcf4c94b3}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-set\-\_\-vblank\-\_\-wait@{sf2d\-\_\-set\-\_\-vblank\-\_\-wait}}
+\index{sf2d\-\_\-set\-\_\-vblank\-\_\-wait@{sf2d\-\_\-set\-\_\-vblank\-\_\-wait}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-set\-\_\-vblank\-\_\-wait}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-set\-\_\-vblank\-\_\-wait (
+\begin{DoxyParamCaption}
+\item[{int}]{enable}
+\end{DoxyParamCaption}
+)}}\label{sf2d_8h_ac73776c4b7107cc201656ccdcf4c94b3}
+
+
+Enables or disables the V\-Blank waiting. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & whether to enable or disable the V\-Blank waiting \\
 \hline
 \end{DoxyParams}
 \hypertarget{sf2d_8h_aebf0bffc5ec4230ba44ba6daeddcd040}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-start\-\_\-frame@{sf2d\-\_\-start\-\_\-frame}}
