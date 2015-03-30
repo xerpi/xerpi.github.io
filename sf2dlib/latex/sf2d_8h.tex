@@ -51,8 +51,7 @@ void \hyperlink{sf2d_8h_aebf0bffc5ec4230ba44ba6daeddcd040}{sf2d\-\_\-start\-\_\-
 \begin{DoxyCompactList}\small\item\em Swaps the framebuffers, should be called once after all the frames has been finished. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_ac73776c4b7107cc201656ccdcf4c94b3}{sf2d\-\_\-set\-\_\-vblank\-\_\-wait} (int enable)
 \begin{DoxyCompactList}\small\item\em Enables or disables the V\-Blank waiting. \end{DoxyCompactList}\item 
-\hypertarget{sf2d_8h_a64f6d65b15e00a60967bd189a94bf1d0}{float \hyperlink{sf2d_8h_a64f6d65b15e00a60967bd189a94bf1d0}{sf2d\-\_\-get\-\_\-fps} ()}\label{sf2d_8h_a64f6d65b15e00a60967bd189a94bf1d0}
-
+float \hyperlink{sf2d_8h_a64f6d65b15e00a60967bd189a94bf1d0}{sf2d\-\_\-get\-\_\-fps} ()
 \begin{DoxyCompactList}\small\item\em Returns the F\-P\-S (frames per second) \end{DoxyCompactList}\item 
 void $\ast$ \hyperlink{sf2d_8h_a62fe88879d163c0c69095944bd29a1b3}{sf2d\-\_\-pool\-\_\-malloc} (u32 size)
 \begin{DoxyCompactList}\small\item\em Allocates memory from a temporary pool. The pool will be emptied after a sf2d\-\_\-swapbuffers call. \end{DoxyCompactList}\item 
@@ -83,6 +82,8 @@ void \hyperlink{sf2d_8h_affc6cf46e403ae0837ec2901c85b4464}{sf2d\-\_\-draw\-\_\-t
 \begin{DoxyCompactList}\small\item\em Draws a texture with rotation. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_abdfae56c564b94d07bf7a1b54bd11453}{sf2d\-\_\-draw\-\_\-texture\-\_\-part} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, int tex\-\_\-x, int tex\-\_\-y, int tex\-\_\-w, int tex\-\_\-h)
 \begin{DoxyCompactList}\small\item\em Draws a part of a texture. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_aed7b8a897e01f5f5465d820cde08ab24}{sf2d\-\_\-draw\-\_\-texture\-\_\-scale} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, float x\-\_\-scale, float y\-\_\-scale)
+\begin{DoxyCompactList}\small\item\em Draws a texture with scaling. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_ab485210364f2285c265ec161196695b9}{sf2d\-\_\-texture\-\_\-tile32} (\hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture)
 \begin{DoxyCompactList}\small\item\em Tiles a texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -359,6 +360,34 @@ Draws a texture with rotation.
 {\em rad} & rotation (in radians) to draw the texture \\
 \hline
 \end{DoxyParams}
+\hypertarget{sf2d_8h_aed7b8a897e01f5f5465d820cde08ab24}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-scale@{sf2d\-\_\-draw\-\_\-texture\-\_\-scale}}
+\index{sf2d\-\_\-draw\-\_\-texture\-\_\-scale@{sf2d\-\_\-draw\-\_\-texture\-\_\-scale}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-texture\-\_\-scale}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-texture\-\_\-scale (
+\begin{DoxyParamCaption}
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{float}]{x\-\_\-scale, }
+\item[{float}]{y\-\_\-scale}
+\end{DoxyParamCaption}
+)}}\label{sf2d_8h_aed7b8a897e01f5f5465d820cde08ab24}
+
+
+Draws a texture with scaling. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to draw \\
+\hline
+{\em x} & the x coordinate to draw the texture to \\
+\hline
+{\em y} & the y coordinate to draw the texture to \\
+\hline
+{\em x\-\_\-scale} & the x scale \\
+\hline
+{\em y\-\_\-scale} & the y scale \\
+\hline
+\end{DoxyParams}
 \hypertarget{sf2d_8h_ac06fd9ba922f84e9f50cac3ac0e5b5a4}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-fill\-\_\-texture\-\_\-from\-\_\-\-R\-G\-B\-A8@{sf2d\-\_\-fill\-\_\-texture\-\_\-from\-\_\-\-R\-G\-B\-A8}}
 \index{sf2d\-\_\-fill\-\_\-texture\-\_\-from\-\_\-\-R\-G\-B\-A8@{sf2d\-\_\-fill\-\_\-texture\-\_\-from\-\_\-\-R\-G\-B\-A8}!sf2d.h@{sf2d.\-h}}
 \subsubsection[{sf2d\-\_\-fill\-\_\-texture\-\_\-from\-\_\-\-R\-G\-B\-A8}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-fill\-\_\-texture\-\_\-from\-\_\-\-R\-G\-B\-A8 (
@@ -414,6 +443,20 @@ Frees a texture.
 {\em texture} & pointer to the texture to freeze \\
 \hline
 \end{DoxyParams}
+\hypertarget{sf2d_8h_a64f6d65b15e00a60967bd189a94bf1d0}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-get\-\_\-fps@{sf2d\-\_\-get\-\_\-fps}}
+\index{sf2d\-\_\-get\-\_\-fps@{sf2d\-\_\-get\-\_\-fps}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-get\-\_\-fps}]{\setlength{\rightskip}{0pt plus 5cm}float sf2d\-\_\-get\-\_\-fps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{sf2d_8h_a64f6d65b15e00a60967bd189a94bf1d0}
+
+
+Returns the F\-P\-S (frames per second) 
+
+\begin{DoxyReturn}{Returns}
+the current F\-P\-S 
+\end{DoxyReturn}
 \hypertarget{sf2d_8h_aa14ff4b0b0b65e43d45bb838f90ff64e}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-init@{sf2d\-\_\-init}}
 \index{sf2d\-\_\-init@{sf2d\-\_\-init}!sf2d.h@{sf2d.\-h}}
 \subsubsection[{sf2d\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}int sf2d\-\_\-init (
