@@ -84,6 +84,8 @@ void \hyperlink{sf2d_8h_abdfae56c564b94d07bf7a1b54bd11453}{sf2d\-\_\-draw\-\_\-t
 \begin{DoxyCompactList}\small\item\em Draws a part of a texture. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_aed7b8a897e01f5f5465d820cde08ab24}{sf2d\-\_\-draw\-\_\-texture\-\_\-scale} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, float x\-\_\-scale, float y\-\_\-scale)
 \begin{DoxyCompactList}\small\item\em Draws a texture with scaling. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_af5fe98d85442da3243788c8db104d5dc}{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-cut\-\_\-scale} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, float rad, int tex\-\_\-x, int tex\-\_\-y, int tex\-\_\-w, int tex\-\_\-h, float x\-\_\-scale, float y\-\_\-scale)
+\begin{DoxyCompactList}\small\item\em Draws a part of a texture, with rotation and scaling. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_ab485210364f2285c265ec161196695b9}{sf2d\-\_\-texture\-\_\-tile32} (\hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture)
 \begin{DoxyCompactList}\small\item\em Tiles a texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -358,6 +360,49 @@ Draws a texture with rotation.
 {\em y} & the y coordinate to draw the texture to \\
 \hline
 {\em rad} & rotation (in radians) to draw the texture \\
+\hline
+\end{DoxyParams}
+\hypertarget{sf2d_8h_af5fe98d85442da3243788c8db104d5dc}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-cut\-\_\-scale@{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-cut\-\_\-scale}}
+\index{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-cut\-\_\-scale@{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-cut\-\_\-scale}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-cut\-\_\-scale}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-cut\-\_\-scale (
+\begin{DoxyParamCaption}
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{float}]{rad, }
+\item[{int}]{tex\-\_\-x, }
+\item[{int}]{tex\-\_\-y, }
+\item[{int}]{tex\-\_\-w, }
+\item[{int}]{tex\-\_\-h, }
+\item[{float}]{x\-\_\-scale, }
+\item[{float}]{y\-\_\-scale}
+\end{DoxyParamCaption}
+)}}\label{sf2d_8h_af5fe98d85442da3243788c8db104d5dc}
+
+
+Draws a part of a texture, with rotation and scaling. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to draw \\
+\hline
+{\em x} & the x coordinate to draw the texture to \\
+\hline
+{\em y} & the y coordinate to draw the texture to \\
+\hline
+{\em rad} & rotation (in radians) to draw the texture \\
+\hline
+{\em tex\-\_\-x} & the starting point (x coordinate) where to start drawing \\
+\hline
+{\em tex\-\_\-y} & the starting point (y coordinate) where to start drawing \\
+\hline
+{\em tex\-\_\-w} & the width to draw from the starting point \\
+\hline
+{\em tex\-\_\-h} & the height to draw from the starting point \\
+\hline
+{\em x\-\_\-scale} & the x scale \\
+\hline
+{\em y\-\_\-scale} & the y scale \\
 \hline
 \end{DoxyParams}
 \hypertarget{sf2d_8h_aed7b8a897e01f5f5465d820cde08ab24}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-scale@{sf2d\-\_\-draw\-\_\-texture\-\_\-scale}}

@@ -8,6 +8,7 @@ var searchData=
   ['sf2d_5fdraw_5ftexture',['sf2d_draw_texture',['../sf2d_8h.html#a09501d8d7c5319db00a39709f0cd18fa',1,'sf2d.h']]],
   ['sf2d_5fdraw_5ftexture_5fpart',['sf2d_draw_texture_part',['../sf2d_8h.html#abdfae56c564b94d07bf7a1b54bd11453',1,'sf2d.h']]],
   ['sf2d_5fdraw_5ftexture_5frotate',['sf2d_draw_texture_rotate',['../sf2d_8h.html#affc6cf46e403ae0837ec2901c85b4464',1,'sf2d.h']]],
+  ['sf2d_5fdraw_5ftexture_5frotate_5fcut_5fscale',['sf2d_draw_texture_rotate_cut_scale',['../sf2d_8h.html#af5fe98d85442da3243788c8db104d5dc',1,'sf2d.h']]],
   ['sf2d_5fdraw_5ftexture_5fscale',['sf2d_draw_texture_scale',['../sf2d_8h.html#aed7b8a897e01f5f5465d820cde08ab24',1,'sf2d.h']]],
   ['sf2d_5fend_5fframe',['sf2d_end_frame',['../sf2d_8h.html#ab933b16f700958c78bd159c997b9124f',1,'sf2d.h']]],
   ['sf2d_5ffill_5ftexture_5ffrom_5frgba8',['sf2d_fill_texture_from_RGBA8',['../sf2d_8h.html#ac06fd9ba922f84e9f50cac3ac0e5b5a4',1,'sf2d.h']]],
