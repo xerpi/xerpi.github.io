@@ -86,6 +86,8 @@ void \hyperlink{sf2d_8h_aed7b8a897e01f5f5465d820cde08ab24}{sf2d\-\_\-draw\-\_\-t
 \begin{DoxyCompactList}\small\item\em Draws a texture with scaling. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_af5fe98d85442da3243788c8db104d5dc}{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-cut\-\_\-scale} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, float rad, int tex\-\_\-x, int tex\-\_\-y, int tex\-\_\-w, int tex\-\_\-h, float x\-\_\-scale, float y\-\_\-scale)
 \begin{DoxyCompactList}\small\item\em Draws a part of a texture, with rotation and scaling. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_a211cd71f8cd5fe774b7df176b50e7873}{sf2d\-\_\-draw\-\_\-texture\-\_\-blend} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, u32 color)
+\begin{DoxyCompactList}\small\item\em Draws a texture blended with a color. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_ab485210364f2285c265ec161196695b9}{sf2d\-\_\-texture\-\_\-tile32} (\hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture)
 \begin{DoxyCompactList}\small\item\em Tiles a texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -301,6 +303,31 @@ Draws a texture.
 {\em x} & the x coordinate to draw the texture to \\
 \hline
 {\em y} & the y coordinate to draw the texture to \\
+\hline
+\end{DoxyParams}
+\hypertarget{sf2d_8h_a211cd71f8cd5fe774b7df176b50e7873}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-blend@{sf2d\-\_\-draw\-\_\-texture\-\_\-blend}}
+\index{sf2d\-\_\-draw\-\_\-texture\-\_\-blend@{sf2d\-\_\-draw\-\_\-texture\-\_\-blend}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-texture\-\_\-blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-texture\-\_\-blend (
+\begin{DoxyParamCaption}
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{u32}]{color}
+\end{DoxyParamCaption}
+)}}\label{sf2d_8h_a211cd71f8cd5fe774b7df176b50e7873}
+
+
+Draws a texture blended with a color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to draw \\
+\hline
+{\em x} & the x coordinate to draw the texture to \\
+\hline
+{\em y} & the y coordinate to draw the texture to \\
+\hline
+{\em color} & the color to blend with the texture \\
 \hline
 \end{DoxyParams}
 \hypertarget{sf2d_8h_abdfae56c564b94d07bf7a1b54bd11453}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-part@{sf2d\-\_\-draw\-\_\-texture\-\_\-part}}

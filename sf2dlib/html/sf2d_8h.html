@@ -209,6 +209,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 <tr class="memitem:af5fe98d85442da3243788c8db104d5dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#af5fe98d85442da3243788c8db104d5dc">sf2d_draw_texture_rotate_cut_scale</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, float rad, int tex_x, int tex_y, int tex_w, int tex_h, float x_scale, float y_scale)</td></tr>
 <tr class="memdesc:af5fe98d85442da3243788c8db104d5dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a part of a texture, with rotation and scaling.  <a href="#af5fe98d85442da3243788c8db104d5dc">More...</a><br/></td></tr>
 <tr class="separator:af5fe98d85442da3243788c8db104d5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a211cd71f8cd5fe774b7df176b50e7873"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a211cd71f8cd5fe774b7df176b50e7873">sf2d_draw_texture_blend</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, u32 color)</td></tr>
+<tr class="memdesc:a211cd71f8cd5fe774b7df176b50e7873"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a texture blended with a color.  <a href="#a211cd71f8cd5fe774b7df176b50e7873">More...</a><br/></td></tr>
+<tr class="separator:a211cd71f8cd5fe774b7df176b50e7873"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab485210364f2285c265ec161196695b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#ab485210364f2285c265ec161196695b9">sf2d_texture_tile32</a> (<a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture)</td></tr>
 <tr class="memdesc:ab485210364f2285c265ec161196695b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tiles a texture.  <a href="#ab485210364f2285c265ec161196695b9">More...</a><br/></td></tr>
 <tr class="separator:ab485210364f2285c265ec161196695b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -587,6 +590,55 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
     <tr><td class="paramname">texture</td><td>the texture to draw </td></tr>
     <tr><td class="paramname">x</td><td>the x coordinate to draw the texture to </td></tr>
     <tr><td class="paramname">y</td><td>the y coordinate to draw the texture to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a211cd71f8cd5fe774b7df176b50e7873"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf2d_draw_texture_blend </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a texture blended with a color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>the texture to draw </td></tr>
+    <tr><td class="paramname">x</td><td>the x coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">y</td><td>the y coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">color</td><td>the color to blend with the texture </td></tr>
   </table>
   </dd>
 </dl>
@@ -1157,7 +1209,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 31 2015 00:40:54 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 1 2015 23:47:10 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

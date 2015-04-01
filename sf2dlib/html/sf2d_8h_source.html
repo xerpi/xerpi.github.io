@@ -195,13 +195,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="keywordtype">void</span> <a class="code" href="sf2d_8h.html#af5fe98d85442da3243788c8db104d5dc">sf2d_draw_texture_rotate_cut_scale</a>(<span class="keyword">const</span> <a class="code" href="structsf2d__texture.html">sf2d_texture</a> *texture, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">float</span> rad, <span class="keywordtype">int</span> tex_x, <span class="keywordtype">int</span> tex_y, <span class="keywordtype">int</span> tex_w, <span class="keywordtype">int</span> tex_h, <span class="keywordtype">float</span> x_scale, <span class="keywordtype">float</span> y_scale);</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="keywordtype">void</span> <a class="code" href="sf2d_8h.html#ab485210364f2285c265ec161196695b9">sf2d_texture_tile32</a>(<a class="code" href="structsf2d__texture.html">sf2d_texture</a> *texture);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="keywordtype">void</span> <a class="code" href="sf2d_8h.html#a211cd71f8cd5fe774b7df176b50e7873">sf2d_draw_texture_blend</a>(<span class="keyword">const</span> <a class="code" href="structsf2d__texture.html">sf2d_texture</a> *texture, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, u32 color);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="keywordtype">void</span> <a class="code" href="sf2d_8h.html#ab485210364f2285c265ec161196695b9">sf2d_texture_tile32</a>(<a class="code" href="structsf2d__texture.html">sf2d_texture</a> *texture);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="structsf2d__texture_html_a312abd0ee8ab587825804132c136b253"><div class="ttname"><a href="structsf2d__texture.html#a312abd0ee8ab587825804132c136b253">sf2d_texture::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> sf2d.h:90</div></div>
 <div class="ttc" id="sf2d_8h_html_a5acbbcbe3d4aae913976d01302951e93"><div class="ttname"><a href="sf2d_8h.html#a5acbbcbe3d4aae913976d01302951e93">sf2d_bind_texture</a></div><div class="ttdeci">void sf2d_bind_texture(const sf2d_texture *texture, GPU_TEXUNIT unit)</div><div class="ttdoc">Binds a texture to a GPU texture unit. </div></div>
 <div class="ttc" id="sf2d_8h_html_a09501d8d7c5319db00a39709f0cd18fa"><div class="ttname"><a href="sf2d_8h.html#a09501d8d7c5319db00a39709f0cd18fa">sf2d_draw_texture</a></div><div class="ttdeci">void sf2d_draw_texture(const sf2d_texture *texture, int x, int y)</div><div class="ttdoc">Draws a texture. </div></div>
@@ -240,13 +242,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="sf2d_8h_html_a8c7a8d299f8e9577fbdecf792e7b4b5b"><div class="ttname"><a href="sf2d_8h.html#a8c7a8d299f8e9577fbdecf792e7b4b5b">sf2d_draw_rectangle_rotate</a></div><div class="ttdeci">void sf2d_draw_rectangle_rotate(int x, int y, int w, int h, u32 color, float rad)</div><div class="ttdoc">Draws a rotated rectangle. </div></div>
 <div class="ttc" id="structsf2d__vector__3f_html"><div class="ttname"><a href="structsf2d__vector__3f.html">sf2d_vector_3f</a></div><div class="ttdoc">Represents a three dimensional float vector. </div><div class="ttdef"><b>Definition:</b> sf2d.h:53</div></div>
 <div class="ttc" id="sf2d_8h_html_a07951fad547d423a4cf6521c2e5171eaae4d62813738d1fec4a10cef2405d8b3d"><div class="ttname"><a href="sf2d_8h.html#a07951fad547d423a4cf6521c2e5171eaae4d62813738d1fec4a10cef2405d8b3d">SF2D_PLACE_VRAM</a></div><div class="ttdef"><b>Definition:</b> sf2d.h:36</div></div>
+<div class="ttc" id="sf2d_8h_html_a211cd71f8cd5fe774b7df176b50e7873"><div class="ttname"><a href="sf2d_8h.html#a211cd71f8cd5fe774b7df176b50e7873">sf2d_draw_texture_blend</a></div><div class="ttdeci">void sf2d_draw_texture_blend(const sf2d_texture *texture, int x, int y, u32 color)</div><div class="ttdoc">Draws a texture blended with a color. </div></div>
 <div class="ttc" id="sf2d_8h_html_ab485210364f2285c265ec161196695b9"><div class="ttname"><a href="sf2d_8h.html#ab485210364f2285c265ec161196695b9">sf2d_texture_tile32</a></div><div class="ttdeci">void sf2d_texture_tile32(sf2d_texture *texture)</div><div class="ttdoc">Tiles a texture. </div></div>
 <div class="ttc" id="structsf2d__texture_html_a46673c7ce439c63554a23e6ce83b254f"><div class="ttname"><a href="structsf2d__texture.html#a46673c7ce439c63554a23e6ce83b254f">sf2d_texture::data</a></div><div class="ttdeci">void * data</div><div class="ttdef"><b>Definition:</b> sf2d.h:95</div></div>
 <div class="ttc" id="sf2d_8h_html_ac06fd9ba922f84e9f50cac3ac0e5b5a4"><div class="ttname"><a href="sf2d_8h.html#ac06fd9ba922f84e9f50cac3ac0e5b5a4">sf2d_fill_texture_from_RGBA8</a></div><div class="ttdeci">void sf2d_fill_texture_from_RGBA8(sf2d_texture *dst, const void *rgba8, int source_w, int source_h)</div><div class="ttdoc">Fills an already allocated texture from a RGBA8 source. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 31 2015 00:40:54 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 1 2015 23:47:10 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
