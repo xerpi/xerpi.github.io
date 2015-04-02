@@ -24,6 +24,7 @@ var searchData=
   ['sf2d_5fpool_5fmalloc',['sf2d_pool_malloc',['../sf2d_8h.html#a62fe88879d163c0c69095944bd29a1b3',1,'sf2d.h']]],
   ['sf2d_5fpool_5fmemalign',['sf2d_pool_memalign',['../sf2d_8h.html#a0d73cc225df3c071ef63dc4cb2a68edc',1,'sf2d.h']]],
   ['sf2d_5fpool_5freset',['sf2d_pool_reset',['../sf2d_8h.html#aaaf6fc32b6d321adbffb78300c7df51e',1,'sf2d.h']]],
+  ['sf2d_5fset_5f3d',['sf2d_set_3D',['../sf2d_8h.html#a76aa41b3f67dbf7e96d958ef488c732e',1,'sf2d.h']]],
   ['sf2d_5fset_5fclear_5fcolor',['sf2d_set_clear_color',['../sf2d_8h.html#a21914ce31f435615df6c743f129d7221',1,'sf2d.h']]],
   ['sf2d_5fset_5fvblank_5fwait',['sf2d_set_vblank_wait',['../sf2d_8h.html#ac73776c4b7107cc201656ccdcf4c94b3',1,'sf2d.h']]],
   ['sf2d_5fstart_5fframe',['sf2d_start_frame',['../sf2d_8h.html#aebf0bffc5ec4230ba44ba6daeddcd040',1,'sf2d.h']]],
