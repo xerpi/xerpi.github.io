@@ -1,0 +1,191 @@
+\hypertarget{sftd_8h}{\section{include/sftd.h File Reference}
+\label{sftd_8h}\index{include/sftd.\-h@{include/sftd.\-h}}
+}
+
+
+sftdlib header  
+
+
+{\ttfamily \#include $<$3ds.\-h$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{sftd_8h_a4003f4919f110cb71460797b1bd42a89}{typedef struct \hyperlink{sftd_8h_a4003f4919f110cb71460797b1bd42a89}{sftd\-\_\-font} \hyperlink{sftd_8h_a4003f4919f110cb71460797b1bd42a89}{sftd\-\_\-font}}\label{sftd_8h_a4003f4919f110cb71460797b1bd42a89}
+
+\begin{DoxyCompactList}\small\item\em Represents a font. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{sftd_8h_a19a4502a949254d34d3c6ebb69f777a2}{sftd\-\_\-init} ()
+\begin{DoxyCompactList}\small\item\em Initializates the library. \end{DoxyCompactList}\item 
+int \hyperlink{sftd_8h_aecffbadb46cdfccceb65b375399c9f1e}{sftd\-\_\-fini} ()
+\begin{DoxyCompactList}\small\item\em Finishes the library. \end{DoxyCompactList}\item 
+\hyperlink{sftd_8h_a4003f4919f110cb71460797b1bd42a89}{sftd\-\_\-font} $\ast$ \hyperlink{sftd_8h_af85ab25c9d4ce569edd4ddb29399eba9}{sftd\-\_\-load\-\_\-font\-\_\-file} (const char $\ast$pathname)
+\begin{DoxyCompactList}\small\item\em Loads a font from a file. \end{DoxyCompactList}\item 
+\hyperlink{sftd_8h_a4003f4919f110cb71460797b1bd42a89}{sftd\-\_\-font} $\ast$ \hyperlink{sftd_8h_aee33487ba9759f994732e9df58ace5b9}{sftd\-\_\-load\-\_\-font\-\_\-mem} (const void $\ast$buffer, unsigned int size)
+\begin{DoxyCompactList}\small\item\em Loads a font from memory. \end{DoxyCompactList}\item 
+void \hyperlink{sftd_8h_a97aaeaf4b5d0c67c9ec6df66c58d745d}{sftd\-\_\-free\-\_\-font} (\hyperlink{sftd_8h_a4003f4919f110cb71460797b1bd42a89}{sftd\-\_\-font} $\ast$font)
+\begin{DoxyCompactList}\small\item\em Frees a font. \end{DoxyCompactList}\item 
+void \hyperlink{sftd_8h_a684d41cc700f2204e9e443eb5e5ea3a2}{sftd\-\_\-draw\-\_\-text} (\hyperlink{sftd_8h_a4003f4919f110cb71460797b1bd42a89}{sftd\-\_\-font} $\ast$font, int x, int y, unsigned int color, unsigned int size, const char $\ast$text)
+\begin{DoxyCompactList}\small\item\em Draws text using a font. \end{DoxyCompactList}\item 
+void \hyperlink{sftd_8h_a81e52a2fc2ab2dae844f8ca2a7b26519}{sftd\-\_\-draw\-\_\-wtext} (\hyperlink{sftd_8h_a4003f4919f110cb71460797b1bd42a89}{sftd\-\_\-font} $\ast$font, int x, int y, unsigned int color, unsigned int size, const wchar\-\_\-t $\ast$text)
+\begin{DoxyCompactList}\small\item\em Draws wide text using a font. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+sftdlib header \begin{DoxyAuthor}{Author}
+Sergi Granell (xerpi) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2 April 2015 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{sftd_8h_a684d41cc700f2204e9e443eb5e5ea3a2}{\index{sftd.\-h@{sftd.\-h}!sftd\-\_\-draw\-\_\-text@{sftd\-\_\-draw\-\_\-text}}
+\index{sftd\-\_\-draw\-\_\-text@{sftd\-\_\-draw\-\_\-text}!sftd.h@{sftd.\-h}}
+\subsubsection[{sftd\-\_\-draw\-\_\-text}]{\setlength{\rightskip}{0pt plus 5cm}void sftd\-\_\-draw\-\_\-text (
+\begin{DoxyParamCaption}
+\item[{{\bf sftd\-\_\-font} $\ast$}]{font, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{unsigned int}]{color, }
+\item[{unsigned int}]{size, }
+\item[{const char $\ast$}]{text}
+\end{DoxyParamCaption}
+)}}\label{sftd_8h_a684d41cc700f2204e9e443eb5e5ea3a2}
+
+
+Draws text using a font. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & the font to use \\
+\hline
+{\em x} & the x coordinate to draw the text to \\
+\hline
+{\em y} & the y coordinate to draw the text to \\
+\hline
+{\em color} & the color to draw the font \\
+\hline
+{\em size} & the font size \\
+\hline
+{\em text} & a pointer to the text to draw \\
+\hline
+\end{DoxyParams}
+\hypertarget{sftd_8h_a81e52a2fc2ab2dae844f8ca2a7b26519}{\index{sftd.\-h@{sftd.\-h}!sftd\-\_\-draw\-\_\-wtext@{sftd\-\_\-draw\-\_\-wtext}}
+\index{sftd\-\_\-draw\-\_\-wtext@{sftd\-\_\-draw\-\_\-wtext}!sftd.h@{sftd.\-h}}
+\subsubsection[{sftd\-\_\-draw\-\_\-wtext}]{\setlength{\rightskip}{0pt plus 5cm}void sftd\-\_\-draw\-\_\-wtext (
+\begin{DoxyParamCaption}
+\item[{{\bf sftd\-\_\-font} $\ast$}]{font, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{unsigned int}]{color, }
+\item[{unsigned int}]{size, }
+\item[{const wchar\-\_\-t $\ast$}]{text}
+\end{DoxyParamCaption}
+)}}\label{sftd_8h_a81e52a2fc2ab2dae844f8ca2a7b26519}
+
+
+Draws wide text using a font. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & the font to use \\
+\hline
+{\em x} & the x coordinate to draw the text to \\
+\hline
+{\em y} & the y coordinate to draw the text to \\
+\hline
+{\em color} & the color to draw the font \\
+\hline
+{\em size} & the font size \\
+\hline
+{\em text} & a pointer to the wide text to draw \\
+\hline
+\end{DoxyParams}
+\hypertarget{sftd_8h_aecffbadb46cdfccceb65b375399c9f1e}{\index{sftd.\-h@{sftd.\-h}!sftd\-\_\-fini@{sftd\-\_\-fini}}
+\index{sftd\-\_\-fini@{sftd\-\_\-fini}!sftd.h@{sftd.\-h}}
+\subsubsection[{sftd\-\_\-fini}]{\setlength{\rightskip}{0pt plus 5cm}int sftd\-\_\-fini (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{sftd_8h_aecffbadb46cdfccceb65b375399c9f1e}
+
+
+Finishes the library. 
+
+\begin{DoxyReturn}{Returns}
+Whether the finalization has been successful or not 
+\end{DoxyReturn}
+\hypertarget{sftd_8h_a97aaeaf4b5d0c67c9ec6df66c58d745d}{\index{sftd.\-h@{sftd.\-h}!sftd\-\_\-free\-\_\-font@{sftd\-\_\-free\-\_\-font}}
+\index{sftd\-\_\-free\-\_\-font@{sftd\-\_\-free\-\_\-font}!sftd.h@{sftd.\-h}}
+\subsubsection[{sftd\-\_\-free\-\_\-font}]{\setlength{\rightskip}{0pt plus 5cm}void sftd\-\_\-free\-\_\-font (
+\begin{DoxyParamCaption}
+\item[{{\bf sftd\-\_\-font} $\ast$}]{font}
+\end{DoxyParamCaption}
+)}}\label{sftd_8h_a97aaeaf4b5d0c67c9ec6df66c58d745d}
+
+
+Frees a font. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & pointer to the font to freeze \\
+\hline
+\end{DoxyParams}
+\hypertarget{sftd_8h_a19a4502a949254d34d3c6ebb69f777a2}{\index{sftd.\-h@{sftd.\-h}!sftd\-\_\-init@{sftd\-\_\-init}}
+\index{sftd\-\_\-init@{sftd\-\_\-init}!sftd.h@{sftd.\-h}}
+\subsubsection[{sftd\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}int sftd\-\_\-init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{sftd_8h_a19a4502a949254d34d3c6ebb69f777a2}
+
+
+Initializates the library. 
+
+\begin{DoxyReturn}{Returns}
+Whether the initialization has been successful or not 
+\end{DoxyReturn}
+\hypertarget{sftd_8h_af85ab25c9d4ce569edd4ddb29399eba9}{\index{sftd.\-h@{sftd.\-h}!sftd\-\_\-load\-\_\-font\-\_\-file@{sftd\-\_\-load\-\_\-font\-\_\-file}}
+\index{sftd\-\_\-load\-\_\-font\-\_\-file@{sftd\-\_\-load\-\_\-font\-\_\-file}!sftd.h@{sftd.\-h}}
+\subsubsection[{sftd\-\_\-load\-\_\-font\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sftd\-\_\-font}$\ast$ sftd\-\_\-load\-\_\-font\-\_\-file (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{pathname}
+\end{DoxyParamCaption}
+)}}\label{sftd_8h_af85ab25c9d4ce569edd4ddb29399eba9}
+
+
+Loads a font from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pathname} & the path to the font \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the loaded font (N\-U\-L\-L on error) 
+\end{DoxyReturn}
+\hypertarget{sftd_8h_aee33487ba9759f994732e9df58ace5b9}{\index{sftd.\-h@{sftd.\-h}!sftd\-\_\-load\-\_\-font\-\_\-mem@{sftd\-\_\-load\-\_\-font\-\_\-mem}}
+\index{sftd\-\_\-load\-\_\-font\-\_\-mem@{sftd\-\_\-load\-\_\-font\-\_\-mem}!sftd.h@{sftd.\-h}}
+\subsubsection[{sftd\-\_\-load\-\_\-font\-\_\-mem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sftd\-\_\-font}$\ast$ sftd\-\_\-load\-\_\-font\-\_\-mem (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{buffer, }
+\item[{unsigned int}]{size}
+\end{DoxyParamCaption}
+)}}\label{sftd_8h_aee33487ba9759f994732e9df58ace5b9}
+
+
+Loads a font from memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the address of the font \\
+\hline
+{\em size} & the size of the font buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the loaded font (N\-U\-L\-L on error) 
+\end{DoxyReturn}
