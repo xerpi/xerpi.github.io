@@ -2,6 +2,7 @@ var searchData=
 [
   ['sf2d_2eh',['sf2d.h',['../sf2d_8h.html',1,'']]],
   ['sf2d_5fbind_5ftexture',['sf2d_bind_texture',['../sf2d_8h.html#a5acbbcbe3d4aae913976d01302951e93',1,'sf2d.h']]],
+  ['sf2d_5fbind_5ftexture_5fcolor',['sf2d_bind_texture_color',['../sf2d_8h.html#a479621a55bb749362151bf71db8d0b8d',1,'sf2d.h']]],
   ['sf2d_5fcreate_5ftexture',['sf2d_create_texture',['../sf2d_8h.html#aa2d2bf527f988eea5763f122a69c83c5',1,'sf2d.h']]],
   ['sf2d_5fcreate_5ftexture_5fmem_5frgba8',['sf2d_create_texture_mem_RGBA8',['../sf2d_8h.html#afb4d665753c46d5e40efb451ef46f68f',1,'sf2d.h']]],
   ['sf2d_5fdraw_5fline',['sf2d_draw_line',['../sf2d_8h.html#ace95578f2bfe9f2e8b1753bdd816d96b',1,'sf2d.h']]],
@@ -10,6 +11,7 @@ var searchData=
   ['sf2d_5fdraw_5ftexture',['sf2d_draw_texture',['../sf2d_8h.html#a09501d8d7c5319db00a39709f0cd18fa',1,'sf2d.h']]],
   ['sf2d_5fdraw_5ftexture_5fblend',['sf2d_draw_texture_blend',['../sf2d_8h.html#a211cd71f8cd5fe774b7df176b50e7873',1,'sf2d.h']]],
   ['sf2d_5fdraw_5ftexture_5fpart',['sf2d_draw_texture_part',['../sf2d_8h.html#abdfae56c564b94d07bf7a1b54bd11453',1,'sf2d.h']]],
+  ['sf2d_5fdraw_5ftexture_5fpart_5fblend',['sf2d_draw_texture_part_blend',['../sf2d_8h.html#a57101cdd022be92ae6c6ac5ec1feb014',1,'sf2d.h']]],
   ['sf2d_5fdraw_5ftexture_5frotate',['sf2d_draw_texture_rotate',['../sf2d_8h.html#affc6cf46e403ae0837ec2901c85b4464',1,'sf2d.h']]],
   ['sf2d_5fdraw_5ftexture_5frotate_5fcut_5fscale',['sf2d_draw_texture_rotate_cut_scale',['../sf2d_8h.html#af5fe98d85442da3243788c8db104d5dc',1,'sf2d.h']]],
   ['sf2d_5fdraw_5ftexture_5fscale',['sf2d_draw_texture_scale',['../sf2d_8h.html#aed7b8a897e01f5f5465d820cde08ab24',1,'sf2d.h']]],
