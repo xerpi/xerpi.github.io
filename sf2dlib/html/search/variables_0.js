@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['data',['data',['../structsf2d__texture.html#a46673c7ce439c63554a23e6ce83b254f',1,'sf2d_texture']]],
-  ['data_5fsize',['data_size',['../structsf2d__texture.html#a99107fa90e683bab6456da738ff9d005',1,'sf2d_texture']]]
+  ['a',['a',['../structsf2d__vector__4f.html#aac68efbadd85967e74d917970f595823',1,'sf2d_vector_4f']]]
 ];
