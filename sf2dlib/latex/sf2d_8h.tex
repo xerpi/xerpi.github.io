@@ -106,6 +106,8 @@ void \hyperlink{sf2d_8h_a211cd71f8cd5fe774b7df176b50e7873}{sf2d\+\_\+draw\+\_\+t
 \begin{DoxyCompactList}\small\item\em Draws a texture blended with a color. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_a57101cdd022be92ae6c6ac5ec1feb014}{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+blend} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, int tex\+\_\+x, int tex\+\_\+y, int tex\+\_\+w, int tex\+\_\+h, u32 color)
 \begin{DoxyCompactList}\small\item\em Draws a part of a texture blended with a color. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_a593059994abb6b9e8604cdd689d6b7e7}{sf2d\+\_\+draw\+\_\+texture\+\_\+depth} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, signed short z)
+\begin{DoxyCompactList}\small\item\em Draws a texture blended in a certain depth. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_ab485210364f2285c265ec161196695b9}{sf2d\+\_\+texture\+\_\+tile32} (\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture)
 \begin{DoxyCompactList}\small\item\em Tiles a texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -405,6 +407,34 @@ Draws a texture blended with a color.
 {\em color} & the color to blend with the texture \\
 \hline
 \end{DoxyParams}
+\hypertarget{sf2d_8h_a593059994abb6b9e8604cdd689d6b7e7}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+depth@{sf2d\+\_\+draw\+\_\+texture\+\_\+depth}}
+\index{sf2d\+\_\+draw\+\_\+texture\+\_\+depth@{sf2d\+\_\+draw\+\_\+texture\+\_\+depth}!sf2d.\+h@{sf2d.\+h}}
+\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+depth}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+depth (
+\begin{DoxyParamCaption}
+\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{signed short}]{z}
+\end{DoxyParamCaption}
+)}\label{sf2d_8h_a593059994abb6b9e8604cdd689d6b7e7}
+
+
+Draws a texture blended in a certain depth. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to draw \\
+\hline
+{\em x} & the x coordinate to draw the texture to \\
+\hline
+{\em y} & the y coordinate to draw the texture to \\
+\hline
+{\em z} & the depth to draw the texture to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The z parameter is a value in the \mbox{[}-\/32768, +32767\mbox{]} range, where -\/32768 is the deepest and +32767 the toppest. By default, the textures are drawn at z = 0. Keep in mind that this function won\textquotesingle{}t do Order-\/independent transparency (O\+I\+T), so you should use fully opaque textures to get good results. 
+\end{DoxyNote}
 \hypertarget{sf2d_8h_abdfae56c564b94d07bf7a1b54bd11453}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+part@{sf2d\+\_\+draw\+\_\+texture\+\_\+part}}
 \index{sf2d\+\_\+draw\+\_\+texture\+\_\+part@{sf2d\+\_\+draw\+\_\+texture\+\_\+part}!sf2d.\+h@{sf2d.\+h}}
 \subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+part}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+part (

@@ -240,6 +240,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 <tr class="memitem:a57101cdd022be92ae6c6ac5ec1feb014"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a57101cdd022be92ae6c6ac5ec1feb014">sf2d_draw_texture_part_blend</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, int tex_x, int tex_y, int tex_w, int tex_h, u32 color)</td></tr>
 <tr class="memdesc:a57101cdd022be92ae6c6ac5ec1feb014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a part of a texture blended with a color.  <a href="#a57101cdd022be92ae6c6ac5ec1feb014">More...</a><br /></td></tr>
 <tr class="separator:a57101cdd022be92ae6c6ac5ec1feb014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a593059994abb6b9e8604cdd689d6b7e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a593059994abb6b9e8604cdd689d6b7e7">sf2d_draw_texture_depth</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, signed short z)</td></tr>
+<tr class="memdesc:a593059994abb6b9e8604cdd689d6b7e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a texture blended in a certain depth.  <a href="#a593059994abb6b9e8604cdd689d6b7e7">More...</a><br /></td></tr>
+<tr class="separator:a593059994abb6b9e8604cdd689d6b7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab485210364f2285c265ec161196695b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#ab485210364f2285c265ec161196695b9">sf2d_texture_tile32</a> (<a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture)</td></tr>
 <tr class="memdesc:ab485210364f2285c265ec161196695b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tiles a texture.  <a href="#ab485210364f2285c265ec161196695b9">More...</a><br /></td></tr>
 <tr class="separator:ab485210364f2285c265ec161196695b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -772,6 +775,56 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a593059994abb6b9e8604cdd689d6b7e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf2d_draw_texture_depth </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">signed short&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a texture blended in a certain depth. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>the texture to draw </td></tr>
+    <tr><td class="paramname">x</td><td>the x coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">y</td><td>the y coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">z</td><td>the depth to draw the texture to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The z parameter is a value in the [-32768, +32767] range, where -32768 is the deepest and +32767 the toppest. By default, the textures are drawn at z = 0. Keep in mind that this function won't do Order-independent transparency (OIT), so you should use fully opaque textures to get good results. </dd></dl>
 
 </div>
 </div>
@@ -1492,7 +1545,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 5 2015 23:06:06 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 6 2015 22:27:53 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
