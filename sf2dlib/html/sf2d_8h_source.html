@@ -226,11 +226,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="keywordtype">void</span> <a class="code" href="sf2d_8h.html#ab485210364f2285c265ec161196695b9">sf2d_texture_tile32</a>(<a class="code" href="structsf2d__texture.html">sf2d_texture</a> *texture);</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;}</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="keywordtype">void</span> <a class="code" href="sf2d_8h.html#a8a6c72fe9cb76fa7eb851058ae9fc773">sf2d_set_scissor_test</a>(GPU_SCISSORMODE mode, u32 x, u32 y, u32 w, u32 h);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;}</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="structsf2d__texture_html_a312abd0ee8ab587825804132c136b253"><div class="ttname"><a href="structsf2d__texture.html#a312abd0ee8ab587825804132c136b253">sf2d_texture::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> sf2d.h:108</div></div>
 <div class="ttc" id="structsf2d__vector__2f_html_ae9cab2d0f74baf57efbdbfdffa8492b9"><div class="ttname"><a href="structsf2d__vector__2f.html#ae9cab2d0f74baf57efbdbfdffa8492b9">sf2d_vector_2f::v</a></div><div class="ttdeci">float v</div><div class="ttdef"><b>Definition:</b> sf2d.h:58</div></div>
 <div class="ttc" id="sf2d_8h_html_a07951fad547d423a4cf6521c2e5171eaa70138ec78a57f02178621e5917b2358d"><div class="ttname"><a href="sf2d_8h.html#a07951fad547d423a4cf6521c2e5171eaa70138ec78a57f02178621e5917b2358d">SF2D_PLACE_TEMP</a></div><div class="ttdef"><b>Definition:</b> sf2d.h:47</div></div>
@@ -238,6 +240,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="sf2d_8h_html_a479621a55bb749362151bf71db8d0b8d"><div class="ttname"><a href="sf2d_8h.html#a479621a55bb749362151bf71db8d0b8d">sf2d_bind_texture_color</a></div><div class="ttdeci">void sf2d_bind_texture_color(const sf2d_texture *texture, GPU_TEXUNIT unit, u32 color)</div><div class="ttdoc">Binds a texture to a GPU texture unit with a constant color. </div></div>
 <div class="ttc" id="structsf2d__vertex__pos__tex_html_a72fcf7753d1977b813b6e5336c27fce6"><div class="ttname"><a href="structsf2d__vertex__pos__tex.html#a72fcf7753d1977b813b6e5336c27fce6">sf2d_vertex_pos_tex::texcoord</a></div><div class="ttdeci">sf2d_vector_2f texcoord</div><div class="ttdef"><b>Definition:</b> sf2d.h:97</div></div>
 <div class="ttc" id="sf2d_8h_html_a09501d8d7c5319db00a39709f0cd18fa"><div class="ttname"><a href="sf2d_8h.html#a09501d8d7c5319db00a39709f0cd18fa">sf2d_draw_texture</a></div><div class="ttdeci">void sf2d_draw_texture(const sf2d_texture *texture, int x, int y)</div><div class="ttdoc">Draws a texture. </div></div>
+<div class="ttc" id="sf2d_8h_html_a8a6c72fe9cb76fa7eb851058ae9fc773"><div class="ttname"><a href="sf2d_8h.html#a8a6c72fe9cb76fa7eb851058ae9fc773">sf2d_set_scissor_test</a></div><div class="ttdeci">void sf2d_set_scissor_test(GPU_SCISSORMODE mode, u32 x, u32 y, u32 w, u32 h)</div><div class="ttdoc">Sets the scissor test. </div></div>
 <div class="ttc" id="sf2d_8h_html_a625850a797c090dca02468becc5859f0"><div class="ttname"><a href="sf2d_8h.html#a625850a797c090dca02468becc5859f0">sf2d_init_advanced</a></div><div class="ttdeci">int sf2d_init_advanced(int gpucmd_size, int temppool_size)</div><div class="ttdoc">Initializates the library (with advanced settings) </div></div>
 <div class="ttc" id="sf2d_8h_html_a21914ce31f435615df6c743f129d7221"><div class="ttname"><a href="sf2d_8h.html#a21914ce31f435615df6c743f129d7221">sf2d_set_clear_color</a></div><div class="ttdeci">void sf2d_set_clear_color(u32 color)</div><div class="ttdoc">Sets the screen clear color. </div></div>
 <div class="ttc" id="structsf2d__texture_html_ac30cfc2de337739d1a19858e4fdacaa4"><div class="ttname"><a href="structsf2d__texture.html#ac30cfc2de337739d1a19858e4fdacaa4">sf2d_texture::place</a></div><div class="ttdeci">sf2d_place place</div><div class="ttdef"><b>Definition:</b> sf2d.h:105</div></div>
@@ -298,7 +301,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 6 2015 22:27:53 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 15 2015 20:15:45 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

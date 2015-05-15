@@ -246,6 +246,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 <tr class="memitem:ab485210364f2285c265ec161196695b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#ab485210364f2285c265ec161196695b9">sf2d_texture_tile32</a> (<a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture)</td></tr>
 <tr class="memdesc:ab485210364f2285c265ec161196695b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tiles a texture.  <a href="#ab485210364f2285c265ec161196695b9">More...</a><br /></td></tr>
 <tr class="separator:ab485210364f2285c265ec161196695b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a6c72fe9cb76fa7eb851058ae9fc773"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a8a6c72fe9cb76fa7eb851058ae9fc773">sf2d_set_scissor_test</a> (GPU_SCISSORMODE mode, u32 x, u32 y, u32 w, u32 h)</td></tr>
+<tr class="memdesc:a8a6c72fe9cb76fa7eb851058ae9fc773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the scissor test.  <a href="#a8a6c72fe9cb76fa7eb851058ae9fc773">More...</a><br /></td></tr>
+<tr class="separator:a8a6c72fe9cb76fa7eb851058ae9fc773"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>sf2dlib header </p>
@@ -1459,6 +1462,63 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 
 </div>
 </div>
+<a class="anchor" id="a8a6c72fe9cb76fa7eb851058ae9fc773"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf2d_set_scissor_test </td>
+          <td>(</td>
+          <td class="paramtype">GPU_SCISSORMODE&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the scissor test. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>the test mode (disable, invert or normal) </td></tr>
+    <tr><td class="paramname">x</td><td>the starting x coordinate of the scissor </td></tr>
+    <tr><td class="paramname">y</td><td>the starting y coordinate of the scissor </td></tr>
+    <tr><td class="paramname">w</td><td>the width of the scissor rectangle </td></tr>
+    <tr><td class="paramname">h</td><td>the height of the scissor rectangle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function should be called after sf2d_start_frame. The scissor will remain active until the sf2d_end_frame call. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ac73776c4b7107cc201656ccdcf4c94b3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1545,7 +1605,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 6 2015 22:27:53 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 15 2015 20:15:45 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

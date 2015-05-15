@@ -34,6 +34,7 @@ var searchData=
   ['sf2d_5fpool_5fspace_5ffree',['sf2d_pool_space_free',['../sf2d_8h.html#aef14b8c67493e1e4f8682bafee458890',1,'sf2d.h']]],
   ['sf2d_5fset_5f3d',['sf2d_set_3D',['../sf2d_8h.html#a76aa41b3f67dbf7e96d958ef488c732e',1,'sf2d.h']]],
   ['sf2d_5fset_5fclear_5fcolor',['sf2d_set_clear_color',['../sf2d_8h.html#a21914ce31f435615df6c743f129d7221',1,'sf2d.h']]],
+  ['sf2d_5fset_5fscissor_5ftest',['sf2d_set_scissor_test',['../sf2d_8h.html#a8a6c72fe9cb76fa7eb851058ae9fc773',1,'sf2d.h']]],
   ['sf2d_5fset_5fvblank_5fwait',['sf2d_set_vblank_wait',['../sf2d_8h.html#ac73776c4b7107cc201656ccdcf4c94b3',1,'sf2d.h']]],
   ['sf2d_5fstart_5fframe',['sf2d_start_frame',['../sf2d_8h.html#aebf0bffc5ec4230ba44ba6daeddcd040',1,'sf2d.h']]],
   ['sf2d_5fswapbuffers',['sf2d_swapbuffers',['../sf2d_8h.html#a88b5ab9a86f26417e04ad0305c8bddbd',1,'sf2d.h']]],

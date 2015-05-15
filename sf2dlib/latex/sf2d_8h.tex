@@ -109,7 +109,9 @@ void \hyperlink{sf2d_8h_a57101cdd022be92ae6c6ac5ec1feb014}{sf2d\+\_\+draw\+\_\+t
 void \hyperlink{sf2d_8h_a593059994abb6b9e8604cdd689d6b7e7}{sf2d\+\_\+draw\+\_\+texture\+\_\+depth} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, signed short z)
 \begin{DoxyCompactList}\small\item\em Draws a texture blended in a certain depth. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_ab485210364f2285c265ec161196695b9}{sf2d\+\_\+texture\+\_\+tile32} (\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture)
-\begin{DoxyCompactList}\small\item\em Tiles a texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Tiles a texture. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_a8a6c72fe9cb76fa7eb851058ae9fc773}{sf2d\+\_\+set\+\_\+scissor\+\_\+test} (G\+P\+U\+\_\+\+S\+C\+I\+S\+S\+O\+R\+M\+O\+D\+E mode, u32 x, u32 y, u32 w, u32 h)
+\begin{DoxyCompactList}\small\item\em Sets the scissor test. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -788,6 +790,37 @@ Sets the screen clear color.
 {\em color} & the color \\
 \hline
 \end{DoxyParams}
+\hypertarget{sf2d_8h_a8a6c72fe9cb76fa7eb851058ae9fc773}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+set\+\_\+scissor\+\_\+test@{sf2d\+\_\+set\+\_\+scissor\+\_\+test}}
+\index{sf2d\+\_\+set\+\_\+scissor\+\_\+test@{sf2d\+\_\+set\+\_\+scissor\+\_\+test}!sf2d.\+h@{sf2d.\+h}}
+\subsubsection[{sf2d\+\_\+set\+\_\+scissor\+\_\+test}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+set\+\_\+scissor\+\_\+test (
+\begin{DoxyParamCaption}
+\item[{G\+P\+U\+\_\+\+S\+C\+I\+S\+S\+O\+R\+M\+O\+D\+E}]{mode, }
+\item[{u32}]{x, }
+\item[{u32}]{y, }
+\item[{u32}]{w, }
+\item[{u32}]{h}
+\end{DoxyParamCaption}
+)}\label{sf2d_8h_a8a6c72fe9cb76fa7eb851058ae9fc773}
+
+
+Sets the scissor test. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & the test mode (disable, invert or normal) \\
+\hline
+{\em x} & the starting x coordinate of the scissor \\
+\hline
+{\em y} & the starting y coordinate of the scissor \\
+\hline
+{\em w} & the width of the scissor rectangle \\
+\hline
+{\em h} & the height of the scissor rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function should be called after sf2d\+\_\+start\+\_\+frame. The scissor will remain active until the sf2d\+\_\+end\+\_\+frame call. 
+\end{DoxyNote}
 \hypertarget{sf2d_8h_ac73776c4b7107cc201656ccdcf4c94b3}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+set\+\_\+vblank\+\_\+wait@{sf2d\+\_\+set\+\_\+vblank\+\_\+wait}}
 \index{sf2d\+\_\+set\+\_\+vblank\+\_\+wait@{sf2d\+\_\+set\+\_\+vblank\+\_\+wait}!sf2d.\+h@{sf2d.\+h}}
 \subsubsection[{sf2d\+\_\+set\+\_\+vblank\+\_\+wait}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+set\+\_\+vblank\+\_\+wait (
