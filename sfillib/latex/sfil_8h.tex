@@ -1,0 +1,173 @@
+\hypertarget{sfil_8h}{}\section{include/sfil.h File Reference}
+\label{sfil_8h}\index{include/sfil.\+h@{include/sfil.\+h}}
+
+
+sfillib header  
+
+
+{\ttfamily \#include $<$3ds.\+h$>$}\\*
+{\ttfamily \#include $<$sf2d.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+sf2d\+\_\+texture $\ast$ \hyperlink{sfil_8h_a37f75b9ca9fb7a0eff5421a3cddc7071}{sfil\+\_\+load\+\_\+\+P\+N\+G\+\_\+file} (const char $\ast$filename, sf2d\+\_\+place place)
+\begin{DoxyCompactList}\small\item\em Loads a P\+N\+G image from the S\+D card. \end{DoxyCompactList}\item 
+sf2d\+\_\+texture $\ast$ \hyperlink{sfil_8h_a50c9e961e0c20518cad14c17c2376059}{sfil\+\_\+load\+\_\+\+P\+N\+G\+\_\+buffer} (const void $\ast$buffer, sf2d\+\_\+place place)
+\begin{DoxyCompactList}\small\item\em Loads a P\+N\+G image from a memory buffer. \end{DoxyCompactList}\item 
+sf2d\+\_\+texture $\ast$ \hyperlink{sfil_8h_ac32ccd19da3f7b585859bf3a124413ae}{sfil\+\_\+load\+\_\+\+J\+P\+E\+G\+\_\+file} (const char $\ast$filename, sf2d\+\_\+place place)
+\begin{DoxyCompactList}\small\item\em Loads a J\+P\+G/\+J\+P\+E\+G image from the S\+D card. \end{DoxyCompactList}\item 
+sf2d\+\_\+texture $\ast$ \hyperlink{sfil_8h_a3d6f74021696e0cf1007ce937656ee20}{sfil\+\_\+load\+\_\+\+J\+P\+E\+G\+\_\+buffer} (const void $\ast$buffer, unsigned long buffer\+\_\+size, sf2d\+\_\+place place)
+\begin{DoxyCompactList}\small\item\em Loads a J\+P\+G/\+J\+P\+E\+G image from a memory buffer. \end{DoxyCompactList}\item 
+sf2d\+\_\+texture $\ast$ \hyperlink{sfil_8h_ab8b6b732b5f738d17426a472c7a2f254}{sfil\+\_\+load\+\_\+\+B\+M\+P\+\_\+file} (const char $\ast$filename, sf2d\+\_\+place place)
+\begin{DoxyCompactList}\small\item\em Loads a B\+M\+P image from the S\+D card. \end{DoxyCompactList}\item 
+sf2d\+\_\+texture $\ast$ \hyperlink{sfil_8h_a2d2dabdd30f294d52dbda6ed0d09e693}{sfil\+\_\+load\+\_\+\+B\+M\+P\+\_\+buffer} (const void $\ast$buffer, sf2d\+\_\+place place)
+\begin{DoxyCompactList}\small\item\em Loads a B\+M\+P image from a memory buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+sfillib header 
+
+\begin{DoxyAuthor}{Author}
+Sergi Granell (xerpi) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2 April 2015 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{sfil_8h_a2d2dabdd30f294d52dbda6ed0d09e693}{}\index{sfil.\+h@{sfil.\+h}!sfil\+\_\+load\+\_\+\+B\+M\+P\+\_\+buffer@{sfil\+\_\+load\+\_\+\+B\+M\+P\+\_\+buffer}}
+\index{sfil\+\_\+load\+\_\+\+B\+M\+P\+\_\+buffer@{sfil\+\_\+load\+\_\+\+B\+M\+P\+\_\+buffer}!sfil.\+h@{sfil.\+h}}
+\subsubsection[{sfil\+\_\+load\+\_\+\+B\+M\+P\+\_\+buffer}]{\setlength{\rightskip}{0pt plus 5cm}sf2d\+\_\+texture$\ast$ sfil\+\_\+load\+\_\+\+B\+M\+P\+\_\+buffer (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{buffer, }
+\item[{sf2d\+\_\+place}]{place}
+\end{DoxyParamCaption}
+)}\label{sfil_8h_a2d2dabdd30f294d52dbda6ed0d09e693}
+
+
+Loads a B\+M\+P image from a memory buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the pointer of the memory buffer to load the image from \\
+\hline
+{\em place} & where to allocate the texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the newly created texture/image 
+\end{DoxyReturn}
+\hypertarget{sfil_8h_ab8b6b732b5f738d17426a472c7a2f254}{}\index{sfil.\+h@{sfil.\+h}!sfil\+\_\+load\+\_\+\+B\+M\+P\+\_\+file@{sfil\+\_\+load\+\_\+\+B\+M\+P\+\_\+file}}
+\index{sfil\+\_\+load\+\_\+\+B\+M\+P\+\_\+file@{sfil\+\_\+load\+\_\+\+B\+M\+P\+\_\+file}!sfil.\+h@{sfil.\+h}}
+\subsubsection[{sfil\+\_\+load\+\_\+\+B\+M\+P\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}sf2d\+\_\+texture$\ast$ sfil\+\_\+load\+\_\+\+B\+M\+P\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{sf2d\+\_\+place}]{place}
+\end{DoxyParamCaption}
+)}\label{sfil_8h_ab8b6b732b5f738d17426a472c7a2f254}
+
+
+Loads a B\+M\+P image from the S\+D card. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the path of the image to load \\
+\hline
+{\em place} & where to allocate the texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the newly created texture/image 
+\end{DoxyReturn}
+\hypertarget{sfil_8h_a3d6f74021696e0cf1007ce937656ee20}{}\index{sfil.\+h@{sfil.\+h}!sfil\+\_\+load\+\_\+\+J\+P\+E\+G\+\_\+buffer@{sfil\+\_\+load\+\_\+\+J\+P\+E\+G\+\_\+buffer}}
+\index{sfil\+\_\+load\+\_\+\+J\+P\+E\+G\+\_\+buffer@{sfil\+\_\+load\+\_\+\+J\+P\+E\+G\+\_\+buffer}!sfil.\+h@{sfil.\+h}}
+\subsubsection[{sfil\+\_\+load\+\_\+\+J\+P\+E\+G\+\_\+buffer}]{\setlength{\rightskip}{0pt plus 5cm}sf2d\+\_\+texture$\ast$ sfil\+\_\+load\+\_\+\+J\+P\+E\+G\+\_\+buffer (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{buffer, }
+\item[{unsigned long}]{buffer\+\_\+size, }
+\item[{sf2d\+\_\+place}]{place}
+\end{DoxyParamCaption}
+)}\label{sfil_8h_a3d6f74021696e0cf1007ce937656ee20}
+
+
+Loads a J\+P\+G/\+J\+P\+E\+G image from a memory buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the pointer of the memory buffer to load the image from \\
+\hline
+{\em buffer\+\_\+size} & the size of the memory buffer \\
+\hline
+{\em place} & where to allocate the texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the newly created texture/image 
+\end{DoxyReturn}
+\hypertarget{sfil_8h_ac32ccd19da3f7b585859bf3a124413ae}{}\index{sfil.\+h@{sfil.\+h}!sfil\+\_\+load\+\_\+\+J\+P\+E\+G\+\_\+file@{sfil\+\_\+load\+\_\+\+J\+P\+E\+G\+\_\+file}}
+\index{sfil\+\_\+load\+\_\+\+J\+P\+E\+G\+\_\+file@{sfil\+\_\+load\+\_\+\+J\+P\+E\+G\+\_\+file}!sfil.\+h@{sfil.\+h}}
+\subsubsection[{sfil\+\_\+load\+\_\+\+J\+P\+E\+G\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}sf2d\+\_\+texture$\ast$ sfil\+\_\+load\+\_\+\+J\+P\+E\+G\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{sf2d\+\_\+place}]{place}
+\end{DoxyParamCaption}
+)}\label{sfil_8h_ac32ccd19da3f7b585859bf3a124413ae}
+
+
+Loads a J\+P\+G/\+J\+P\+E\+G image from the S\+D card. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the path of the image to load \\
+\hline
+{\em place} & where to allocate the texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the newly created texture/image 
+\end{DoxyReturn}
+\hypertarget{sfil_8h_a50c9e961e0c20518cad14c17c2376059}{}\index{sfil.\+h@{sfil.\+h}!sfil\+\_\+load\+\_\+\+P\+N\+G\+\_\+buffer@{sfil\+\_\+load\+\_\+\+P\+N\+G\+\_\+buffer}}
+\index{sfil\+\_\+load\+\_\+\+P\+N\+G\+\_\+buffer@{sfil\+\_\+load\+\_\+\+P\+N\+G\+\_\+buffer}!sfil.\+h@{sfil.\+h}}
+\subsubsection[{sfil\+\_\+load\+\_\+\+P\+N\+G\+\_\+buffer}]{\setlength{\rightskip}{0pt plus 5cm}sf2d\+\_\+texture$\ast$ sfil\+\_\+load\+\_\+\+P\+N\+G\+\_\+buffer (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{buffer, }
+\item[{sf2d\+\_\+place}]{place}
+\end{DoxyParamCaption}
+)}\label{sfil_8h_a50c9e961e0c20518cad14c17c2376059}
+
+
+Loads a P\+N\+G image from a memory buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the pointer of the memory buffer to load the image from \\
+\hline
+{\em place} & where to allocate the texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the newly created texture/image 
+\end{DoxyReturn}
+\hypertarget{sfil_8h_a37f75b9ca9fb7a0eff5421a3cddc7071}{}\index{sfil.\+h@{sfil.\+h}!sfil\+\_\+load\+\_\+\+P\+N\+G\+\_\+file@{sfil\+\_\+load\+\_\+\+P\+N\+G\+\_\+file}}
+\index{sfil\+\_\+load\+\_\+\+P\+N\+G\+\_\+file@{sfil\+\_\+load\+\_\+\+P\+N\+G\+\_\+file}!sfil.\+h@{sfil.\+h}}
+\subsubsection[{sfil\+\_\+load\+\_\+\+P\+N\+G\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}sf2d\+\_\+texture$\ast$ sfil\+\_\+load\+\_\+\+P\+N\+G\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{sf2d\+\_\+place}]{place}
+\end{DoxyParamCaption}
+)}\label{sfil_8h_a37f75b9ca9fb7a0eff5421a3cddc7071}
+
+
+Loads a P\+N\+G image from the S\+D card. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the path of the image to load \\
+\hline
+{\em place} & where to allocate the texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the newly created texture/image 
+\end{DoxyReturn}
