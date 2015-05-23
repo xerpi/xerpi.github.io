@@ -19,6 +19,8 @@ var searchData=
   ['sf2d_5ffill_5ftexture_5ffrom_5frgba8',['sf2d_fill_texture_from_RGBA8',['../sf2d_8h.html#ac06fd9ba922f84e9f50cac3ac0e5b5a4',1,'sf2d.h']]],
   ['sf2d_5ffini',['sf2d_fini',['../sf2d_8h.html#a322d93586a0d8dd3e0ccd5e23352e8e8',1,'sf2d.h']]],
   ['sf2d_5ffree_5ftexture',['sf2d_free_texture',['../sf2d_8h.html#a7cda3052688d26cdf0b238d4da1be74a',1,'sf2d.h']]],
+  ['sf2d_5fget_5fcurrent_5fscreen',['sf2d_get_current_screen',['../sf2d_8h.html#a910c9294fd3826c2a10a8f4c8ea454fe',1,'sf2d.h']]],
+  ['sf2d_5fget_5fcurrent_5fside',['sf2d_get_current_side',['../sf2d_8h.html#aaaafb63f20b898fe363a95d15b5a152a',1,'sf2d.h']]],
   ['sf2d_5fget_5ffps',['sf2d_get_fps',['../sf2d_8h.html#a64f6d65b15e00a60967bd189a94bf1d0',1,'sf2d.h']]],
   ['sf2d_5finit',['sf2d_init',['../sf2d_8h.html#aa14ff4b0b0b65e43d45bb838f90ff64e',1,'sf2d.h']]],
   ['sf2d_5finit_5fadvanced',['sf2d_init_advanced',['../sf2d_8h.html#a625850a797c090dca02468becc5859f0',1,'sf2d.h']]],

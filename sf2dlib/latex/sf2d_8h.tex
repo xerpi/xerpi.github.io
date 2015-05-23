@@ -26,12 +26,15 @@ struct \hyperlink{structsf2d__texture}{sf2d\+\_\+texture}
 \item 
 \#define \hyperlink{sf2d_8h_ada252b0d1c54c165a668d3bb1bee06c1}{R\+G\+B\+A8}(r,  g,  b,  a)~((((r)\&0x\+F\+F)$<$$<$24) $\vert$ (((g)\&0x\+F\+F)$<$$<$16) $\vert$ (((b)\&0x\+F\+F)$<$$<$8) $\vert$ (((a)\&0x\+F\+F)$<$$<$0))
 \begin{DoxyCompactList}\small\item\em Creates a new R\+G\+B\+A8 color. \end{DoxyCompactList}\item 
-\hypertarget{sf2d_8h_a059a42cbd6522d3116ddc5716f1fbe27}{}\#define \hyperlink{sf2d_8h_a059a42cbd6522d3116ddc5716f1fbe27}{S\+F2\+D\+\_\+\+G\+P\+U\+C\+M\+D\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+Z\+E}~0x40000\label{sf2d_8h_a059a42cbd6522d3116ddc5716f1fbe27}
+\hypertarget{sf2d_8h_a059a42cbd6522d3116ddc5716f1fbe27}{}\#define \hyperlink{sf2d_8h_a059a42cbd6522d3116ddc5716f1fbe27}{S\+F2\+D\+\_\+\+G\+P\+U\+C\+M\+D\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+Z\+E}~0x80000\label{sf2d_8h_a059a42cbd6522d3116ddc5716f1fbe27}
 
 \begin{DoxyCompactList}\small\item\em Default size of the G\+P\+U commands F\+I\+F\+O buffer. \end{DoxyCompactList}\item 
-\hypertarget{sf2d_8h_a7a140f18ef19959a8f7f41ac3b160a07}{}\#define \hyperlink{sf2d_8h_a7a140f18ef19959a8f7f41ac3b160a07}{S\+F2\+D\+\_\+\+T\+E\+M\+P\+P\+O\+O\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+Z\+E}~0x10000\label{sf2d_8h_a7a140f18ef19959a8f7f41ac3b160a07}
+\hypertarget{sf2d_8h_a7a140f18ef19959a8f7f41ac3b160a07}{}\#define \hyperlink{sf2d_8h_a7a140f18ef19959a8f7f41ac3b160a07}{S\+F2\+D\+\_\+\+T\+E\+M\+P\+P\+O\+O\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+Z\+E}~0x80000\label{sf2d_8h_a7a140f18ef19959a8f7f41ac3b160a07}
 
-\begin{DoxyCompactList}\small\item\em Default size of the temporary memory pool. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Default size of the temporary memory pool. \end{DoxyCompactList}\item 
+\hypertarget{sf2d_8h_a7c8117fed8069ce23c154a6ede278241}{}\#define \hyperlink{sf2d_8h_a7c8117fed8069ce23c154a6ede278241}{S\+F2\+D\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+P\+T\+H}~0.\+5f\label{sf2d_8h_a7c8117fed8069ce23c154a6ede278241}
+
+\begin{DoxyCompactList}\small\item\em Default depth (Z coordinate) to draw the textures to. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
@@ -111,7 +114,11 @@ void \hyperlink{sf2d_8h_a593059994abb6b9e8604cdd689d6b7e7}{sf2d\+\_\+draw\+\_\+t
 void \hyperlink{sf2d_8h_ab485210364f2285c265ec161196695b9}{sf2d\+\_\+texture\+\_\+tile32} (\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture)
 \begin{DoxyCompactList}\small\item\em Tiles a texture. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_a8a6c72fe9cb76fa7eb851058ae9fc773}{sf2d\+\_\+set\+\_\+scissor\+\_\+test} (G\+P\+U\+\_\+\+S\+C\+I\+S\+S\+O\+R\+M\+O\+D\+E mode, u32 x, u32 y, u32 w, u32 h)
-\begin{DoxyCompactList}\small\item\em Sets the scissor test. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sets the scissor test. \end{DoxyCompactList}\item 
+gfx\+Screen\+\_\+t \hyperlink{sf2d_8h_a910c9294fd3826c2a10a8f4c8ea454fe}{sf2d\+\_\+get\+\_\+current\+\_\+screen} ()
+\begin{DoxyCompactList}\small\item\em Returns the current screen (latest call to sf2d\+\_\+start\+\_\+frame) \end{DoxyCompactList}\item 
+gfx3d\+Side\+\_\+t \hyperlink{sf2d_8h_aaaafb63f20b898fe363a95d15b5a152a}{sf2d\+\_\+get\+\_\+current\+\_\+side} ()
+\begin{DoxyCompactList}\small\item\em Returns the current screen side (latest call to sf2d\+\_\+start\+\_\+frame) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -659,6 +666,34 @@ Frees a texture.
 {\em texture} & pointer to the texture to freeze \\
 \hline
 \end{DoxyParams}
+\hypertarget{sf2d_8h_a910c9294fd3826c2a10a8f4c8ea454fe}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+get\+\_\+current\+\_\+screen@{sf2d\+\_\+get\+\_\+current\+\_\+screen}}
+\index{sf2d\+\_\+get\+\_\+current\+\_\+screen@{sf2d\+\_\+get\+\_\+current\+\_\+screen}!sf2d.\+h@{sf2d.\+h}}
+\subsubsection[{sf2d\+\_\+get\+\_\+current\+\_\+screen}]{\setlength{\rightskip}{0pt plus 5cm}gfx\+Screen\+\_\+t sf2d\+\_\+get\+\_\+current\+\_\+screen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{sf2d_8h_a910c9294fd3826c2a10a8f4c8ea454fe}
+
+
+Returns the current screen (latest call to sf2d\+\_\+start\+\_\+frame) 
+
+\begin{DoxyNote}{Note}
+The returned value can be G\+F\+X\+\_\+\+T\+O\+P or G\+F\+X\+\_\+\+B\+O\+T\+T\+O\+M. 
+\end{DoxyNote}
+\hypertarget{sf2d_8h_aaaafb63f20b898fe363a95d15b5a152a}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+get\+\_\+current\+\_\+side@{sf2d\+\_\+get\+\_\+current\+\_\+side}}
+\index{sf2d\+\_\+get\+\_\+current\+\_\+side@{sf2d\+\_\+get\+\_\+current\+\_\+side}!sf2d.\+h@{sf2d.\+h}}
+\subsubsection[{sf2d\+\_\+get\+\_\+current\+\_\+side}]{\setlength{\rightskip}{0pt plus 5cm}gfx3d\+Side\+\_\+t sf2d\+\_\+get\+\_\+current\+\_\+side (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{sf2d_8h_aaaafb63f20b898fe363a95d15b5a152a}
+
+
+Returns the current screen side (latest call to sf2d\+\_\+start\+\_\+frame) 
+
+\begin{DoxyNote}{Note}
+The returned value can be G\+F\+X\+\_\+\+L\+E\+F\+T or G\+F\+X\+\_\+\+R\+I\+G\+H\+T. 
+\end{DoxyNote}
 \hypertarget{sf2d_8h_a64f6d65b15e00a60967bd189a94bf1d0}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+get\+\_\+fps@{sf2d\+\_\+get\+\_\+fps}}
 \index{sf2d\+\_\+get\+\_\+fps@{sf2d\+\_\+get\+\_\+fps}!sf2d.\+h@{sf2d.\+h}}
 \subsubsection[{sf2d\+\_\+get\+\_\+fps}]{\setlength{\rightskip}{0pt plus 5cm}float sf2d\+\_\+get\+\_\+fps (

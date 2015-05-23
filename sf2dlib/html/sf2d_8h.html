@@ -128,13 +128,17 @@ Macros</h2></td></tr>
 <tr class="memdesc:ada252b0d1c54c165a668d3bb1bee06c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new RGBA8 color.  <a href="#ada252b0d1c54c165a668d3bb1bee06c1">More...</a><br /></td></tr>
 <tr class="separator:ada252b0d1c54c165a668d3bb1bee06c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a059a42cbd6522d3116ddc5716f1fbe27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a059a42cbd6522d3116ddc5716f1fbe27"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a059a42cbd6522d3116ddc5716f1fbe27">SF2D_GPUCMD_DEFAULT_SIZE</a>&#160;&#160;&#160;0x40000</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a059a42cbd6522d3116ddc5716f1fbe27">SF2D_GPUCMD_DEFAULT_SIZE</a>&#160;&#160;&#160;0x80000</td></tr>
 <tr class="memdesc:a059a42cbd6522d3116ddc5716f1fbe27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default size of the GPU commands FIFO buffer. <br /></td></tr>
 <tr class="separator:a059a42cbd6522d3116ddc5716f1fbe27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a140f18ef19959a8f7f41ac3b160a07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a140f18ef19959a8f7f41ac3b160a07"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a7a140f18ef19959a8f7f41ac3b160a07">SF2D_TEMPPOOL_DEFAULT_SIZE</a>&#160;&#160;&#160;0x10000</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a7a140f18ef19959a8f7f41ac3b160a07">SF2D_TEMPPOOL_DEFAULT_SIZE</a>&#160;&#160;&#160;0x80000</td></tr>
 <tr class="memdesc:a7a140f18ef19959a8f7f41ac3b160a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default size of the temporary memory pool. <br /></td></tr>
 <tr class="separator:a7a140f18ef19959a8f7f41ac3b160a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c8117fed8069ce23c154a6ede278241"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c8117fed8069ce23c154a6ede278241"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a7c8117fed8069ce23c154a6ede278241">SF2D_DEFAULT_DEPTH</a>&#160;&#160;&#160;0.5f</td></tr>
+<tr class="memdesc:a7c8117fed8069ce23c154a6ede278241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default depth (Z coordinate) to draw the textures to. <br /></td></tr>
+<tr class="separator:a7c8117fed8069ce23c154a6ede278241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -249,6 +253,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 <tr class="memitem:a8a6c72fe9cb76fa7eb851058ae9fc773"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a8a6c72fe9cb76fa7eb851058ae9fc773">sf2d_set_scissor_test</a> (GPU_SCISSORMODE mode, u32 x, u32 y, u32 w, u32 h)</td></tr>
 <tr class="memdesc:a8a6c72fe9cb76fa7eb851058ae9fc773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the scissor test.  <a href="#a8a6c72fe9cb76fa7eb851058ae9fc773">More...</a><br /></td></tr>
 <tr class="separator:a8a6c72fe9cb76fa7eb851058ae9fc773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a910c9294fd3826c2a10a8f4c8ea454fe"><td class="memItemLeft" align="right" valign="top">gfxScreen_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a910c9294fd3826c2a10a8f4c8ea454fe">sf2d_get_current_screen</a> ()</td></tr>
+<tr class="memdesc:a910c9294fd3826c2a10a8f4c8ea454fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current screen (latest call to sf2d_start_frame)  <a href="#a910c9294fd3826c2a10a8f4c8ea454fe">More...</a><br /></td></tr>
+<tr class="separator:a910c9294fd3826c2a10a8f4c8ea454fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaafb63f20b898fe363a95d15b5a152a"><td class="memItemLeft" align="right" valign="top">gfx3dSide_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#aaaafb63f20b898fe363a95d15b5a152a">sf2d_get_current_side</a> ()</td></tr>
+<tr class="memdesc:aaaafb63f20b898fe363a95d15b5a152a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current screen side (latest call to sf2d_start_frame)  <a href="#aaaafb63f20b898fe363a95d15b5a152a">More...</a><br /></td></tr>
+<tr class="separator:aaaafb63f20b898fe363a95d15b5a152a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>sf2dlib header </p>
@@ -1265,6 +1275,42 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 
 </div>
 </div>
+<a class="anchor" id="a910c9294fd3826c2a10a8f4c8ea454fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gfxScreen_t sf2d_get_current_screen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the current screen (latest call to sf2d_start_frame) </p>
+<dl class="section note"><dt>Note</dt><dd>The returned value can be GFX_TOP or GFX_BOTTOM. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaaafb63f20b898fe363a95d15b5a152a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gfx3dSide_t sf2d_get_current_side </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the current screen side (latest call to sf2d_start_frame) </p>
+<dl class="section note"><dt>Note</dt><dd>The returned value can be GFX_LEFT or GFX_RIGHT. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a64f6d65b15e00a60967bd189a94bf1d0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1605,7 +1651,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 15 2015 20:15:45 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 23 2015 15:23:53 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
