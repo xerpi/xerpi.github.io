@@ -38,6 +38,26 @@ struct \hyperlink{structsf2d__texture}{sf2d\+\_\+texture}
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
+\hypertarget{sf2d_8h_a159c44ac8ef84cd08235063d4e220244}{}enum \hyperlink{sf2d_8h_a159c44ac8ef84cd08235063d4e220244}{sf2d\+\_\+texfmt} \{ \\*
+{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+R\+G\+B\+A8} = 0, 
+{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+R\+G\+B8} = 1, 
+{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+R\+G\+B5\+A1} = 2, 
+{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+R\+G\+B565} = 3, 
+\\*
+{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+R\+G\+B\+A4} = 4, 
+{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+I\+A8} = 5, 
+{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+I8} = 7, 
+{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+A8} = 8, 
+\\*
+{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+I\+A4} = 9, 
+{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+I4} = 10, 
+{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+A4} = 11, 
+{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+E\+T\+C1} = 12, 
+\\*
+{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+E\+T\+C1\+A4} = 13
+ \}\label{sf2d_8h_a159c44ac8ef84cd08235063d4e220244}
+
+\begin{DoxyCompactList}\small\item\em Represents a texture format. \end{DoxyCompactList}\item 
 enum \hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171ea}{sf2d\+\_\+place} \{ \hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaa4e481aa581f839137a4b1fd0708666fb}{S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+R\+A\+M}, 
 \hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaae4d62813738d1fec4a10cef2405d8b3d}{S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+V\+R\+A\+M}, 
 \hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaa70138ec78a57f02178621e5917b2358d}{S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+T\+E\+M\+P}
@@ -83,13 +103,13 @@ void \hyperlink{sf2d_8h_aec970054d30e326ab9bc616ecab6aff9}{sf2d\+\_\+draw\+\_\+r
 \begin{DoxyCompactList}\small\item\em Draws a rectangle. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_a8c7a8d299f8e9577fbdecf792e7b4b5b}{sf2d\+\_\+draw\+\_\+rectangle\+\_\+rotate} (int x, int y, int w, int h, u32 color, float rad)
 \begin{DoxyCompactList}\small\item\em Draws a rotated rectangle. \end{DoxyCompactList}\item 
-\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$ \hyperlink{sf2d_8h_aa2d2bf527f988eea5763f122a69c83c5}{sf2d\+\_\+create\+\_\+texture} (int width, int height, G\+P\+U\+\_\+\+T\+E\+X\+C\+O\+L\+O\+R pixel\+\_\+format, \hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171ea}{sf2d\+\_\+place} place)
+\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$ \hyperlink{sf2d_8h_a8f1e8dd266bab09c9e18371bc4b937f3}{sf2d\+\_\+create\+\_\+texture} (int width, int height, \hyperlink{sf2d_8h_a159c44ac8ef84cd08235063d4e220244}{sf2d\+\_\+texfmt} pixel\+\_\+format, \hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171ea}{sf2d\+\_\+place} place)
 \begin{DoxyCompactList}\small\item\em Creates an empty texture. The returned texture has the data allocated, this means that the raw pixel data can be filled just after the return. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_a7cda3052688d26cdf0b238d4da1be74a}{sf2d\+\_\+free\+\_\+texture} (\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture)
 \begin{DoxyCompactList}\small\item\em Frees a texture. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_ac06fd9ba922f84e9f50cac3ac0e5b5a4}{sf2d\+\_\+fill\+\_\+texture\+\_\+from\+\_\+\+R\+G\+B\+A8} (\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$dst, const void $\ast$rgba8, int source\+\_\+w, int source\+\_\+h)
 \begin{DoxyCompactList}\small\item\em Fills an already allocated texture from a R\+G\+B\+A8 source. \end{DoxyCompactList}\item 
-\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$ \hyperlink{sf2d_8h_afb4d665753c46d5e40efb451ef46f68f}{sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8} (const void $\ast$src\+\_\+buffer, int src\+\_\+w, int src\+\_\+h, G\+P\+U\+\_\+\+T\+E\+X\+C\+O\+L\+O\+R pixel\+\_\+format, \hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171ea}{sf2d\+\_\+place} place)
+\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$ \hyperlink{sf2d_8h_a3ff172fa92634b777545f50b1d8a5a5d}{sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8} (const void $\ast$src\+\_\+buffer, int src\+\_\+w, int src\+\_\+h, \hyperlink{sf2d_8h_a159c44ac8ef84cd08235063d4e220244}{sf2d\+\_\+texfmt} pixel\+\_\+format, \hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171ea}{sf2d\+\_\+place} place)
 \begin{DoxyCompactList}\small\item\em Creates a texture and fills it from a R\+G\+B\+A8 memory source. The returned texture is already tiled. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_a5acbbcbe3d4aae913976d01302951e93}{sf2d\+\_\+bind\+\_\+texture} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, G\+P\+U\+\_\+\+T\+E\+X\+U\+N\+I\+T unit)
 \begin{DoxyCompactList}\small\item\em Binds a texture to a G\+P\+U texture unit. \end{DoxyCompactList}\item 
@@ -111,6 +131,10 @@ void \hyperlink{sf2d_8h_a57101cdd022be92ae6c6ac5ec1feb014}{sf2d\+\_\+draw\+\_\+t
 \begin{DoxyCompactList}\small\item\em Draws a part of a texture blended with a color. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_a593059994abb6b9e8604cdd689d6b7e7}{sf2d\+\_\+draw\+\_\+texture\+\_\+depth} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, signed short z)
 \begin{DoxyCompactList}\small\item\em Draws a texture blended in a certain depth. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_ac5cb9ef4a97b5e7ee4bfbabf6e77e565}{sf2d\+\_\+set\+\_\+pixel} (\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, u32 new\+\_\+color)
+\begin{DoxyCompactList}\small\item\em Changes a pixel of the texture. \end{DoxyCompactList}\item 
+u32 \hyperlink{sf2d_8h_a5de4ef9dc5260cce7a35423f10d7904b}{sf2d\+\_\+get\+\_\+pixel} (\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y)
+\begin{DoxyCompactList}\small\item\em Gets a pixel of the texture. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_ab485210364f2285c265ec161196695b9}{sf2d\+\_\+texture\+\_\+tile32} (\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture)
 \begin{DoxyCompactList}\small\item\em Tiles a texture. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_a8a6c72fe9cb76fa7eb851058ae9fc773}{sf2d\+\_\+set\+\_\+scissor\+\_\+test} (G\+P\+U\+\_\+\+S\+C\+I\+S\+S\+O\+R\+M\+O\+D\+E mode, u32 x, u32 y, u32 w, u32 h)
@@ -223,16 +247,16 @@ Binds a texture to a G\+P\+U texture unit with a constant color.
 {\em color} & the color the bind with the texture \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_aa2d2bf527f988eea5763f122a69c83c5}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+create\+\_\+texture@{sf2d\+\_\+create\+\_\+texture}}
+\hypertarget{sf2d_8h_a8f1e8dd266bab09c9e18371bc4b937f3}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+create\+\_\+texture@{sf2d\+\_\+create\+\_\+texture}}
 \index{sf2d\+\_\+create\+\_\+texture@{sf2d\+\_\+create\+\_\+texture}!sf2d.\+h@{sf2d.\+h}}
 \subsubsection[{sf2d\+\_\+create\+\_\+texture}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sf2d\+\_\+texture}$\ast$ sf2d\+\_\+create\+\_\+texture (
 \begin{DoxyParamCaption}
 \item[{int}]{width, }
 \item[{int}]{height, }
-\item[{G\+P\+U\+\_\+\+T\+E\+X\+C\+O\+L\+O\+R}]{pixel\+\_\+format, }
+\item[{{\bf sf2d\+\_\+texfmt}}]{pixel\+\_\+format, }
 \item[{{\bf sf2d\+\_\+place}}]{place}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_aa2d2bf527f988eea5763f122a69c83c5}
+)}\label{sf2d_8h_a8f1e8dd266bab09c9e18371bc4b937f3}
 
 
 Creates an empty texture. The returned texture has the data allocated, this means that the raw pixel data can be filled just after the return. 
@@ -251,17 +275,17 @@ Creates an empty texture. The returned texture has the data allocated, this mean
 \begin{DoxyReturn}{Returns}
 a pointer to the newly created texture 
 \end{DoxyReturn}
-\hypertarget{sf2d_8h_afb4d665753c46d5e40efb451ef46f68f}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8@{sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8}}
+\hypertarget{sf2d_8h_a3ff172fa92634b777545f50b1d8a5a5d}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8@{sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8}}
 \index{sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8@{sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8}!sf2d.\+h@{sf2d.\+h}}
 \subsubsection[{sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sf2d\+\_\+texture}$\ast$ sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8 (
 \begin{DoxyParamCaption}
 \item[{const void $\ast$}]{src\+\_\+buffer, }
 \item[{int}]{src\+\_\+w, }
 \item[{int}]{src\+\_\+h, }
-\item[{G\+P\+U\+\_\+\+T\+E\+X\+C\+O\+L\+O\+R}]{pixel\+\_\+format, }
+\item[{{\bf sf2d\+\_\+texfmt}}]{pixel\+\_\+format, }
 \item[{{\bf sf2d\+\_\+place}}]{place}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_afb4d665753c46d5e40efb451ef46f68f}
+)}\label{sf2d_8h_a3ff172fa92634b777545f50b1d8a5a5d}
 
 
 Creates a texture and fills it from a R\+G\+B\+A8 memory source. The returned texture is already tiled. 
@@ -708,6 +732,31 @@ Returns the F\+P\+S (frames per second)
 \begin{DoxyReturn}{Returns}
 the current F\+P\+S 
 \end{DoxyReturn}
+\hypertarget{sf2d_8h_a5de4ef9dc5260cce7a35423f10d7904b}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+get\+\_\+pixel@{sf2d\+\_\+get\+\_\+pixel}}
+\index{sf2d\+\_\+get\+\_\+pixel@{sf2d\+\_\+get\+\_\+pixel}!sf2d.\+h@{sf2d.\+h}}
+\subsubsection[{sf2d\+\_\+get\+\_\+pixel}]{\setlength{\rightskip}{0pt plus 5cm}u32 sf2d\+\_\+get\+\_\+pixel (
+\begin{DoxyParamCaption}
+\item[{{\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{sf2d_8h_a5de4ef9dc5260cce7a35423f10d7904b}
+
+
+Gets a pixel of the texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to get the pixel \\
+\hline
+{\em x} & the x coordinate to get the pixel \\
+\hline
+{\em y} & the y coordinate to get the pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the pixel at (x, y) 
+\end{DoxyReturn}
 \hypertarget{sf2d_8h_aa14ff4b0b0b65e43d45bb838f90ff64e}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+init@{sf2d\+\_\+init}}
 \index{sf2d\+\_\+init@{sf2d\+\_\+init}!sf2d.\+h@{sf2d.\+h}}
 \subsubsection[{sf2d\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}int sf2d\+\_\+init (
@@ -823,6 +872,31 @@ Sets the screen clear color.
 
 \begin{DoxyParams}{Parameters}
 {\em color} & the color \\
+\hline
+\end{DoxyParams}
+\hypertarget{sf2d_8h_ac5cb9ef4a97b5e7ee4bfbabf6e77e565}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+set\+\_\+pixel@{sf2d\+\_\+set\+\_\+pixel}}
+\index{sf2d\+\_\+set\+\_\+pixel@{sf2d\+\_\+set\+\_\+pixel}!sf2d.\+h@{sf2d.\+h}}
+\subsubsection[{sf2d\+\_\+set\+\_\+pixel}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+set\+\_\+pixel (
+\begin{DoxyParamCaption}
+\item[{{\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{u32}]{new\+\_\+color}
+\end{DoxyParamCaption}
+)}\label{sf2d_8h_ac5cb9ef4a97b5e7ee4bfbabf6e77e565}
+
+
+Changes a pixel of the texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to change the pixel \\
+\hline
+{\em x} & the x coordinate to change the pixel \\
+\hline
+{\em y} & the y coordinate to change the pixel \\
+\hline
+{\em new\+\_\+color} & the new color to set to the pixel at (x, y) \\
 \hline
 \end{DoxyParams}
 \hypertarget{sf2d_8h_a8a6c72fe9cb76fa7eb851058ae9fc773}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+set\+\_\+scissor\+\_\+test@{sf2d\+\_\+set\+\_\+scissor\+\_\+test}}

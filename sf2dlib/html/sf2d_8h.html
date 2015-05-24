@@ -142,6 +142,27 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a159c44ac8ef84cd08235063d4e220244"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a159c44ac8ef84cd08235063d4e220244"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a159c44ac8ef84cd08235063d4e220244">sf2d_texfmt</a> { <br />
+&#160;&#160;<b>TEXFMT_RGBA8</b> = 0, 
+<b>TEXFMT_RGB8</b> = 1, 
+<b>TEXFMT_RGB5A1</b> = 2, 
+<b>TEXFMT_RGB565</b> = 3, 
+<br />
+&#160;&#160;<b>TEXFMT_RGBA4</b> = 4, 
+<b>TEXFMT_IA8</b> = 5, 
+<b>TEXFMT_I8</b> = 7, 
+<b>TEXFMT_A8</b> = 8, 
+<br />
+&#160;&#160;<b>TEXFMT_IA4</b> = 9, 
+<b>TEXFMT_I4</b> = 10, 
+<b>TEXFMT_A4</b> = 11, 
+<b>TEXFMT_ETC1</b> = 12, 
+<br />
+&#160;&#160;<b>TEXFMT_ETC1A4</b> = 13
+<br />
+ }</td></tr>
+<tr class="memdesc:a159c44ac8ef84cd08235063d4e220244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a texture format. <br /></td></tr>
+<tr class="separator:a159c44ac8ef84cd08235063d4e220244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07951fad547d423a4cf6521c2e5171ea"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a07951fad547d423a4cf6521c2e5171ea">sf2d_place</a> { <a class="el" href="sf2d_8h.html#a07951fad547d423a4cf6521c2e5171eaa4e481aa581f839137a4b1fd0708666fb">SF2D_PLACE_RAM</a>, 
 <a class="el" href="sf2d_8h.html#a07951fad547d423a4cf6521c2e5171eaae4d62813738d1fec4a10cef2405d8b3d">SF2D_PLACE_VRAM</a>, 
 <a class="el" href="sf2d_8h.html#a07951fad547d423a4cf6521c2e5171eaa70138ec78a57f02178621e5917b2358d">SF2D_PLACE_TEMP</a>
@@ -205,18 +226,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 <tr class="memitem:a8c7a8d299f8e9577fbdecf792e7b4b5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a8c7a8d299f8e9577fbdecf792e7b4b5b">sf2d_draw_rectangle_rotate</a> (int x, int y, int w, int h, u32 color, float rad)</td></tr>
 <tr class="memdesc:a8c7a8d299f8e9577fbdecf792e7b4b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a rotated rectangle.  <a href="#a8c7a8d299f8e9577fbdecf792e7b4b5b">More...</a><br /></td></tr>
 <tr class="separator:a8c7a8d299f8e9577fbdecf792e7b4b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2d2bf527f988eea5763f122a69c83c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#aa2d2bf527f988eea5763f122a69c83c5">sf2d_create_texture</a> (int width, int height, GPU_TEXCOLOR pixel_format, <a class="el" href="sf2d_8h.html#a07951fad547d423a4cf6521c2e5171ea">sf2d_place</a> place)</td></tr>
-<tr class="memdesc:aa2d2bf527f988eea5763f122a69c83c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty texture. The returned texture has the data allocated, this means that the raw pixel data can be filled just after the return.  <a href="#aa2d2bf527f988eea5763f122a69c83c5">More...</a><br /></td></tr>
-<tr class="separator:aa2d2bf527f988eea5763f122a69c83c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f1e8dd266bab09c9e18371bc4b937f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a8f1e8dd266bab09c9e18371bc4b937f3">sf2d_create_texture</a> (int width, int height, <a class="el" href="sf2d_8h.html#a159c44ac8ef84cd08235063d4e220244">sf2d_texfmt</a> pixel_format, <a class="el" href="sf2d_8h.html#a07951fad547d423a4cf6521c2e5171ea">sf2d_place</a> place)</td></tr>
+<tr class="memdesc:a8f1e8dd266bab09c9e18371bc4b937f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty texture. The returned texture has the data allocated, this means that the raw pixel data can be filled just after the return.  <a href="#a8f1e8dd266bab09c9e18371bc4b937f3">More...</a><br /></td></tr>
+<tr class="separator:a8f1e8dd266bab09c9e18371bc4b937f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cda3052688d26cdf0b238d4da1be74a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a7cda3052688d26cdf0b238d4da1be74a">sf2d_free_texture</a> (<a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture)</td></tr>
 <tr class="memdesc:a7cda3052688d26cdf0b238d4da1be74a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a texture.  <a href="#a7cda3052688d26cdf0b238d4da1be74a">More...</a><br /></td></tr>
 <tr class="separator:a7cda3052688d26cdf0b238d4da1be74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac06fd9ba922f84e9f50cac3ac0e5b5a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#ac06fd9ba922f84e9f50cac3ac0e5b5a4">sf2d_fill_texture_from_RGBA8</a> (<a class="el" href="structsf2d__texture.html">sf2d_texture</a> *dst, const void *rgba8, int source_w, int source_h)</td></tr>
 <tr class="memdesc:ac06fd9ba922f84e9f50cac3ac0e5b5a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills an already allocated texture from a RGBA8 source.  <a href="#ac06fd9ba922f84e9f50cac3ac0e5b5a4">More...</a><br /></td></tr>
 <tr class="separator:ac06fd9ba922f84e9f50cac3ac0e5b5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb4d665753c46d5e40efb451ef46f68f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#afb4d665753c46d5e40efb451ef46f68f">sf2d_create_texture_mem_RGBA8</a> (const void *src_buffer, int src_w, int src_h, GPU_TEXCOLOR pixel_format, <a class="el" href="sf2d_8h.html#a07951fad547d423a4cf6521c2e5171ea">sf2d_place</a> place)</td></tr>
-<tr class="memdesc:afb4d665753c46d5e40efb451ef46f68f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a texture and fills it from a RGBA8 memory source. The returned texture is already tiled.  <a href="#afb4d665753c46d5e40efb451ef46f68f">More...</a><br /></td></tr>
-<tr class="separator:afb4d665753c46d5e40efb451ef46f68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ff172fa92634b777545f50b1d8a5a5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a3ff172fa92634b777545f50b1d8a5a5d">sf2d_create_texture_mem_RGBA8</a> (const void *src_buffer, int src_w, int src_h, <a class="el" href="sf2d_8h.html#a159c44ac8ef84cd08235063d4e220244">sf2d_texfmt</a> pixel_format, <a class="el" href="sf2d_8h.html#a07951fad547d423a4cf6521c2e5171ea">sf2d_place</a> place)</td></tr>
+<tr class="memdesc:a3ff172fa92634b777545f50b1d8a5a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a texture and fills it from a RGBA8 memory source. The returned texture is already tiled.  <a href="#a3ff172fa92634b777545f50b1d8a5a5d">More...</a><br /></td></tr>
+<tr class="separator:a3ff172fa92634b777545f50b1d8a5a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5acbbcbe3d4aae913976d01302951e93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a5acbbcbe3d4aae913976d01302951e93">sf2d_bind_texture</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, GPU_TEXUNIT unit)</td></tr>
 <tr class="memdesc:a5acbbcbe3d4aae913976d01302951e93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a texture to a GPU texture unit.  <a href="#a5acbbcbe3d4aae913976d01302951e93">More...</a><br /></td></tr>
 <tr class="separator:a5acbbcbe3d4aae913976d01302951e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,6 +268,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 <tr class="memitem:a593059994abb6b9e8604cdd689d6b7e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a593059994abb6b9e8604cdd689d6b7e7">sf2d_draw_texture_depth</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, signed short z)</td></tr>
 <tr class="memdesc:a593059994abb6b9e8604cdd689d6b7e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a texture blended in a certain depth.  <a href="#a593059994abb6b9e8604cdd689d6b7e7">More...</a><br /></td></tr>
 <tr class="separator:a593059994abb6b9e8604cdd689d6b7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5cb9ef4a97b5e7ee4bfbabf6e77e565"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#ac5cb9ef4a97b5e7ee4bfbabf6e77e565">sf2d_set_pixel</a> (<a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, u32 new_color)</td></tr>
+<tr class="memdesc:ac5cb9ef4a97b5e7ee4bfbabf6e77e565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes a pixel of the texture.  <a href="#ac5cb9ef4a97b5e7ee4bfbabf6e77e565">More...</a><br /></td></tr>
+<tr class="separator:ac5cb9ef4a97b5e7ee4bfbabf6e77e565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de4ef9dc5260cce7a35423f10d7904b"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a5de4ef9dc5260cce7a35423f10d7904b">sf2d_get_pixel</a> (<a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y)</td></tr>
+<tr class="memdesc:a5de4ef9dc5260cce7a35423f10d7904b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a pixel of the texture.  <a href="#a5de4ef9dc5260cce7a35423f10d7904b">More...</a><br /></td></tr>
+<tr class="separator:a5de4ef9dc5260cce7a35423f10d7904b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab485210364f2285c265ec161196695b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#ab485210364f2285c265ec161196695b9">sf2d_texture_tile32</a> (<a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture)</td></tr>
 <tr class="memdesc:ab485210364f2285c265ec161196695b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tiles a texture.  <a href="#ab485210364f2285c265ec161196695b9">More...</a><br /></td></tr>
 <tr class="separator:ab485210364f2285c265ec161196695b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -418,7 +445,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 
 </div>
 </div>
-<a class="anchor" id="aa2d2bf527f988eea5763f122a69c83c5"></a>
+<a class="anchor" id="a8f1e8dd266bab09c9e18371bc4b937f3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -437,7 +464,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEXCOLOR&#160;</td>
+          <td class="paramtype"><a class="el" href="sf2d_8h.html#a159c44ac8ef84cd08235063d4e220244">sf2d_texfmt</a>&#160;</td>
           <td class="paramname"><em>pixel_format</em>, </td>
         </tr>
         <tr>
@@ -468,7 +495,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 
 </div>
 </div>
-<a class="anchor" id="afb4d665753c46d5e40efb451ef46f68f"></a>
+<a class="anchor" id="a3ff172fa92634b777545f50b1d8a5a5d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -493,7 +520,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEXCOLOR&#160;</td>
+          <td class="paramtype"><a class="el" href="sf2d_8h.html#a159c44ac8ef84cd08235063d4e220244">sf2d_texfmt</a>&#160;</td>
           <td class="paramname"><em>pixel_format</em>, </td>
         </tr>
         <tr>
@@ -1329,6 +1356,49 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 
 </div>
 </div>
+<a class="anchor" id="a5de4ef9dc5260cce7a35423f10d7904b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32 sf2d_get_pixel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a pixel of the texture. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>the texture to get the pixel </td></tr>
+    <tr><td class="paramname">x</td><td>the x coordinate to get the pixel </td></tr>
+    <tr><td class="paramname">y</td><td>the y coordinate to get the pixel </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the pixel at (x, y) </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="aa14ff4b0b0b65e43d45bb838f90ff64e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1508,6 +1578,55 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 
 </div>
 </div>
+<a class="anchor" id="ac5cb9ef4a97b5e7ee4bfbabf6e77e565"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf2d_set_pixel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>new_color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes a pixel of the texture. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>the texture to change the pixel </td></tr>
+    <tr><td class="paramname">x</td><td>the x coordinate to change the pixel </td></tr>
+    <tr><td class="paramname">y</td><td>the y coordinate to change the pixel </td></tr>
+    <tr><td class="paramname">new_color</td><td>the new color to set to the pixel at (x, y) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a8a6c72fe9cb76fa7eb851058ae9fc773"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1651,7 +1770,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 23 2015 15:27:46 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 24 2015 12:18:15 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
