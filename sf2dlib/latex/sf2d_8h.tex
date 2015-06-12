@@ -103,6 +103,8 @@ void \hyperlink{sf2d_8h_aec970054d30e326ab9bc616ecab6aff9}{sf2d\+\_\+draw\+\_\+r
 \begin{DoxyCompactList}\small\item\em Draws a rectangle. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_a8c7a8d299f8e9577fbdecf792e7b4b5b}{sf2d\+\_\+draw\+\_\+rectangle\+\_\+rotate} (int x, int y, int w, int h, u32 color, float rad)
 \begin{DoxyCompactList}\small\item\em Draws a rotated rectangle. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_a06ed18ade4b709c334858ba1764e1660}{sf2d\+\_\+draw\+\_\+fill\+\_\+circle} (int x, int y, int radius, u32 color)
+\begin{DoxyCompactList}\small\item\em Draws a filled circle. \end{DoxyCompactList}\item 
 \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$ \hyperlink{sf2d_8h_a8f1e8dd266bab09c9e18371bc4b937f3}{sf2d\+\_\+create\+\_\+texture} (int width, int height, \hyperlink{sf2d_8h_a159c44ac8ef84cd08235063d4e220244}{sf2d\+\_\+texfmt} pixel\+\_\+format, \hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171ea}{sf2d\+\_\+place} place)
 \begin{DoxyCompactList}\small\item\em Creates an empty texture. The returned texture has the data allocated, this means that the raw pixel data can be filled just after the return. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_a7cda3052688d26cdf0b238d4da1be74a}{sf2d\+\_\+free\+\_\+texture} (\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture)
@@ -306,6 +308,31 @@ Creates a texture and fills it from a R\+G\+B\+A8 memory source. The returned te
 \begin{DoxyReturn}{Returns}
 a pointer to the newly created, filled, and tiled texture 
 \end{DoxyReturn}
+\hypertarget{sf2d_8h_a06ed18ade4b709c334858ba1764e1660}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+fill\+\_\+circle@{sf2d\+\_\+draw\+\_\+fill\+\_\+circle}}
+\index{sf2d\+\_\+draw\+\_\+fill\+\_\+circle@{sf2d\+\_\+draw\+\_\+fill\+\_\+circle}!sf2d.\+h@{sf2d.\+h}}
+\subsubsection[{sf2d\+\_\+draw\+\_\+fill\+\_\+circle}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+fill\+\_\+circle (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{radius, }
+\item[{u32}]{color}
+\end{DoxyParamCaption}
+)}\label{sf2d_8h_a06ed18ade4b709c334858ba1764e1660}
+
+
+Draws a filled circle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the center of the circle \\
+\hline
+{\em y} & y coordinate of the center of the circle \\
+\hline
+{\em radius} & the radius of the circle \\
+\hline
+{\em color} & the color to draw the circle \\
+\hline
+\end{DoxyParams}
 \hypertarget{sf2d_8h_ace95578f2bfe9f2e8b1753bdd816d96b}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+line@{sf2d\+\_\+draw\+\_\+line}}
 \index{sf2d\+\_\+draw\+\_\+line@{sf2d\+\_\+draw\+\_\+line}!sf2d.\+h@{sf2d.\+h}}
 \subsubsection[{sf2d\+\_\+draw\+\_\+line}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+line (
