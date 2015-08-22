@@ -117,22 +117,42 @@ void \hyperlink{sf2d_8h_a5acbbcbe3d4aae913976d01302951e93}{sf2d\+\_\+bind\+\_\+t
 \begin{DoxyCompactList}\small\item\em Binds a texture to a G\+P\+U texture unit. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_a479621a55bb749362151bf71db8d0b8d}{sf2d\+\_\+bind\+\_\+texture\+\_\+color} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, G\+P\+U\+\_\+\+T\+E\+X\+U\+N\+I\+T unit, u32 color)
 \begin{DoxyCompactList}\small\item\em Binds a texture to a G\+P\+U texture unit with a constant color. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_abddce09e31ba9365ea1b3f22cb46b752}{sf2d\+\_\+bind\+\_\+texture\+\_\+parameters} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, G\+P\+U\+\_\+\+T\+E\+X\+U\+N\+I\+T unit, unsigned int params)
+\begin{DoxyCompactList}\small\item\em Binds a texture to a G\+P\+U texture unit with custom parameters. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_a09501d8d7c5319db00a39709f0cd18fa}{sf2d\+\_\+draw\+\_\+texture} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y)
 \begin{DoxyCompactList}\small\item\em Draws a texture. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_affc6cf46e403ae0837ec2901c85b4464}{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, float rad)
-\begin{DoxyCompactList}\small\item\em Draws a texture with rotation. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_abdfae56c564b94d07bf7a1b54bd11453}{sf2d\+\_\+draw\+\_\+texture\+\_\+part} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, int tex\+\_\+x, int tex\+\_\+y, int tex\+\_\+w, int tex\+\_\+h)
-\begin{DoxyCompactList}\small\item\em Draws a part of a texture. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_aed7b8a897e01f5f5465d820cde08ab24}{sf2d\+\_\+draw\+\_\+texture\+\_\+scale} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, float x\+\_\+scale, float y\+\_\+scale)
-\begin{DoxyCompactList}\small\item\em Draws a texture with scaling. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_af5fe98d85442da3243788c8db104d5dc}{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+cut\+\_\+scale} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, float rad, int tex\+\_\+x, int tex\+\_\+y, int tex\+\_\+w, int tex\+\_\+h, float x\+\_\+scale, float y\+\_\+scale)
-\begin{DoxyCompactList}\small\item\em Draws a part of a texture, with rotation and scaling. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_a211cd71f8cd5fe774b7df176b50e7873}{sf2d\+\_\+draw\+\_\+texture\+\_\+blend} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, u32 color)
 \begin{DoxyCompactList}\small\item\em Draws a texture blended with a color. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_a9e377d6fb0e939c33acd0bd362b35bf9}{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, float rad, float center\+\_\+x, float center\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Draws a texture with rotation around a hotspot. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_a498f9fb5a5ad0c2943fe4712423f3734}{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot\+\_\+blend} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, float rad, float center\+\_\+x, float center\+\_\+y, u32 color)
+\begin{DoxyCompactList}\small\item\em Draws a texture with rotation around a hotspot with a color. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_affc6cf46e403ae0837ec2901c85b4464}{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, float rad)
+\begin{DoxyCompactList}\small\item\em Draws a texture with rotation around its center. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_ab8ff0c8e0d6fdb7579ff55c41fd8b4f4}{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+blend} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, float rad, u32 color)
+\begin{DoxyCompactList}\small\item\em Draws a texture with rotation around its center with color. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_abdfae56c564b94d07bf7a1b54bd11453}{sf2d\+\_\+draw\+\_\+texture\+\_\+part} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, int tex\+\_\+x, int tex\+\_\+y, int tex\+\_\+w, int tex\+\_\+h)
+\begin{DoxyCompactList}\small\item\em Draws a part of a texture. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_a57101cdd022be92ae6c6ac5ec1feb014}{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+blend} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, int tex\+\_\+x, int tex\+\_\+y, int tex\+\_\+w, int tex\+\_\+h, u32 color)
-\begin{DoxyCompactList}\small\item\em Draws a part of a texture blended with a color. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Draws a part of a texture with color. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_aed7b8a897e01f5f5465d820cde08ab24}{sf2d\+\_\+draw\+\_\+texture\+\_\+scale} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, float x\+\_\+scale, float y\+\_\+scale)
+\begin{DoxyCompactList}\small\item\em Draws a texture with scaling. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_a5e283b6dd16eae580b4e4504039c9ae6}{sf2d\+\_\+draw\+\_\+texture\+\_\+scale\+\_\+blend} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, float x\+\_\+scale, float y\+\_\+scale, u32 color)
+\begin{DoxyCompactList}\small\item\em Draws a texture with scaling with color. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_aa68c942cb5c3abd0e316036a21d03199}{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, float x, float y, float tex\+\_\+x, float tex\+\_\+y, float tex\+\_\+w, float tex\+\_\+h, float x\+\_\+scale, float y\+\_\+scale)
+\begin{DoxyCompactList}\small\item\em Draws a part of a texture, with scaling. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_ad84def91854cbe24fba4f58f053dad91}{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale\+\_\+blend} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, float x, float y, float tex\+\_\+x, float tex\+\_\+y, float tex\+\_\+w, float tex\+\_\+h, float x\+\_\+scale, float y\+\_\+scale, u32 color)
+\begin{DoxyCompactList}\small\item\em Draws a part of a texture, with scaling, with color. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_ac1f7df5f248e36c4fe6a7ac483efcfab}{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, float rad, int tex\+\_\+x, int tex\+\_\+y, int tex\+\_\+w, int tex\+\_\+h, float x\+\_\+scale, float y\+\_\+scale)
+\begin{DoxyCompactList}\small\item\em Draws a part of a texture, with rotation and scaling. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_a0bcea7388de7b703e965e9186cc518fd}{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale\+\_\+blend} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, float rad, int tex\+\_\+x, int tex\+\_\+y, int tex\+\_\+w, int tex\+\_\+h, float x\+\_\+scale, float y\+\_\+scale, u32 color)
+\begin{DoxyCompactList}\small\item\em Draws a part of a texture, with rotation, scaling and color. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_a593059994abb6b9e8604cdd689d6b7e7}{sf2d\+\_\+draw\+\_\+texture\+\_\+depth} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, signed short z)
 \begin{DoxyCompactList}\small\item\em Draws a texture blended in a certain depth. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_a3c2a92d08773b50f6fff6e3b9dec2d1f}{sf2d\+\_\+draw\+\_\+texture\+\_\+depth\+\_\+blend} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, signed short z, u32 color)
+\begin{DoxyCompactList}\small\item\em Draws a texture blended in a certain depth. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_a8c862ee1a542092da7970b3b65e3374e}{sf2d\+\_\+draw\+\_\+quad\+\_\+uv} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, float left, float top, float right, float bottom, float u0, float v0, float u1, float v1, unsigned int params)
+\begin{DoxyCompactList}\small\item\em Draws a texture using custom texture coordinates and parameters. \end{DoxyCompactList}\item 
 void \hyperlink{sf2d_8h_ac5cb9ef4a97b5e7ee4bfbabf6e77e565}{sf2d\+\_\+set\+\_\+pixel} (\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, u32 new\+\_\+color)
 \begin{DoxyCompactList}\small\item\em Changes a pixel of the texture. \end{DoxyCompactList}\item 
 u32 \hyperlink{sf2d_8h_a5de4ef9dc5260cce7a35423f10d7904b}{sf2d\+\_\+get\+\_\+pixel} (\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y)
@@ -249,6 +269,28 @@ Binds a texture to a G\+P\+U texture unit with a constant color.
 {\em color} & the color the bind with the texture \\
 \hline
 \end{DoxyParams}
+\hypertarget{sf2d_8h_abddce09e31ba9365ea1b3f22cb46b752}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+bind\+\_\+texture\+\_\+parameters@{sf2d\+\_\+bind\+\_\+texture\+\_\+parameters}}
+\index{sf2d\+\_\+bind\+\_\+texture\+\_\+parameters@{sf2d\+\_\+bind\+\_\+texture\+\_\+parameters}!sf2d.\+h@{sf2d.\+h}}
+\subsubsection[{sf2d\+\_\+bind\+\_\+texture\+\_\+parameters}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+bind\+\_\+texture\+\_\+parameters (
+\begin{DoxyParamCaption}
+\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{G\+P\+U\+\_\+\+T\+E\+X\+U\+N\+I\+T}]{unit, }
+\item[{unsigned int}]{params}
+\end{DoxyParamCaption}
+)}\label{sf2d_8h_abddce09e31ba9365ea1b3f22cb46b752}
+
+
+Binds a texture to a G\+P\+U texture unit with custom parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to bind \\
+\hline
+{\em unit} & G\+P\+U texture unit to bind to \\
+\hline
+{\em params} & the parameters the bind with the texture \\
+\hline
+\end{DoxyParams}
 \hypertarget{sf2d_8h_a8f1e8dd266bab09c9e18371bc4b937f3}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+create\+\_\+texture@{sf2d\+\_\+create\+\_\+texture}}
 \index{sf2d\+\_\+create\+\_\+texture@{sf2d\+\_\+create\+\_\+texture}!sf2d.\+h@{sf2d.\+h}}
 \subsubsection[{sf2d\+\_\+create\+\_\+texture}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sf2d\+\_\+texture}$\ast$ sf2d\+\_\+create\+\_\+texture (
@@ -277,6 +319,9 @@ Creates an empty texture. The returned texture has the data allocated, this mean
 \begin{DoxyReturn}{Returns}
 a pointer to the newly created texture 
 \end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Before drawing the texture, it needs to be tiled by calling sf2d\+\_\+texture\+\_\+tile32. 
+\end{DoxyNote}
 \hypertarget{sf2d_8h_a3ff172fa92634b777545f50b1d8a5a5d}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8@{sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8}}
 \index{sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8@{sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8}!sf2d.\+h@{sf2d.\+h}}
 \subsubsection[{sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sf2d\+\_\+texture}$\ast$ sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8 (
@@ -359,6 +404,49 @@ Draws a line.
 {\em y1} & y coordinate of the sceond dot \\
 \hline
 {\em color} & the color to draw the line \\
+\hline
+\end{DoxyParams}
+\hypertarget{sf2d_8h_a8c862ee1a542092da7970b3b65e3374e}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+quad\+\_\+uv@{sf2d\+\_\+draw\+\_\+quad\+\_\+uv}}
+\index{sf2d\+\_\+draw\+\_\+quad\+\_\+uv@{sf2d\+\_\+draw\+\_\+quad\+\_\+uv}!sf2d.\+h@{sf2d.\+h}}
+\subsubsection[{sf2d\+\_\+draw\+\_\+quad\+\_\+uv}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+quad\+\_\+uv (
+\begin{DoxyParamCaption}
+\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{float}]{left, }
+\item[{float}]{top, }
+\item[{float}]{right, }
+\item[{float}]{bottom, }
+\item[{float}]{u0, }
+\item[{float}]{v0, }
+\item[{float}]{u1, }
+\item[{float}]{v1, }
+\item[{unsigned int}]{params}
+\end{DoxyParamCaption}
+)}\label{sf2d_8h_a8c862ee1a542092da7970b3b65e3374e}
+
+
+Draws a texture using custom texture coordinates and parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to draw \\
+\hline
+{\em left} & the left coordinate of the texture to start drawing \\
+\hline
+{\em top} & the top coordinate of the texture to start drawing \\
+\hline
+{\em width} & the width to draw from the starting left coordinate \\
+\hline
+{\em height} & the height to draw from the starting top coordinate \\
+\hline
+{\em u0} & the U texture coordinate of the left vertices \\
+\hline
+{\em v0} & the V texture coordinate of the top vertices \\
+\hline
+{\em u1} & the U texture coordinate of the right vertices \\
+\hline
+{\em v1} & the V texture coordinate of the bottom vertices \\
+\hline
+{\em params} & the parameters to draw the texture with \\
 \hline
 \end{DoxyParams}
 \hypertarget{sf2d_8h_aec970054d30e326ab9bc616ecab6aff9}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+rectangle@{sf2d\+\_\+draw\+\_\+rectangle}}
@@ -495,6 +583,37 @@ Draws a texture blended in a certain depth.
 \begin{DoxyNote}{Note}
 The z parameter is a value in the \mbox{[}-\/32768, +32767\mbox{]} range, where -\/32768 is the deepest and +32767 the toppest. By default, the textures are drawn at z = 0. Keep in mind that this function won\textquotesingle{}t do Order-\/independent transparency (O\+I\+T), so you should use fully opaque textures to get good results. 
 \end{DoxyNote}
+\hypertarget{sf2d_8h_a3c2a92d08773b50f6fff6e3b9dec2d1f}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+depth\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+depth\+\_\+blend}}
+\index{sf2d\+\_\+draw\+\_\+texture\+\_\+depth\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+depth\+\_\+blend}!sf2d.\+h@{sf2d.\+h}}
+\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+depth\+\_\+blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+depth\+\_\+blend (
+\begin{DoxyParamCaption}
+\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{signed short}]{z, }
+\item[{u32}]{color}
+\end{DoxyParamCaption}
+)}\label{sf2d_8h_a3c2a92d08773b50f6fff6e3b9dec2d1f}
+
+
+Draws a texture blended in a certain depth. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to draw \\
+\hline
+{\em x} & the x coordinate to draw the texture to \\
+\hline
+{\em y} & the y coordinate to draw the texture to \\
+\hline
+{\em z} & the depth to draw the texture to \\
+\hline
+{\em color} & the color to blend with the texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The z parameter is a value in the \mbox{[}-\/32768, +32767\mbox{]} range, where -\/32768 is the deepest and +32767 the toppest. By default, the textures are drawn at z = 0. Keep in mind that this function won\textquotesingle{}t do Order-\/independent transparency (O\+I\+T), so you should use fully opaque textures to get good results. 
+\end{DoxyNote}
 \hypertarget{sf2d_8h_abdfae56c564b94d07bf7a1b54bd11453}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+part@{sf2d\+\_\+draw\+\_\+texture\+\_\+part}}
 \index{sf2d\+\_\+draw\+\_\+texture\+\_\+part@{sf2d\+\_\+draw\+\_\+texture\+\_\+part}!sf2d.\+h@{sf2d.\+h}}
 \subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+part}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+part (
@@ -545,7 +664,7 @@ Draws a part of a texture.
 )}\label{sf2d_8h_a57101cdd022be92ae6c6ac5ec1feb014}
 
 
-Draws a part of a texture blended with a color. 
+Draws a part of a texture with color. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -566,34 +685,9 @@ Draws a part of a texture blended with a color.
 {\em color} & the color to blend with the texture \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_affc6cf46e403ae0837ec2901c85b4464}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+rotate@{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate}}
-\index{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate@{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+rotate (
-\begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
-\item[{int}]{x, }
-\item[{int}]{y, }
-\item[{float}]{rad}
-\end{DoxyParamCaption}
-)}\label{sf2d_8h_affc6cf46e403ae0837ec2901c85b4464}
-
-
-Draws a texture with rotation. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em texture} & the texture to draw \\
-\hline
-{\em x} & the x coordinate to draw the texture to \\
-\hline
-{\em y} & the y coordinate to draw the texture to \\
-\hline
-{\em rad} & rotation (in radians) to draw the texture \\
-\hline
-\end{DoxyParams}
-\hypertarget{sf2d_8h_af5fe98d85442da3243788c8db104d5dc}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+cut\+\_\+scale@{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+cut\+\_\+scale}}
-\index{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+cut\+\_\+scale@{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+cut\+\_\+scale}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+cut\+\_\+scale}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+cut\+\_\+scale (
+\hypertarget{sf2d_8h_ac1f7df5f248e36c4fe6a7ac483efcfab}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale@{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale}}
+\index{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale@{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale}!sf2d.\+h@{sf2d.\+h}}
+\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale (
 \begin{DoxyParamCaption}
 \item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
 \item[{int}]{x, }
@@ -606,7 +700,7 @@ Draws a texture with rotation.
 \item[{float}]{x\+\_\+scale, }
 \item[{float}]{y\+\_\+scale}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_af5fe98d85442da3243788c8db104d5dc}
+)}\label{sf2d_8h_ac1f7df5f248e36c4fe6a7ac483efcfab}
 
 
 Draws a part of a texture, with rotation and scaling. 
@@ -632,6 +726,253 @@ Draws a part of a texture, with rotation and scaling.
 {\em x\+\_\+scale} & the x scale \\
 \hline
 {\em y\+\_\+scale} & the y scale \\
+\hline
+\end{DoxyParams}
+\hypertarget{sf2d_8h_a0bcea7388de7b703e965e9186cc518fd}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale\+\_\+blend}}
+\index{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale\+\_\+blend}!sf2d.\+h@{sf2d.\+h}}
+\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale\+\_\+blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale\+\_\+blend (
+\begin{DoxyParamCaption}
+\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{float}]{rad, }
+\item[{int}]{tex\+\_\+x, }
+\item[{int}]{tex\+\_\+y, }
+\item[{int}]{tex\+\_\+w, }
+\item[{int}]{tex\+\_\+h, }
+\item[{float}]{x\+\_\+scale, }
+\item[{float}]{y\+\_\+scale, }
+\item[{u32}]{color}
+\end{DoxyParamCaption}
+)}\label{sf2d_8h_a0bcea7388de7b703e965e9186cc518fd}
+
+
+Draws a part of a texture, with rotation, scaling and color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to draw \\
+\hline
+{\em x} & the x coordinate to draw the texture to \\
+\hline
+{\em y} & the y coordinate to draw the texture to \\
+\hline
+{\em rad} & rotation (in radians) to draw the texture \\
+\hline
+{\em tex\+\_\+x} & the starting point (x coordinate) where to start drawing \\
+\hline
+{\em tex\+\_\+y} & the starting point (y coordinate) where to start drawing \\
+\hline
+{\em tex\+\_\+w} & the width to draw from the starting point \\
+\hline
+{\em tex\+\_\+h} & the height to draw from the starting point \\
+\hline
+{\em x\+\_\+scale} & the x scale \\
+\hline
+{\em y\+\_\+scale} & the y scale \\
+\hline
+{\em color} & the color to blend with the texture \\
+\hline
+\end{DoxyParams}
+\hypertarget{sf2d_8h_aa68c942cb5c3abd0e316036a21d03199}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale@{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale}}
+\index{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale@{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale}!sf2d.\+h@{sf2d.\+h}}
+\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale (
+\begin{DoxyParamCaption}
+\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{tex\+\_\+x, }
+\item[{float}]{tex\+\_\+y, }
+\item[{float}]{tex\+\_\+w, }
+\item[{float}]{tex\+\_\+h, }
+\item[{float}]{x\+\_\+scale, }
+\item[{float}]{y\+\_\+scale}
+\end{DoxyParamCaption}
+)}\label{sf2d_8h_aa68c942cb5c3abd0e316036a21d03199}
+
+
+Draws a part of a texture, with scaling. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to draw \\
+\hline
+{\em x} & the x coordinate to draw the texture to \\
+\hline
+{\em y} & the y coordinate to draw the texture to \\
+\hline
+{\em tex\+\_\+x} & the starting point (x coordinate) where to start drawing \\
+\hline
+{\em tex\+\_\+y} & the starting point (y coordinate) where to start drawing \\
+\hline
+{\em tex\+\_\+w} & the width to draw from the starting point \\
+\hline
+{\em tex\+\_\+h} & the height to draw from the starting point \\
+\hline
+{\em x\+\_\+scale} & the x scale \\
+\hline
+{\em y\+\_\+scale} & the y scale \\
+\hline
+\end{DoxyParams}
+\hypertarget{sf2d_8h_ad84def91854cbe24fba4f58f053dad91}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale\+\_\+blend}}
+\index{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale\+\_\+blend}!sf2d.\+h@{sf2d.\+h}}
+\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale\+\_\+blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale\+\_\+blend (
+\begin{DoxyParamCaption}
+\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{tex\+\_\+x, }
+\item[{float}]{tex\+\_\+y, }
+\item[{float}]{tex\+\_\+w, }
+\item[{float}]{tex\+\_\+h, }
+\item[{float}]{x\+\_\+scale, }
+\item[{float}]{y\+\_\+scale, }
+\item[{u32}]{color}
+\end{DoxyParamCaption}
+)}\label{sf2d_8h_ad84def91854cbe24fba4f58f053dad91}
+
+
+Draws a part of a texture, with scaling, with color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to draw \\
+\hline
+{\em x} & the x coordinate to draw the texture to \\
+\hline
+{\em y} & the y coordinate to draw the texture to \\
+\hline
+{\em tex\+\_\+x} & the starting point (x coordinate) where to start drawing \\
+\hline
+{\em tex\+\_\+y} & the starting point (y coordinate) where to start drawing \\
+\hline
+{\em tex\+\_\+w} & the width to draw from the starting point \\
+\hline
+{\em tex\+\_\+h} & the height to draw from the starting point \\
+\hline
+{\em x\+\_\+scale} & the x scale \\
+\hline
+{\em y\+\_\+scale} & the y scale \\
+\hline
+{\em color} & the color to blend with the texture \\
+\hline
+\end{DoxyParams}
+\hypertarget{sf2d_8h_affc6cf46e403ae0837ec2901c85b4464}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+rotate@{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate}}
+\index{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate@{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate}!sf2d.\+h@{sf2d.\+h}}
+\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+rotate (
+\begin{DoxyParamCaption}
+\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{float}]{rad}
+\end{DoxyParamCaption}
+)}\label{sf2d_8h_affc6cf46e403ae0837ec2901c85b4464}
+
+
+Draws a texture with rotation around its center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to draw \\
+\hline
+{\em x} & the x coordinate to draw the texture to \\
+\hline
+{\em y} & the y coordinate to draw the texture to \\
+\hline
+{\em rad} & rotation (in radians) to draw the texture \\
+\hline
+\end{DoxyParams}
+\hypertarget{sf2d_8h_ab8ff0c8e0d6fdb7579ff55c41fd8b4f4}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+blend}}
+\index{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+blend}!sf2d.\+h@{sf2d.\+h}}
+\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+blend (
+\begin{DoxyParamCaption}
+\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{float}]{rad, }
+\item[{u32}]{color}
+\end{DoxyParamCaption}
+)}\label{sf2d_8h_ab8ff0c8e0d6fdb7579ff55c41fd8b4f4}
+
+
+Draws a texture with rotation around its center with color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to draw \\
+\hline
+{\em x} & the x coordinate to draw the texture to \\
+\hline
+{\em y} & the y coordinate to draw the texture to \\
+\hline
+{\em rad} & rotation (in radians) to draw the texture \\
+\hline
+{\em color} & the color to blend with the texture \\
+\hline
+\end{DoxyParams}
+\hypertarget{sf2d_8h_a9e377d6fb0e939c33acd0bd362b35bf9}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot@{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot}}
+\index{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot@{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot}!sf2d.\+h@{sf2d.\+h}}
+\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot (
+\begin{DoxyParamCaption}
+\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{float}]{rad, }
+\item[{float}]{center\+\_\+x, }
+\item[{float}]{center\+\_\+y}
+\end{DoxyParamCaption}
+)}\label{sf2d_8h_a9e377d6fb0e939c33acd0bd362b35bf9}
+
+
+Draws a texture with rotation around a hotspot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to draw \\
+\hline
+{\em x} & the x coordinate to draw the texture to \\
+\hline
+{\em y} & the y coordinate to draw the texture to \\
+\hline
+{\em rad} & rotation (in radians) to draw the texture \\
+\hline
+{\em center\+\_\+x} & the x position of the hotspot \\
+\hline
+{\em center\+\_\+y} & the y position of the hotspot \\
+\hline
+\end{DoxyParams}
+\hypertarget{sf2d_8h_a498f9fb5a5ad0c2943fe4712423f3734}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot\+\_\+blend}}
+\index{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot\+\_\+blend}!sf2d.\+h@{sf2d.\+h}}
+\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot\+\_\+blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot\+\_\+blend (
+\begin{DoxyParamCaption}
+\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{float}]{rad, }
+\item[{float}]{center\+\_\+x, }
+\item[{float}]{center\+\_\+y, }
+\item[{u32}]{color}
+\end{DoxyParamCaption}
+)}\label{sf2d_8h_a498f9fb5a5ad0c2943fe4712423f3734}
+
+
+Draws a texture with rotation around a hotspot with a color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to draw \\
+\hline
+{\em x} & the x coordinate to draw the texture to \\
+\hline
+{\em y} & the y coordinate to draw the texture to \\
+\hline
+{\em rad} & rotation (in radians) to draw the texture \\
+\hline
+{\em center\+\_\+x} & the x position of the hotspot \\
+\hline
+{\em center\+\_\+y} & the y position of the hotspot \\
+\hline
+{\em color} & the color to blend with the texture \\
 \hline
 \end{DoxyParams}
 \hypertarget{sf2d_8h_aed7b8a897e01f5f5465d820cde08ab24}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+scale@{sf2d\+\_\+draw\+\_\+texture\+\_\+scale}}
@@ -660,6 +1001,37 @@ Draws a texture with scaling.
 {\em x\+\_\+scale} & the x scale \\
 \hline
 {\em y\+\_\+scale} & the y scale \\
+\hline
+\end{DoxyParams}
+\hypertarget{sf2d_8h_a5e283b6dd16eae580b4e4504039c9ae6}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+scale\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+scale\+\_\+blend}}
+\index{sf2d\+\_\+draw\+\_\+texture\+\_\+scale\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+scale\+\_\+blend}!sf2d.\+h@{sf2d.\+h}}
+\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+scale\+\_\+blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+scale\+\_\+blend (
+\begin{DoxyParamCaption}
+\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{float}]{x\+\_\+scale, }
+\item[{float}]{y\+\_\+scale, }
+\item[{u32}]{color}
+\end{DoxyParamCaption}
+)}\label{sf2d_8h_a5e283b6dd16eae580b4e4504039c9ae6}
+
+
+Draws a texture with scaling with color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to draw \\
+\hline
+{\em x} & the x coordinate to draw the texture to \\
+\hline
+{\em y} & the y coordinate to draw the texture to \\
+\hline
+{\em x\+\_\+scale} & the x scale \\
+\hline
+{\em y\+\_\+scale} & the y scale \\
+\hline
+{\em color} & the color to blend with the texture \\
 \hline
 \end{DoxyParams}
 \hypertarget{sf2d_8h_ac06fd9ba922f84e9f50cac3ac0e5b5a4}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+fill\+\_\+texture\+\_\+from\+\_\+\+R\+G\+B\+A8@{sf2d\+\_\+fill\+\_\+texture\+\_\+from\+\_\+\+R\+G\+B\+A8}}

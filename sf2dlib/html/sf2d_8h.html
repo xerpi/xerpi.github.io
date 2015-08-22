@@ -247,30 +247,60 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 <tr class="memitem:a479621a55bb749362151bf71db8d0b8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a479621a55bb749362151bf71db8d0b8d">sf2d_bind_texture_color</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, GPU_TEXUNIT unit, u32 color)</td></tr>
 <tr class="memdesc:a479621a55bb749362151bf71db8d0b8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a texture to a GPU texture unit with a constant color.  <a href="#a479621a55bb749362151bf71db8d0b8d">More...</a><br /></td></tr>
 <tr class="separator:a479621a55bb749362151bf71db8d0b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abddce09e31ba9365ea1b3f22cb46b752"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#abddce09e31ba9365ea1b3f22cb46b752">sf2d_bind_texture_parameters</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, GPU_TEXUNIT unit, unsigned int params)</td></tr>
+<tr class="memdesc:abddce09e31ba9365ea1b3f22cb46b752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a texture to a GPU texture unit with custom parameters.  <a href="#abddce09e31ba9365ea1b3f22cb46b752">More...</a><br /></td></tr>
+<tr class="separator:abddce09e31ba9365ea1b3f22cb46b752"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09501d8d7c5319db00a39709f0cd18fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a09501d8d7c5319db00a39709f0cd18fa">sf2d_draw_texture</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y)</td></tr>
 <tr class="memdesc:a09501d8d7c5319db00a39709f0cd18fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a texture.  <a href="#a09501d8d7c5319db00a39709f0cd18fa">More...</a><br /></td></tr>
 <tr class="separator:a09501d8d7c5319db00a39709f0cd18fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affc6cf46e403ae0837ec2901c85b4464"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#affc6cf46e403ae0837ec2901c85b4464">sf2d_draw_texture_rotate</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, float rad)</td></tr>
-<tr class="memdesc:affc6cf46e403ae0837ec2901c85b4464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a texture with rotation.  <a href="#affc6cf46e403ae0837ec2901c85b4464">More...</a><br /></td></tr>
-<tr class="separator:affc6cf46e403ae0837ec2901c85b4464"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdfae56c564b94d07bf7a1b54bd11453"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#abdfae56c564b94d07bf7a1b54bd11453">sf2d_draw_texture_part</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, int tex_x, int tex_y, int tex_w, int tex_h)</td></tr>
-<tr class="memdesc:abdfae56c564b94d07bf7a1b54bd11453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a part of a texture.  <a href="#abdfae56c564b94d07bf7a1b54bd11453">More...</a><br /></td></tr>
-<tr class="separator:abdfae56c564b94d07bf7a1b54bd11453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed7b8a897e01f5f5465d820cde08ab24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#aed7b8a897e01f5f5465d820cde08ab24">sf2d_draw_texture_scale</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, float x_scale, float y_scale)</td></tr>
-<tr class="memdesc:aed7b8a897e01f5f5465d820cde08ab24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a texture with scaling.  <a href="#aed7b8a897e01f5f5465d820cde08ab24">More...</a><br /></td></tr>
-<tr class="separator:aed7b8a897e01f5f5465d820cde08ab24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5fe98d85442da3243788c8db104d5dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#af5fe98d85442da3243788c8db104d5dc">sf2d_draw_texture_rotate_cut_scale</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, float rad, int tex_x, int tex_y, int tex_w, int tex_h, float x_scale, float y_scale)</td></tr>
-<tr class="memdesc:af5fe98d85442da3243788c8db104d5dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a part of a texture, with rotation and scaling.  <a href="#af5fe98d85442da3243788c8db104d5dc">More...</a><br /></td></tr>
-<tr class="separator:af5fe98d85442da3243788c8db104d5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a211cd71f8cd5fe774b7df176b50e7873"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a211cd71f8cd5fe774b7df176b50e7873">sf2d_draw_texture_blend</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, u32 color)</td></tr>
 <tr class="memdesc:a211cd71f8cd5fe774b7df176b50e7873"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a texture blended with a color.  <a href="#a211cd71f8cd5fe774b7df176b50e7873">More...</a><br /></td></tr>
 <tr class="separator:a211cd71f8cd5fe774b7df176b50e7873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e377d6fb0e939c33acd0bd362b35bf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a9e377d6fb0e939c33acd0bd362b35bf9">sf2d_draw_texture_rotate_hotspot</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, float rad, float center_x, float center_y)</td></tr>
+<tr class="memdesc:a9e377d6fb0e939c33acd0bd362b35bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a texture with rotation around a hotspot.  <a href="#a9e377d6fb0e939c33acd0bd362b35bf9">More...</a><br /></td></tr>
+<tr class="separator:a9e377d6fb0e939c33acd0bd362b35bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a498f9fb5a5ad0c2943fe4712423f3734"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a498f9fb5a5ad0c2943fe4712423f3734">sf2d_draw_texture_rotate_hotspot_blend</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, float rad, float center_x, float center_y, u32 color)</td></tr>
+<tr class="memdesc:a498f9fb5a5ad0c2943fe4712423f3734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a texture with rotation around a hotspot with a color.  <a href="#a498f9fb5a5ad0c2943fe4712423f3734">More...</a><br /></td></tr>
+<tr class="separator:a498f9fb5a5ad0c2943fe4712423f3734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc6cf46e403ae0837ec2901c85b4464"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#affc6cf46e403ae0837ec2901c85b4464">sf2d_draw_texture_rotate</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, float rad)</td></tr>
+<tr class="memdesc:affc6cf46e403ae0837ec2901c85b4464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a texture with rotation around its center.  <a href="#affc6cf46e403ae0837ec2901c85b4464">More...</a><br /></td></tr>
+<tr class="separator:affc6cf46e403ae0837ec2901c85b4464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ff0c8e0d6fdb7579ff55c41fd8b4f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#ab8ff0c8e0d6fdb7579ff55c41fd8b4f4">sf2d_draw_texture_rotate_blend</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, float rad, u32 color)</td></tr>
+<tr class="memdesc:ab8ff0c8e0d6fdb7579ff55c41fd8b4f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a texture with rotation around its center with color.  <a href="#ab8ff0c8e0d6fdb7579ff55c41fd8b4f4">More...</a><br /></td></tr>
+<tr class="separator:ab8ff0c8e0d6fdb7579ff55c41fd8b4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdfae56c564b94d07bf7a1b54bd11453"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#abdfae56c564b94d07bf7a1b54bd11453">sf2d_draw_texture_part</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, int tex_x, int tex_y, int tex_w, int tex_h)</td></tr>
+<tr class="memdesc:abdfae56c564b94d07bf7a1b54bd11453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a part of a texture.  <a href="#abdfae56c564b94d07bf7a1b54bd11453">More...</a><br /></td></tr>
+<tr class="separator:abdfae56c564b94d07bf7a1b54bd11453"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57101cdd022be92ae6c6ac5ec1feb014"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a57101cdd022be92ae6c6ac5ec1feb014">sf2d_draw_texture_part_blend</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, int tex_x, int tex_y, int tex_w, int tex_h, u32 color)</td></tr>
-<tr class="memdesc:a57101cdd022be92ae6c6ac5ec1feb014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a part of a texture blended with a color.  <a href="#a57101cdd022be92ae6c6ac5ec1feb014">More...</a><br /></td></tr>
+<tr class="memdesc:a57101cdd022be92ae6c6ac5ec1feb014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a part of a texture with color.  <a href="#a57101cdd022be92ae6c6ac5ec1feb014">More...</a><br /></td></tr>
 <tr class="separator:a57101cdd022be92ae6c6ac5ec1feb014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed7b8a897e01f5f5465d820cde08ab24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#aed7b8a897e01f5f5465d820cde08ab24">sf2d_draw_texture_scale</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, float x_scale, float y_scale)</td></tr>
+<tr class="memdesc:aed7b8a897e01f5f5465d820cde08ab24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a texture with scaling.  <a href="#aed7b8a897e01f5f5465d820cde08ab24">More...</a><br /></td></tr>
+<tr class="separator:aed7b8a897e01f5f5465d820cde08ab24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e283b6dd16eae580b4e4504039c9ae6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a5e283b6dd16eae580b4e4504039c9ae6">sf2d_draw_texture_scale_blend</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, float x_scale, float y_scale, u32 color)</td></tr>
+<tr class="memdesc:a5e283b6dd16eae580b4e4504039c9ae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a texture with scaling with color.  <a href="#a5e283b6dd16eae580b4e4504039c9ae6">More...</a><br /></td></tr>
+<tr class="separator:a5e283b6dd16eae580b4e4504039c9ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa68c942cb5c3abd0e316036a21d03199"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#aa68c942cb5c3abd0e316036a21d03199">sf2d_draw_texture_part_scale</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, float x, float y, float tex_x, float tex_y, float tex_w, float tex_h, float x_scale, float y_scale)</td></tr>
+<tr class="memdesc:aa68c942cb5c3abd0e316036a21d03199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a part of a texture, with scaling.  <a href="#aa68c942cb5c3abd0e316036a21d03199">More...</a><br /></td></tr>
+<tr class="separator:aa68c942cb5c3abd0e316036a21d03199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad84def91854cbe24fba4f58f053dad91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#ad84def91854cbe24fba4f58f053dad91">sf2d_draw_texture_part_scale_blend</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, float x, float y, float tex_x, float tex_y, float tex_w, float tex_h, float x_scale, float y_scale, u32 color)</td></tr>
+<tr class="memdesc:ad84def91854cbe24fba4f58f053dad91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a part of a texture, with scaling, with color.  <a href="#ad84def91854cbe24fba4f58f053dad91">More...</a><br /></td></tr>
+<tr class="separator:ad84def91854cbe24fba4f58f053dad91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1f7df5f248e36c4fe6a7ac483efcfab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#ac1f7df5f248e36c4fe6a7ac483efcfab">sf2d_draw_texture_part_rotate_scale</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, float rad, int tex_x, int tex_y, int tex_w, int tex_h, float x_scale, float y_scale)</td></tr>
+<tr class="memdesc:ac1f7df5f248e36c4fe6a7ac483efcfab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a part of a texture, with rotation and scaling.  <a href="#ac1f7df5f248e36c4fe6a7ac483efcfab">More...</a><br /></td></tr>
+<tr class="separator:ac1f7df5f248e36c4fe6a7ac483efcfab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bcea7388de7b703e965e9186cc518fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a0bcea7388de7b703e965e9186cc518fd">sf2d_draw_texture_part_rotate_scale_blend</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, float rad, int tex_x, int tex_y, int tex_w, int tex_h, float x_scale, float y_scale, u32 color)</td></tr>
+<tr class="memdesc:a0bcea7388de7b703e965e9186cc518fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a part of a texture, with rotation, scaling and color.  <a href="#a0bcea7388de7b703e965e9186cc518fd">More...</a><br /></td></tr>
+<tr class="separator:a0bcea7388de7b703e965e9186cc518fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a593059994abb6b9e8604cdd689d6b7e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a593059994abb6b9e8604cdd689d6b7e7">sf2d_draw_texture_depth</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, signed short z)</td></tr>
 <tr class="memdesc:a593059994abb6b9e8604cdd689d6b7e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a texture blended in a certain depth.  <a href="#a593059994abb6b9e8604cdd689d6b7e7">More...</a><br /></td></tr>
 <tr class="separator:a593059994abb6b9e8604cdd689d6b7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c2a92d08773b50f6fff6e3b9dec2d1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a3c2a92d08773b50f6fff6e3b9dec2d1f">sf2d_draw_texture_depth_blend</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, signed short z, u32 color)</td></tr>
+<tr class="memdesc:a3c2a92d08773b50f6fff6e3b9dec2d1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a texture blended in a certain depth.  <a href="#a3c2a92d08773b50f6fff6e3b9dec2d1f">More...</a><br /></td></tr>
+<tr class="separator:a3c2a92d08773b50f6fff6e3b9dec2d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c862ee1a542092da7970b3b65e3374e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a8c862ee1a542092da7970b3b65e3374e">sf2d_draw_quad_uv</a> (const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, float left, float top, float right, float bottom, float u0, float v0, float u1, float v1, unsigned int params)</td></tr>
+<tr class="memdesc:a8c862ee1a542092da7970b3b65e3374e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a texture using custom texture coordinates and parameters.  <a href="#a8c862ee1a542092da7970b3b65e3374e">More...</a><br /></td></tr>
+<tr class="separator:a8c862ee1a542092da7970b3b65e3374e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5cb9ef4a97b5e7ee4bfbabf6e77e565"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#ac5cb9ef4a97b5e7ee4bfbabf6e77e565">sf2d_set_pixel</a> (<a class="el" href="structsf2d__texture.html">sf2d_texture</a> *texture, int x, int y, u32 new_color)</td></tr>
 <tr class="memdesc:ac5cb9ef4a97b5e7ee4bfbabf6e77e565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes a pixel of the texture.  <a href="#ac5cb9ef4a97b5e7ee4bfbabf6e77e565">More...</a><br /></td></tr>
 <tr class="separator:ac5cb9ef4a97b5e7ee4bfbabf6e77e565"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -448,6 +478,48 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 
 </div>
 </div>
+<a class="anchor" id="abddce09e31ba9365ea1b3f22cb46b752"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf2d_bind_texture_parameters </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GPU_TEXUNIT&#160;</td>
+          <td class="paramname"><em>unit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binds a texture to a GPU texture unit with custom parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>the texture to bind </td></tr>
+    <tr><td class="paramname">unit</td><td>GPU texture unit to bind to </td></tr>
+    <tr><td class="paramname">params</td><td>the parameters the bind with the texture </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a8f1e8dd266bab09c9e18371bc4b937f3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -495,6 +567,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the newly created texture </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Before drawing the texture, it needs to be tiled by calling sf2d_texture_tile32. </dd></dl>
 
 </div>
 </div>
@@ -654,6 +727,97 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
     <tr><td class="paramname">x1</td><td>x coordinate of the second dot </td></tr>
     <tr><td class="paramname">y1</td><td>y coordinate of the sceond dot </td></tr>
     <tr><td class="paramname">color</td><td>the color to draw the line </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8c862ee1a542092da7970b3b65e3374e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf2d_draw_quad_uv </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>top</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>right</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>bottom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>u0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>v0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>u1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a texture using custom texture coordinates and parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>the texture to draw </td></tr>
+    <tr><td class="paramname">left</td><td>the left coordinate of the texture to start drawing </td></tr>
+    <tr><td class="paramname">top</td><td>the top coordinate of the texture to start drawing </td></tr>
+    <tr><td class="paramname">width</td><td>the width to draw from the starting left coordinate </td></tr>
+    <tr><td class="paramname">height</td><td>the height to draw from the starting top coordinate </td></tr>
+    <tr><td class="paramname">u0</td><td>the U texture coordinate of the left vertices </td></tr>
+    <tr><td class="paramname">v0</td><td>the V texture coordinate of the top vertices </td></tr>
+    <tr><td class="paramname">u1</td><td>the U texture coordinate of the right vertices </td></tr>
+    <tr><td class="paramname">v1</td><td>the V texture coordinate of the bottom vertices </td></tr>
+    <tr><td class="paramname">params</td><td>the parameters to draw the texture with </td></tr>
   </table>
   </dd>
 </dl>
@@ -920,6 +1084,63 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 
 </div>
 </div>
+<a class="anchor" id="a3c2a92d08773b50f6fff6e3b9dec2d1f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf2d_draw_texture_depth_blend </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">signed short&#160;</td>
+          <td class="paramname"><em>z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a texture blended in a certain depth. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>the texture to draw </td></tr>
+    <tr><td class="paramname">x</td><td>the x coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">y</td><td>the y coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">z</td><td>the depth to draw the texture to </td></tr>
+    <tr><td class="paramname">color</td><td>the color to blend with the texture </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The z parameter is a value in the [-32768, +32767] range, where -32768 is the deepest and +32767 the toppest. By default, the textures are drawn at z = 0. Keep in mind that this function won't do Order-independent transparency (OIT), so you should use fully opaque textures to get good results. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="abdfae56c564b94d07bf7a1b54bd11453"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1050,7 +1271,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
       </table>
 </div><div class="memdoc">
 
-<p>Draws a part of a texture blended with a color. </p>
+<p>Draws a part of a texture with color. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">texture</td><td>the texture to draw </td></tr>
@@ -1067,61 +1288,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 
 </div>
 </div>
-<a class="anchor" id="affc6cf46e403ae0837ec2901c85b4464"></a>
+<a class="anchor" id="ac1f7df5f248e36c4fe6a7ac483efcfab"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void sf2d_draw_texture_rotate </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td>
-          <td class="paramname"><em>texture</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>rad</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Draws a texture with rotation. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">texture</td><td>the texture to draw </td></tr>
-    <tr><td class="paramname">x</td><td>the x coordinate to draw the texture to </td></tr>
-    <tr><td class="paramname">y</td><td>the y coordinate to draw the texture to </td></tr>
-    <tr><td class="paramname">rad</td><td>rotation (in radians) to draw the texture </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="af5fe98d85442da3243788c8db104d5dc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf2d_draw_texture_rotate_cut_scale </td>
+          <td class="memname">void sf2d_draw_texture_part_rotate_scale </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td>
           <td class="paramname"><em>texture</em>, </td>
@@ -1207,6 +1379,517 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 
 </div>
 </div>
+<a class="anchor" id="a0bcea7388de7b703e965e9186cc518fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf2d_draw_texture_part_rotate_scale_blend </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>rad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tex_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tex_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tex_w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tex_h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x_scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y_scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a part of a texture, with rotation, scaling and color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>the texture to draw </td></tr>
+    <tr><td class="paramname">x</td><td>the x coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">y</td><td>the y coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">rad</td><td>rotation (in radians) to draw the texture </td></tr>
+    <tr><td class="paramname">tex_x</td><td>the starting point (x coordinate) where to start drawing </td></tr>
+    <tr><td class="paramname">tex_y</td><td>the starting point (y coordinate) where to start drawing </td></tr>
+    <tr><td class="paramname">tex_w</td><td>the width to draw from the starting point </td></tr>
+    <tr><td class="paramname">tex_h</td><td>the height to draw from the starting point </td></tr>
+    <tr><td class="paramname">x_scale</td><td>the x scale </td></tr>
+    <tr><td class="paramname">y_scale</td><td>the y scale </td></tr>
+    <tr><td class="paramname">color</td><td>the color to blend with the texture </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa68c942cb5c3abd0e316036a21d03199"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf2d_draw_texture_part_scale </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tex_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tex_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tex_w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tex_h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x_scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y_scale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a part of a texture, with scaling. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>the texture to draw </td></tr>
+    <tr><td class="paramname">x</td><td>the x coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">y</td><td>the y coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">tex_x</td><td>the starting point (x coordinate) where to start drawing </td></tr>
+    <tr><td class="paramname">tex_y</td><td>the starting point (y coordinate) where to start drawing </td></tr>
+    <tr><td class="paramname">tex_w</td><td>the width to draw from the starting point </td></tr>
+    <tr><td class="paramname">tex_h</td><td>the height to draw from the starting point </td></tr>
+    <tr><td class="paramname">x_scale</td><td>the x scale </td></tr>
+    <tr><td class="paramname">y_scale</td><td>the y scale </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad84def91854cbe24fba4f58f053dad91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf2d_draw_texture_part_scale_blend </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tex_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tex_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tex_w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tex_h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x_scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y_scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a part of a texture, with scaling, with color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>the texture to draw </td></tr>
+    <tr><td class="paramname">x</td><td>the x coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">y</td><td>the y coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">tex_x</td><td>the starting point (x coordinate) where to start drawing </td></tr>
+    <tr><td class="paramname">tex_y</td><td>the starting point (y coordinate) where to start drawing </td></tr>
+    <tr><td class="paramname">tex_w</td><td>the width to draw from the starting point </td></tr>
+    <tr><td class="paramname">tex_h</td><td>the height to draw from the starting point </td></tr>
+    <tr><td class="paramname">x_scale</td><td>the x scale </td></tr>
+    <tr><td class="paramname">y_scale</td><td>the y scale </td></tr>
+    <tr><td class="paramname">color</td><td>the color to blend with the texture </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="affc6cf46e403ae0837ec2901c85b4464"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf2d_draw_texture_rotate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>rad</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a texture with rotation around its center. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>the texture to draw </td></tr>
+    <tr><td class="paramname">x</td><td>the x coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">y</td><td>the y coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">rad</td><td>rotation (in radians) to draw the texture </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab8ff0c8e0d6fdb7579ff55c41fd8b4f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf2d_draw_texture_rotate_blend </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>rad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a texture with rotation around its center with color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>the texture to draw </td></tr>
+    <tr><td class="paramname">x</td><td>the x coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">y</td><td>the y coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">rad</td><td>rotation (in radians) to draw the texture </td></tr>
+    <tr><td class="paramname">color</td><td>the color to blend with the texture </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9e377d6fb0e939c33acd0bd362b35bf9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf2d_draw_texture_rotate_hotspot </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>rad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>center_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>center_y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a texture with rotation around a hotspot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>the texture to draw </td></tr>
+    <tr><td class="paramname">x</td><td>the x coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">y</td><td>the y coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">rad</td><td>rotation (in radians) to draw the texture </td></tr>
+    <tr><td class="paramname">center_x</td><td>the x position of the hotspot </td></tr>
+    <tr><td class="paramname">center_y</td><td>the y position of the hotspot </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a498f9fb5a5ad0c2943fe4712423f3734"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf2d_draw_texture_rotate_hotspot_blend </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>rad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>center_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>center_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a texture with rotation around a hotspot with a color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>the texture to draw </td></tr>
+    <tr><td class="paramname">x</td><td>the x coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">y</td><td>the y coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">rad</td><td>rotation (in radians) to draw the texture </td></tr>
+    <tr><td class="paramname">center_x</td><td>the x position of the hotspot </td></tr>
+    <tr><td class="paramname">center_y</td><td>the y position of the hotspot </td></tr>
+    <tr><td class="paramname">color</td><td>the color to blend with the texture </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="aed7b8a897e01f5f5465d820cde08ab24"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1257,6 +1940,69 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
     <tr><td class="paramname">y</td><td>the y coordinate to draw the texture to </td></tr>
     <tr><td class="paramname">x_scale</td><td>the x scale </td></tr>
     <tr><td class="paramname">y_scale</td><td>the y scale </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5e283b6dd16eae580b4e4504039c9ae6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf2d_draw_texture_scale_blend </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsf2d__texture.html">sf2d_texture</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x_scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y_scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a texture with scaling with color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>the texture to draw </td></tr>
+    <tr><td class="paramname">x</td><td>the x coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">y</td><td>the y coordinate to draw the texture to </td></tr>
+    <tr><td class="paramname">x_scale</td><td>the x scale </td></tr>
+    <tr><td class="paramname">y_scale</td><td>the y scale </td></tr>
+    <tr><td class="paramname">color</td><td>the color to blend with the texture </td></tr>
   </table>
   </dd>
 </dl>
@@ -1822,7 +2568,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 12 2015 23:43:35 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 22 2015 17:35:46 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
