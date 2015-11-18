@@ -1,176 +1,178 @@
-\hypertarget{sf2d_8h}{}\section{include/sf2d.h File Reference}
-\label{sf2d_8h}\index{include/sf2d.\+h@{include/sf2d.\+h}}
+\hypertarget{sf2d_8h}{\section{include/sf2d.h File Reference}
+\label{sf2d_8h}\index{include/sf2d.\-h@{include/sf2d.\-h}}
+}
 
 
 sf2dlib header  
 
 
-{\ttfamily \#include $<$3ds.\+h$>$}\\*
+{\ttfamily \#include $<$3ds.\-h$>$}\\*
 \subsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
-struct \hyperlink{structsf2d__vector__2f}{sf2d\+\_\+vector\+\_\+2f}
+struct \hyperlink{structsf2d__vector__2f}{sf2d\-\_\-vector\-\_\-2f}
 \begin{DoxyCompactList}\small\item\em Represents a two dimensional float vector. \end{DoxyCompactList}\item 
-struct \hyperlink{structsf2d__vector__3f}{sf2d\+\_\+vector\+\_\+3f}
+struct \hyperlink{structsf2d__vector__3f}{sf2d\-\_\-vector\-\_\-3f}
 \begin{DoxyCompactList}\small\item\em Represents a three dimensional float vector. \end{DoxyCompactList}\item 
-struct \hyperlink{structsf2d__vector__4f}{sf2d\+\_\+vector\+\_\+4f}
+struct \hyperlink{structsf2d__vector__4f}{sf2d\-\_\-vector\-\_\-4f}
 \begin{DoxyCompactList}\small\item\em Represents a four dimensional float vector. \end{DoxyCompactList}\item 
-struct \hyperlink{structsf2d__vertex__pos__col}{sf2d\+\_\+vertex\+\_\+pos\+\_\+col}
+struct \hyperlink{structsf2d__vertex__pos__col}{sf2d\-\_\-vertex\-\_\-pos\-\_\-col}
 \begin{DoxyCompactList}\small\item\em Represents a vertex containing position and color attributes. \end{DoxyCompactList}\item 
-struct \hyperlink{structsf2d__vertex__pos__tex}{sf2d\+\_\+vertex\+\_\+pos\+\_\+tex}
+struct \hyperlink{structsf2d__vertex__pos__tex}{sf2d\-\_\-vertex\-\_\-pos\-\_\-tex}
 \begin{DoxyCompactList}\small\item\em Represents a vertex containing position and texture coordinates. \end{DoxyCompactList}\item 
-struct \hyperlink{structsf2d__texture}{sf2d\+\_\+texture}
+struct \hyperlink{structsf2d__texture}{sf2d\-\_\-texture}
 \begin{DoxyCompactList}\small\item\em Represents a texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \hyperlink{sf2d_8h_ada252b0d1c54c165a668d3bb1bee06c1}{R\+G\+B\+A8}(r,  g,  b,  a)~((((r)\&0x\+F\+F)$<$$<$24) $\vert$ (((g)\&0x\+F\+F)$<$$<$16) $\vert$ (((b)\&0x\+F\+F)$<$$<$8) $\vert$ (((a)\&0x\+F\+F)$<$$<$0))
-\begin{DoxyCompactList}\small\item\em Creates a new R\+G\+B\+A8 color. \end{DoxyCompactList}\item 
-\hypertarget{sf2d_8h_a059a42cbd6522d3116ddc5716f1fbe27}{}\#define \hyperlink{sf2d_8h_a059a42cbd6522d3116ddc5716f1fbe27}{S\+F2\+D\+\_\+\+G\+P\+U\+C\+M\+D\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+Z\+E}~0x80000\label{sf2d_8h_a059a42cbd6522d3116ddc5716f1fbe27}
+\#define \hyperlink{sf2d_8h_ada252b0d1c54c165a668d3bb1bee06c1}{R\-G\-B\-A8}(r, g, b, a)~((((r)\&0x\-F\-F)$<$$<$24) $\vert$ (((g)\&0x\-F\-F)$<$$<$16) $\vert$ (((b)\&0x\-F\-F)$<$$<$8) $\vert$ (((a)\&0x\-F\-F)$<$$<$0))
+\begin{DoxyCompactList}\small\item\em Creates a new R\-G\-B\-A8 color. \end{DoxyCompactList}\item 
+\hypertarget{sf2d_8h_a059a42cbd6522d3116ddc5716f1fbe27}{\#define \hyperlink{sf2d_8h_a059a42cbd6522d3116ddc5716f1fbe27}{S\-F2\-D\-\_\-\-G\-P\-U\-C\-M\-D\-\_\-\-D\-E\-F\-A\-U\-L\-T\-\_\-\-S\-I\-Z\-E}~0x80000}\label{sf2d_8h_a059a42cbd6522d3116ddc5716f1fbe27}
 
-\begin{DoxyCompactList}\small\item\em Default size of the G\+P\+U commands F\+I\+F\+O buffer. \end{DoxyCompactList}\item 
-\hypertarget{sf2d_8h_a7a140f18ef19959a8f7f41ac3b160a07}{}\#define \hyperlink{sf2d_8h_a7a140f18ef19959a8f7f41ac3b160a07}{S\+F2\+D\+\_\+\+T\+E\+M\+P\+P\+O\+O\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+Z\+E}~0x80000\label{sf2d_8h_a7a140f18ef19959a8f7f41ac3b160a07}
+\begin{DoxyCompactList}\small\item\em Default size of the G\-P\-U commands F\-I\-F\-O buffer. \end{DoxyCompactList}\item 
+\hypertarget{sf2d_8h_a7a140f18ef19959a8f7f41ac3b160a07}{\#define \hyperlink{sf2d_8h_a7a140f18ef19959a8f7f41ac3b160a07}{S\-F2\-D\-\_\-\-T\-E\-M\-P\-P\-O\-O\-L\-\_\-\-D\-E\-F\-A\-U\-L\-T\-\_\-\-S\-I\-Z\-E}~0x80000}\label{sf2d_8h_a7a140f18ef19959a8f7f41ac3b160a07}
 
 \begin{DoxyCompactList}\small\item\em Default size of the temporary memory pool. \end{DoxyCompactList}\item 
-\hypertarget{sf2d_8h_a7c8117fed8069ce23c154a6ede278241}{}\#define \hyperlink{sf2d_8h_a7c8117fed8069ce23c154a6ede278241}{S\+F2\+D\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+P\+T\+H}~0.\+5f\label{sf2d_8h_a7c8117fed8069ce23c154a6ede278241}
+\hypertarget{sf2d_8h_a7c8117fed8069ce23c154a6ede278241}{\#define \hyperlink{sf2d_8h_a7c8117fed8069ce23c154a6ede278241}{S\-F2\-D\-\_\-\-D\-E\-F\-A\-U\-L\-T\-\_\-\-D\-E\-P\-T\-H}~0.\-5f}\label{sf2d_8h_a7c8117fed8069ce23c154a6ede278241}
 
 \begin{DoxyCompactList}\small\item\em Default depth (Z coordinate) to draw the textures to. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{sf2d_8h_a159c44ac8ef84cd08235063d4e220244}{}enum \hyperlink{sf2d_8h_a159c44ac8ef84cd08235063d4e220244}{sf2d\+\_\+texfmt} \{ \\*
-{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+R\+G\+B\+A8} = 0, 
-{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+R\+G\+B8} = 1, 
-{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+R\+G\+B5\+A1} = 2, 
-{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+R\+G\+B565} = 3, 
+enum \hyperlink{sf2d_8h_a159c44ac8ef84cd08235063d4e220244}{sf2d\-\_\-texfmt} \{ \\*
+{\bfseries T\-E\-X\-F\-M\-T\-\_\-\-R\-G\-B\-A8} = 0, 
+{\bfseries T\-E\-X\-F\-M\-T\-\_\-\-R\-G\-B8} = 1, 
+{\bfseries T\-E\-X\-F\-M\-T\-\_\-\-R\-G\-B5\-A1} = 2, 
+{\bfseries T\-E\-X\-F\-M\-T\-\_\-\-R\-G\-B565} = 3, 
 \\*
-{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+R\+G\+B\+A4} = 4, 
-{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+I\+A8} = 5, 
-{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+I8} = 7, 
-{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+A8} = 8, 
+{\bfseries T\-E\-X\-F\-M\-T\-\_\-\-R\-G\-B\-A4} = 4, 
+{\bfseries T\-E\-X\-F\-M\-T\-\_\-\-I\-A8} = 5, 
+{\bfseries T\-E\-X\-F\-M\-T\-\_\-\-I8} = 7, 
+{\bfseries T\-E\-X\-F\-M\-T\-\_\-\-A8} = 8, 
 \\*
-{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+I\+A4} = 9, 
-{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+I4} = 10, 
-{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+A4} = 11, 
-{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+E\+T\+C1} = 12, 
+{\bfseries T\-E\-X\-F\-M\-T\-\_\-\-I\-A4} = 9, 
+{\bfseries T\-E\-X\-F\-M\-T\-\_\-\-I4} = 10, 
+{\bfseries T\-E\-X\-F\-M\-T\-\_\-\-A4} = 11, 
+{\bfseries T\-E\-X\-F\-M\-T\-\_\-\-E\-T\-C1} = 12, 
 \\*
-{\bfseries T\+E\+X\+F\+M\+T\+\_\+\+E\+T\+C1\+A4} = 13
- \}\label{sf2d_8h_a159c44ac8ef84cd08235063d4e220244}
-
-\begin{DoxyCompactList}\small\item\em Represents a texture format. \end{DoxyCompactList}\item 
-enum \hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171ea}{sf2d\+\_\+place} \{ \hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaa4e481aa581f839137a4b1fd0708666fb}{S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+R\+A\+M}, 
-\hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaae4d62813738d1fec4a10cef2405d8b3d}{S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+V\+R\+A\+M}, 
-\hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaa70138ec78a57f02178621e5917b2358d}{S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+T\+E\+M\+P}
+{\bfseries T\-E\-X\-F\-M\-T\-\_\-\-E\-T\-C1\-A4} = 13
  \}
-\begin{DoxyCompactList}\small\item\em Data allocated on the R\+A\+M or V\+R\+A\+M. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Represents a texture format. \end{DoxyCompactList}\item 
+enum \hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171ea}{sf2d\-\_\-place} \{ \hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaa4e481aa581f839137a4b1fd0708666fb}{S\-F2\-D\-\_\-\-P\-L\-A\-C\-E\-\_\-\-R\-A\-M}, 
+\hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaae4d62813738d1fec4a10cef2405d8b3d}{S\-F2\-D\-\_\-\-P\-L\-A\-C\-E\-\_\-\-V\-R\-A\-M}, 
+\hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaa70138ec78a57f02178621e5917b2358d}{S\-F2\-D\-\_\-\-P\-L\-A\-C\-E\-\_\-\-T\-E\-M\-P}
+ \}
+\begin{DoxyCompactList}\small\item\em Data allocated on the R\-A\-M or V\-R\-A\-M. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{sf2d_8h_aa14ff4b0b0b65e43d45bb838f90ff64e}{sf2d\+\_\+init} ()
+int \hyperlink{sf2d_8h_aa14ff4b0b0b65e43d45bb838f90ff64e}{sf2d\-\_\-init} ()
 \begin{DoxyCompactList}\small\item\em Initializates the library. \end{DoxyCompactList}\item 
-int \hyperlink{sf2d_8h_a625850a797c090dca02468becc5859f0}{sf2d\+\_\+init\+\_\+advanced} (int gpucmd\+\_\+size, int temppool\+\_\+size)
+int \hyperlink{sf2d_8h_a625850a797c090dca02468becc5859f0}{sf2d\-\_\-init\-\_\-advanced} (int gpucmd\-\_\-size, int temppool\-\_\-size)
 \begin{DoxyCompactList}\small\item\em Initializates the library (with advanced settings) \end{DoxyCompactList}\item 
-int \hyperlink{sf2d_8h_a322d93586a0d8dd3e0ccd5e23352e8e8}{sf2d\+\_\+fini} ()
+int \hyperlink{sf2d_8h_a322d93586a0d8dd3e0ccd5e23352e8e8}{sf2d\-\_\-fini} ()
 \begin{DoxyCompactList}\small\item\em Finishes the library. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_a76aa41b3f67dbf7e96d958ef488c732e}{sf2d\+\_\+set\+\_\+3\+D} (int enable)
-\begin{DoxyCompactList}\small\item\em Enables or disables the 3\+D. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_aebf0bffc5ec4230ba44ba6daeddcd040}{sf2d\+\_\+start\+\_\+frame} (gfx\+Screen\+\_\+t screen, gfx3d\+Side\+\_\+t side)
+void \hyperlink{sf2d_8h_a76aa41b3f67dbf7e96d958ef488c732e}{sf2d\-\_\-set\-\_\-3\-D} (int enable)
+\begin{DoxyCompactList}\small\item\em Enables or disables the 3\-D. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_aebf0bffc5ec4230ba44ba6daeddcd040}{sf2d\-\_\-start\-\_\-frame} (gfx\-Screen\-\_\-t screen, gfx3d\-Side\-\_\-t side)
 \begin{DoxyCompactList}\small\item\em Starts a frame. \end{DoxyCompactList}\item 
-\hypertarget{sf2d_8h_ab933b16f700958c78bd159c997b9124f}{}void \hyperlink{sf2d_8h_ab933b16f700958c78bd159c997b9124f}{sf2d\+\_\+end\+\_\+frame} ()\label{sf2d_8h_ab933b16f700958c78bd159c997b9124f}
+\hypertarget{sf2d_8h_ab933b16f700958c78bd159c997b9124f}{void \hyperlink{sf2d_8h_ab933b16f700958c78bd159c997b9124f}{sf2d\-\_\-end\-\_\-frame} ()}\label{sf2d_8h_ab933b16f700958c78bd159c997b9124f}
 
-\begin{DoxyCompactList}\small\item\em Ends a frame, should be called on pair with sf2d\+\_\+start\+\_\+frame. \end{DoxyCompactList}\item 
-\hypertarget{sf2d_8h_a88b5ab9a86f26417e04ad0305c8bddbd}{}void \hyperlink{sf2d_8h_a88b5ab9a86f26417e04ad0305c8bddbd}{sf2d\+\_\+swapbuffers} ()\label{sf2d_8h_a88b5ab9a86f26417e04ad0305c8bddbd}
+\begin{DoxyCompactList}\small\item\em Ends a frame, should be called on pair with sf2d\-\_\-start\-\_\-frame. \end{DoxyCompactList}\item 
+\hypertarget{sf2d_8h_a88b5ab9a86f26417e04ad0305c8bddbd}{void \hyperlink{sf2d_8h_a88b5ab9a86f26417e04ad0305c8bddbd}{sf2d\-\_\-swapbuffers} ()}\label{sf2d_8h_a88b5ab9a86f26417e04ad0305c8bddbd}
 
 \begin{DoxyCompactList}\small\item\em Swaps the framebuffers, should be called once after all the frames have been finished. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_ac73776c4b7107cc201656ccdcf4c94b3}{sf2d\+\_\+set\+\_\+vblank\+\_\+wait} (int enable)
-\begin{DoxyCompactList}\small\item\em Enables or disables the V\+Blank waiting. \end{DoxyCompactList}\item 
-float \hyperlink{sf2d_8h_a64f6d65b15e00a60967bd189a94bf1d0}{sf2d\+\_\+get\+\_\+fps} ()
-\begin{DoxyCompactList}\small\item\em Returns the F\+P\+S (frames per second) \end{DoxyCompactList}\item 
-void $\ast$ \hyperlink{sf2d_8h_a62fe88879d163c0c69095944bd29a1b3}{sf2d\+\_\+pool\+\_\+malloc} (u32 size)
-\begin{DoxyCompactList}\small\item\em Allocates memory from a temporary pool. The pool will be emptied after a sf2d\+\_\+swapbuffers call. \end{DoxyCompactList}\item 
-void $\ast$ \hyperlink{sf2d_8h_a0d73cc225df3c071ef63dc4cb2a68edc}{sf2d\+\_\+pool\+\_\+memalign} (u32 size, u32 alignment)
-\begin{DoxyCompactList}\small\item\em Allocates aligned memory from a temporary pool. Works as sf2d\+\_\+pool\+\_\+malloc. \end{DoxyCompactList}\item 
-unsigned int \hyperlink{sf2d_8h_aef14b8c67493e1e4f8682bafee458890}{sf2d\+\_\+pool\+\_\+space\+\_\+free} ()
-\begin{DoxyCompactList}\small\item\em Returns the temporary pool\textquotesingle{}s free space. \end{DoxyCompactList}\item 
-\hypertarget{sf2d_8h_aaaf6fc32b6d321adbffb78300c7df51e}{}void \hyperlink{sf2d_8h_aaaf6fc32b6d321adbffb78300c7df51e}{sf2d\+\_\+pool\+\_\+reset} ()\label{sf2d_8h_aaaf6fc32b6d321adbffb78300c7df51e}
+void \hyperlink{sf2d_8h_ac73776c4b7107cc201656ccdcf4c94b3}{sf2d\-\_\-set\-\_\-vblank\-\_\-wait} (int enable)
+\begin{DoxyCompactList}\small\item\em Enables or disables the V\-Blank waiting. \end{DoxyCompactList}\item 
+float \hyperlink{sf2d_8h_a64f6d65b15e00a60967bd189a94bf1d0}{sf2d\-\_\-get\-\_\-fps} ()
+\begin{DoxyCompactList}\small\item\em Returns the F\-P\-S (frames per second) \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{sf2d_8h_a62fe88879d163c0c69095944bd29a1b3}{sf2d\-\_\-pool\-\_\-malloc} (u32 size)
+\begin{DoxyCompactList}\small\item\em Allocates memory from a temporary pool. The pool will be emptied after a sf2d\-\_\-swapbuffers call. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{sf2d_8h_a0d73cc225df3c071ef63dc4cb2a68edc}{sf2d\-\_\-pool\-\_\-memalign} (u32 size, u32 alignment)
+\begin{DoxyCompactList}\small\item\em Allocates aligned memory from a temporary pool. Works as sf2d\-\_\-pool\-\_\-malloc. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{sf2d_8h_aef14b8c67493e1e4f8682bafee458890}{sf2d\-\_\-pool\-\_\-space\-\_\-free} ()
+\begin{DoxyCompactList}\small\item\em Returns the temporary pool's free space. \end{DoxyCompactList}\item 
+\hypertarget{sf2d_8h_aaaf6fc32b6d321adbffb78300c7df51e}{void \hyperlink{sf2d_8h_aaaf6fc32b6d321adbffb78300c7df51e}{sf2d\-\_\-pool\-\_\-reset} ()}\label{sf2d_8h_aaaf6fc32b6d321adbffb78300c7df51e}
 
 \begin{DoxyCompactList}\small\item\em Empties the temporary pool. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_a21914ce31f435615df6c743f129d7221}{sf2d\+\_\+set\+\_\+clear\+\_\+color} (u32 color)
+void \hyperlink{sf2d_8h_a21914ce31f435615df6c743f129d7221}{sf2d\-\_\-set\-\_\-clear\-\_\-color} (u32 color)
 \begin{DoxyCompactList}\small\item\em Sets the screen clear color. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_ace95578f2bfe9f2e8b1753bdd816d96b}{sf2d\+\_\+draw\+\_\+line} (int x0, int y0, int x1, int y1, u32 color)
+void \hyperlink{sf2d_8h_ace95578f2bfe9f2e8b1753bdd816d96b}{sf2d\-\_\-draw\-\_\-line} (int x0, int y0, int x1, int y1, u32 color)
 \begin{DoxyCompactList}\small\item\em Draws a line. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_aec970054d30e326ab9bc616ecab6aff9}{sf2d\+\_\+draw\+\_\+rectangle} (int x, int y, int w, int h, u32 color)
+void \hyperlink{sf2d_8h_aec970054d30e326ab9bc616ecab6aff9}{sf2d\-\_\-draw\-\_\-rectangle} (int x, int y, int w, int h, u32 color)
 \begin{DoxyCompactList}\small\item\em Draws a rectangle. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_a8c7a8d299f8e9577fbdecf792e7b4b5b}{sf2d\+\_\+draw\+\_\+rectangle\+\_\+rotate} (int x, int y, int w, int h, u32 color, float rad)
+void \hyperlink{sf2d_8h_a8c7a8d299f8e9577fbdecf792e7b4b5b}{sf2d\-\_\-draw\-\_\-rectangle\-\_\-rotate} (int x, int y, int w, int h, u32 color, float rad)
 \begin{DoxyCompactList}\small\item\em Draws a rotated rectangle. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_a06ed18ade4b709c334858ba1764e1660}{sf2d\+\_\+draw\+\_\+fill\+\_\+circle} (int x, int y, int radius, u32 color)
+void \hyperlink{sf2d_8h_a06ed18ade4b709c334858ba1764e1660}{sf2d\-\_\-draw\-\_\-fill\-\_\-circle} (int x, int y, int radius, u32 color)
 \begin{DoxyCompactList}\small\item\em Draws a filled circle. \end{DoxyCompactList}\item 
-\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$ \hyperlink{sf2d_8h_a8f1e8dd266bab09c9e18371bc4b937f3}{sf2d\+\_\+create\+\_\+texture} (int width, int height, \hyperlink{sf2d_8h_a159c44ac8ef84cd08235063d4e220244}{sf2d\+\_\+texfmt} pixel\+\_\+format, \hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171ea}{sf2d\+\_\+place} place)
+\hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$ \hyperlink{sf2d_8h_a8f1e8dd266bab09c9e18371bc4b937f3}{sf2d\-\_\-create\-\_\-texture} (int width, int height, \hyperlink{sf2d_8h_a159c44ac8ef84cd08235063d4e220244}{sf2d\-\_\-texfmt} pixel\-\_\-format, \hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171ea}{sf2d\-\_\-place} place)
 \begin{DoxyCompactList}\small\item\em Creates an empty texture. The returned texture has the data allocated, this means that the raw pixel data can be filled just after the return. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_a7cda3052688d26cdf0b238d4da1be74a}{sf2d\+\_\+free\+\_\+texture} (\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture)
+void \hyperlink{sf2d_8h_a7cda3052688d26cdf0b238d4da1be74a}{sf2d\-\_\-free\-\_\-texture} (\hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture)
 \begin{DoxyCompactList}\small\item\em Frees a texture. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_ac06fd9ba922f84e9f50cac3ac0e5b5a4}{sf2d\+\_\+fill\+\_\+texture\+\_\+from\+\_\+\+R\+G\+B\+A8} (\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$dst, const void $\ast$rgba8, int source\+\_\+w, int source\+\_\+h)
-\begin{DoxyCompactList}\small\item\em Fills an already allocated texture from a R\+G\+B\+A8 source. \end{DoxyCompactList}\item 
-\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$ \hyperlink{sf2d_8h_a3ff172fa92634b777545f50b1d8a5a5d}{sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8} (const void $\ast$src\+\_\+buffer, int src\+\_\+w, int src\+\_\+h, \hyperlink{sf2d_8h_a159c44ac8ef84cd08235063d4e220244}{sf2d\+\_\+texfmt} pixel\+\_\+format, \hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171ea}{sf2d\+\_\+place} place)
-\begin{DoxyCompactList}\small\item\em Creates a texture and fills it from a R\+G\+B\+A8 memory source. The returned texture is already tiled. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_a5acbbcbe3d4aae913976d01302951e93}{sf2d\+\_\+bind\+\_\+texture} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, G\+P\+U\+\_\+\+T\+E\+X\+U\+N\+I\+T unit)
-\begin{DoxyCompactList}\small\item\em Binds a texture to a G\+P\+U texture unit. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_a479621a55bb749362151bf71db8d0b8d}{sf2d\+\_\+bind\+\_\+texture\+\_\+color} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, G\+P\+U\+\_\+\+T\+E\+X\+U\+N\+I\+T unit, u32 color)
-\begin{DoxyCompactList}\small\item\em Binds a texture to a G\+P\+U texture unit with a constant color. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_abddce09e31ba9365ea1b3f22cb46b752}{sf2d\+\_\+bind\+\_\+texture\+\_\+parameters} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, G\+P\+U\+\_\+\+T\+E\+X\+U\+N\+I\+T unit, unsigned int params)
-\begin{DoxyCompactList}\small\item\em Binds a texture to a G\+P\+U texture unit with custom parameters. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_a09501d8d7c5319db00a39709f0cd18fa}{sf2d\+\_\+draw\+\_\+texture} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y)
+void \hyperlink{sf2d_8h_ac06fd9ba922f84e9f50cac3ac0e5b5a4}{sf2d\-\_\-fill\-\_\-texture\-\_\-from\-\_\-\-R\-G\-B\-A8} (\hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$dst, const void $\ast$rgba8, int source\-\_\-w, int source\-\_\-h)
+\begin{DoxyCompactList}\small\item\em Fills an already allocated texture from a R\-G\-B\-A8 source. \end{DoxyCompactList}\item 
+\hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$ \hyperlink{sf2d_8h_a3ff172fa92634b777545f50b1d8a5a5d}{sf2d\-\_\-create\-\_\-texture\-\_\-mem\-\_\-\-R\-G\-B\-A8} (const void $\ast$src\-\_\-buffer, int src\-\_\-w, int src\-\_\-h, \hyperlink{sf2d_8h_a159c44ac8ef84cd08235063d4e220244}{sf2d\-\_\-texfmt} pixel\-\_\-format, \hyperlink{sf2d_8h_a07951fad547d423a4cf6521c2e5171ea}{sf2d\-\_\-place} place)
+\begin{DoxyCompactList}\small\item\em Creates a texture and fills it from a R\-G\-B\-A8 memory source. The returned texture is already tiled. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_a5acbbcbe3d4aae913976d01302951e93}{sf2d\-\_\-bind\-\_\-texture} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, G\-P\-U\-\_\-\-T\-E\-X\-U\-N\-I\-T unit)
+\begin{DoxyCompactList}\small\item\em Binds a texture to a G\-P\-U texture unit. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_a479621a55bb749362151bf71db8d0b8d}{sf2d\-\_\-bind\-\_\-texture\-\_\-color} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, G\-P\-U\-\_\-\-T\-E\-X\-U\-N\-I\-T unit, u32 color)
+\begin{DoxyCompactList}\small\item\em Binds a texture to a G\-P\-U texture unit with a constant color. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_abddce09e31ba9365ea1b3f22cb46b752}{sf2d\-\_\-bind\-\_\-texture\-\_\-parameters} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, G\-P\-U\-\_\-\-T\-E\-X\-U\-N\-I\-T unit, unsigned int params)
+\begin{DoxyCompactList}\small\item\em Binds a texture to a G\-P\-U texture unit with custom parameters. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_a0013c9599a3b0b63ba2eb65c670a5f59}{sf2d\-\_\-texture\-\_\-set\-\_\-tex\-\_\-filters} (\hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int filters)
+\begin{DoxyCompactList}\small\item\em Changes the texture min and mag filters. \end{DoxyCompactList}\item 
+int \hyperlink{sf2d_8h_a27b718bf7453cf681b4df92375016ec8}{sf2d\-\_\-texture\-\_\-get\-\_\-tex\-\_\-filters} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture)
+\begin{DoxyCompactList}\small\item\em Returns the texture min and mag filters. \end{DoxyCompactList}\item 
+void \hyperlink{sf2d_8h_a09501d8d7c5319db00a39709f0cd18fa}{sf2d\-\_\-draw\-\_\-texture} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y)
 \begin{DoxyCompactList}\small\item\em Draws a texture. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_a211cd71f8cd5fe774b7df176b50e7873}{sf2d\+\_\+draw\+\_\+texture\+\_\+blend} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, u32 color)
+void \hyperlink{sf2d_8h_a211cd71f8cd5fe774b7df176b50e7873}{sf2d\-\_\-draw\-\_\-texture\-\_\-blend} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, u32 color)
 \begin{DoxyCompactList}\small\item\em Draws a texture blended with a color. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_a9e377d6fb0e939c33acd0bd362b35bf9}{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, float rad, float center\+\_\+x, float center\+\_\+y)
+void \hyperlink{sf2d_8h_a9e377d6fb0e939c33acd0bd362b35bf9}{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-hotspot} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, float rad, float center\-\_\-x, float center\-\_\-y)
 \begin{DoxyCompactList}\small\item\em Draws a texture with rotation around a hotspot. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_a498f9fb5a5ad0c2943fe4712423f3734}{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot\+\_\+blend} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, float rad, float center\+\_\+x, float center\+\_\+y, u32 color)
+void \hyperlink{sf2d_8h_a498f9fb5a5ad0c2943fe4712423f3734}{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-hotspot\-\_\-blend} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, float rad, float center\-\_\-x, float center\-\_\-y, u32 color)
 \begin{DoxyCompactList}\small\item\em Draws a texture with rotation around a hotspot with a color. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_affc6cf46e403ae0837ec2901c85b4464}{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, float rad)
+void \hyperlink{sf2d_8h_affc6cf46e403ae0837ec2901c85b4464}{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, float rad)
 \begin{DoxyCompactList}\small\item\em Draws a texture with rotation around its center. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_ab8ff0c8e0d6fdb7579ff55c41fd8b4f4}{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+blend} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, float rad, u32 color)
+void \hyperlink{sf2d_8h_ab8ff0c8e0d6fdb7579ff55c41fd8b4f4}{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-blend} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, float rad, u32 color)
 \begin{DoxyCompactList}\small\item\em Draws a texture with rotation around its center with color. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_abdfae56c564b94d07bf7a1b54bd11453}{sf2d\+\_\+draw\+\_\+texture\+\_\+part} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, int tex\+\_\+x, int tex\+\_\+y, int tex\+\_\+w, int tex\+\_\+h)
+void \hyperlink{sf2d_8h_abdfae56c564b94d07bf7a1b54bd11453}{sf2d\-\_\-draw\-\_\-texture\-\_\-part} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, int tex\-\_\-x, int tex\-\_\-y, int tex\-\_\-w, int tex\-\_\-h)
 \begin{DoxyCompactList}\small\item\em Draws a part of a texture. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_a57101cdd022be92ae6c6ac5ec1feb014}{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+blend} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, int tex\+\_\+x, int tex\+\_\+y, int tex\+\_\+w, int tex\+\_\+h, u32 color)
+void \hyperlink{sf2d_8h_a57101cdd022be92ae6c6ac5ec1feb014}{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-blend} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, int tex\-\_\-x, int tex\-\_\-y, int tex\-\_\-w, int tex\-\_\-h, u32 color)
 \begin{DoxyCompactList}\small\item\em Draws a part of a texture with color. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_aed7b8a897e01f5f5465d820cde08ab24}{sf2d\+\_\+draw\+\_\+texture\+\_\+scale} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, float x\+\_\+scale, float y\+\_\+scale)
+void \hyperlink{sf2d_8h_aed7b8a897e01f5f5465d820cde08ab24}{sf2d\-\_\-draw\-\_\-texture\-\_\-scale} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, float x\-\_\-scale, float y\-\_\-scale)
 \begin{DoxyCompactList}\small\item\em Draws a texture with scaling. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_a5e283b6dd16eae580b4e4504039c9ae6}{sf2d\+\_\+draw\+\_\+texture\+\_\+scale\+\_\+blend} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, float x\+\_\+scale, float y\+\_\+scale, u32 color)
+void \hyperlink{sf2d_8h_a5e283b6dd16eae580b4e4504039c9ae6}{sf2d\-\_\-draw\-\_\-texture\-\_\-scale\-\_\-blend} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, float x\-\_\-scale, float y\-\_\-scale, u32 color)
 \begin{DoxyCompactList}\small\item\em Draws a texture with scaling with color. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_aa68c942cb5c3abd0e316036a21d03199}{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, float x, float y, float tex\+\_\+x, float tex\+\_\+y, float tex\+\_\+w, float tex\+\_\+h, float x\+\_\+scale, float y\+\_\+scale)
+void \hyperlink{sf2d_8h_aa68c942cb5c3abd0e316036a21d03199}{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-scale} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, float x, float y, float tex\-\_\-x, float tex\-\_\-y, float tex\-\_\-w, float tex\-\_\-h, float x\-\_\-scale, float y\-\_\-scale)
 \begin{DoxyCompactList}\small\item\em Draws a part of a texture, with scaling. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_ad84def91854cbe24fba4f58f053dad91}{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale\+\_\+blend} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, float x, float y, float tex\+\_\+x, float tex\+\_\+y, float tex\+\_\+w, float tex\+\_\+h, float x\+\_\+scale, float y\+\_\+scale, u32 color)
+void \hyperlink{sf2d_8h_ad84def91854cbe24fba4f58f053dad91}{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-scale\-\_\-blend} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, float x, float y, float tex\-\_\-x, float tex\-\_\-y, float tex\-\_\-w, float tex\-\_\-h, float x\-\_\-scale, float y\-\_\-scale, u32 color)
 \begin{DoxyCompactList}\small\item\em Draws a part of a texture, with scaling, with color. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_ac1f7df5f248e36c4fe6a7ac483efcfab}{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, float rad, int tex\+\_\+x, int tex\+\_\+y, int tex\+\_\+w, int tex\+\_\+h, float x\+\_\+scale, float y\+\_\+scale)
+void \hyperlink{sf2d_8h_ac1f7df5f248e36c4fe6a7ac483efcfab}{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-rotate\-\_\-scale} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, float rad, int tex\-\_\-x, int tex\-\_\-y, int tex\-\_\-w, int tex\-\_\-h, float x\-\_\-scale, float y\-\_\-scale)
 \begin{DoxyCompactList}\small\item\em Draws a part of a texture, with rotation and scaling. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_a0bcea7388de7b703e965e9186cc518fd}{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale\+\_\+blend} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, float rad, int tex\+\_\+x, int tex\+\_\+y, int tex\+\_\+w, int tex\+\_\+h, float x\+\_\+scale, float y\+\_\+scale, u32 color)
+void \hyperlink{sf2d_8h_a0bcea7388de7b703e965e9186cc518fd}{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-rotate\-\_\-scale\-\_\-blend} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, float rad, int tex\-\_\-x, int tex\-\_\-y, int tex\-\_\-w, int tex\-\_\-h, float x\-\_\-scale, float y\-\_\-scale, u32 color)
 \begin{DoxyCompactList}\small\item\em Draws a part of a texture, with rotation, scaling and color. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_a593059994abb6b9e8604cdd689d6b7e7}{sf2d\+\_\+draw\+\_\+texture\+\_\+depth} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, signed short z)
+void \hyperlink{sf2d_8h_a593059994abb6b9e8604cdd689d6b7e7}{sf2d\-\_\-draw\-\_\-texture\-\_\-depth} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, signed short z)
 \begin{DoxyCompactList}\small\item\em Draws a texture blended in a certain depth. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_a3c2a92d08773b50f6fff6e3b9dec2d1f}{sf2d\+\_\+draw\+\_\+texture\+\_\+depth\+\_\+blend} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, signed short z, u32 color)
+void \hyperlink{sf2d_8h_a3c2a92d08773b50f6fff6e3b9dec2d1f}{sf2d\-\_\-draw\-\_\-texture\-\_\-depth\-\_\-blend} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, signed short z, u32 color)
 \begin{DoxyCompactList}\small\item\em Draws a texture blended in a certain depth. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_a8c862ee1a542092da7970b3b65e3374e}{sf2d\+\_\+draw\+\_\+quad\+\_\+uv} (const \hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, float left, float top, float right, float bottom, float u0, float v0, float u1, float v1, unsigned int params)
+void \hyperlink{sf2d_8h_a8c862ee1a542092da7970b3b65e3374e}{sf2d\-\_\-draw\-\_\-quad\-\_\-uv} (const \hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, float left, float top, float right, float bottom, float u0, float v0, float u1, float v1, unsigned int params)
 \begin{DoxyCompactList}\small\item\em Draws a texture using custom texture coordinates and parameters. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_ac5cb9ef4a97b5e7ee4bfbabf6e77e565}{sf2d\+\_\+set\+\_\+pixel} (\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y, u32 new\+\_\+color)
+void \hyperlink{sf2d_8h_ac5cb9ef4a97b5e7ee4bfbabf6e77e565}{sf2d\-\_\-set\-\_\-pixel} (\hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y, u32 new\-\_\-color)
 \begin{DoxyCompactList}\small\item\em Changes a pixel of the texture. \end{DoxyCompactList}\item 
-u32 \hyperlink{sf2d_8h_a5de4ef9dc5260cce7a35423f10d7904b}{sf2d\+\_\+get\+\_\+pixel} (\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture, int x, int y)
+u32 \hyperlink{sf2d_8h_a5de4ef9dc5260cce7a35423f10d7904b}{sf2d\-\_\-get\-\_\-pixel} (\hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture, int x, int y)
 \begin{DoxyCompactList}\small\item\em Gets a pixel of the texture. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_ab485210364f2285c265ec161196695b9}{sf2d\+\_\+texture\+\_\+tile32} (\hyperlink{structsf2d__texture}{sf2d\+\_\+texture} $\ast$texture)
+void \hyperlink{sf2d_8h_ab485210364f2285c265ec161196695b9}{sf2d\-\_\-texture\-\_\-tile32} (\hyperlink{structsf2d__texture}{sf2d\-\_\-texture} $\ast$texture)
 \begin{DoxyCompactList}\small\item\em Tiles a texture. \end{DoxyCompactList}\item 
-void \hyperlink{sf2d_8h_a8a6c72fe9cb76fa7eb851058ae9fc773}{sf2d\+\_\+set\+\_\+scissor\+\_\+test} (G\+P\+U\+\_\+\+S\+C\+I\+S\+S\+O\+R\+M\+O\+D\+E mode, u32 x, u32 y, u32 w, u32 h)
+void \hyperlink{sf2d_8h_a8a6c72fe9cb76fa7eb851058ae9fc773}{sf2d\-\_\-set\-\_\-scissor\-\_\-test} (G\-P\-U\-\_\-\-S\-C\-I\-S\-S\-O\-R\-M\-O\-D\-E mode, u32 x, u32 y, u32 w, u32 h)
 \begin{DoxyCompactList}\small\item\em Sets the scissor test. \end{DoxyCompactList}\item 
-gfx\+Screen\+\_\+t \hyperlink{sf2d_8h_a910c9294fd3826c2a10a8f4c8ea454fe}{sf2d\+\_\+get\+\_\+current\+\_\+screen} ()
-\begin{DoxyCompactList}\small\item\em Returns the current screen (latest call to sf2d\+\_\+start\+\_\+frame) \end{DoxyCompactList}\item 
-gfx3d\+Side\+\_\+t \hyperlink{sf2d_8h_aaaafb63f20b898fe363a95d15b5a152a}{sf2d\+\_\+get\+\_\+current\+\_\+side} ()
-\begin{DoxyCompactList}\small\item\em Returns the current screen side (latest call to sf2d\+\_\+start\+\_\+frame) \end{DoxyCompactList}\end{DoxyCompactItemize}
+gfx\-Screen\-\_\-t \hyperlink{sf2d_8h_a910c9294fd3826c2a10a8f4c8ea454fe}{sf2d\-\_\-get\-\_\-current\-\_\-screen} ()
+\begin{DoxyCompactList}\small\item\em Returns the current screen (latest call to sf2d\-\_\-start\-\_\-frame) \end{DoxyCompactList}\item 
+gfx3d\-Side\-\_\-t \hyperlink{sf2d_8h_aaaafb63f20b898fe363a95d15b5a152a}{sf2d\-\_\-get\-\_\-current\-\_\-side} ()
+\begin{DoxyCompactList}\small\item\em Returns the current screen side (latest call to sf2d\-\_\-start\-\_\-frame) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-sf2dlib header 
-
-\begin{DoxyAuthor}{Author}
+sf2dlib header \begin{DoxyAuthor}{Author}
 Sergi Granell (xerpi) 
 \end{DoxyAuthor}
 \begin{DoxyDate}{Date}
@@ -179,19 +181,19 @@ Sergi Granell (xerpi)
 
 
 \subsection{Macro Definition Documentation}
-\hypertarget{sf2d_8h_ada252b0d1c54c165a668d3bb1bee06c1}{}\index{sf2d.\+h@{sf2d.\+h}!R\+G\+B\+A8@{R\+G\+B\+A8}}
-\index{R\+G\+B\+A8@{R\+G\+B\+A8}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{R\+G\+B\+A8}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+G\+B\+A8(
+\hypertarget{sf2d_8h_ada252b0d1c54c165a668d3bb1bee06c1}{\index{sf2d.\-h@{sf2d.\-h}!R\-G\-B\-A8@{R\-G\-B\-A8}}
+\index{R\-G\-B\-A8@{R\-G\-B\-A8}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{R\-G\-B\-A8}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-G\-B\-A8(
 \begin{DoxyParamCaption}
 \item[{}]{r, }
 \item[{}]{g, }
 \item[{}]{b, }
 \item[{}]{a}
 \end{DoxyParamCaption}
-)~((((r)\&0x\+F\+F)$<$$<$24) $\vert$ (((g)\&0x\+F\+F)$<$$<$16) $\vert$ (((b)\&0x\+F\+F)$<$$<$8) $\vert$ (((a)\&0x\+F\+F)$<$$<$0))}\label{sf2d_8h_ada252b0d1c54c165a668d3bb1bee06c1}
+)~((((r)\&0x\-F\-F)$<$$<$24) $\vert$ (((g)\&0x\-F\-F)$<$$<$16) $\vert$ (((b)\&0x\-F\-F)$<$$<$8) $\vert$ (((a)\&0x\-F\-F)$<$$<$0))}}\label{sf2d_8h_ada252b0d1c54c165a668d3bb1bee06c1}
 
 
-Creates a new R\+G\+B\+A8 color. 
+Creates a new R\-G\-B\-A8 color. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -207,100 +209,100 @@ Creates a new R\+G\+B\+A8 color.
 
 
 \subsection{Enumeration Type Documentation}
-\hypertarget{sf2d_8h_a07951fad547d423a4cf6521c2e5171ea}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+place@{sf2d\+\_\+place}}
-\index{sf2d\+\_\+place@{sf2d\+\_\+place}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+place}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf sf2d\+\_\+place}}\label{sf2d_8h_a07951fad547d423a4cf6521c2e5171ea}
+\hypertarget{sf2d_8h_a07951fad547d423a4cf6521c2e5171ea}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-place@{sf2d\-\_\-place}}
+\index{sf2d\-\_\-place@{sf2d\-\_\-place}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-place}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf sf2d\-\_\-place}}}\label{sf2d_8h_a07951fad547d423a4cf6521c2e5171ea}
 
 
-Data allocated on the R\+A\+M or V\+R\+A\+M. 
+Data allocated on the R\-A\-M or V\-R\-A\-M. 
 
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
-\index{S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+R\+A\+M@{S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+R\+A\+M}!sf2d.\+h@{sf2d.\+h}}\index{sf2d.\+h@{sf2d.\+h}!S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+R\+A\+M@{S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+R\+A\+M}}\item[{\em 
-\hypertarget{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaa4e481aa581f839137a4b1fd0708666fb}{}S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+R\+A\+M\label{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaa4e481aa581f839137a4b1fd0708666fb}
-}]R\+A\+M allocated \index{S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+V\+R\+A\+M@{S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+V\+R\+A\+M}!sf2d.\+h@{sf2d.\+h}}\index{sf2d.\+h@{sf2d.\+h}!S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+V\+R\+A\+M@{S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+V\+R\+A\+M}}\item[{\em 
-\hypertarget{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaae4d62813738d1fec4a10cef2405d8b3d}{}S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+V\+R\+A\+M\label{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaae4d62813738d1fec4a10cef2405d8b3d}
-}]V\+R\+A\+M allocated \index{S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+T\+E\+M\+P@{S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+T\+E\+M\+P}!sf2d.\+h@{sf2d.\+h}}\index{sf2d.\+h@{sf2d.\+h}!S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+T\+E\+M\+P@{S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+T\+E\+M\+P}}\item[{\em 
-\hypertarget{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaa70138ec78a57f02178621e5917b2358d}{}S\+F2\+D\+\_\+\+P\+L\+A\+C\+E\+\_\+\+T\+E\+M\+P\label{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaa70138ec78a57f02178621e5917b2358d}
+\index{S\-F2\-D\-\_\-\-P\-L\-A\-C\-E\-\_\-\-R\-A\-M@{S\-F2\-D\-\_\-\-P\-L\-A\-C\-E\-\_\-\-R\-A\-M}!sf2d.\-h@{sf2d.\-h}}\index{sf2d.\-h@{sf2d.\-h}!S\-F2\-D\-\_\-\-P\-L\-A\-C\-E\-\_\-\-R\-A\-M@{S\-F2\-D\-\_\-\-P\-L\-A\-C\-E\-\_\-\-R\-A\-M}}\item[{\em 
+\hypertarget{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaa4e481aa581f839137a4b1fd0708666fb}{S\-F2\-D\-\_\-\-P\-L\-A\-C\-E\-\_\-\-R\-A\-M}\label{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaa4e481aa581f839137a4b1fd0708666fb}
+}]R\-A\-M allocated \index{S\-F2\-D\-\_\-\-P\-L\-A\-C\-E\-\_\-\-V\-R\-A\-M@{S\-F2\-D\-\_\-\-P\-L\-A\-C\-E\-\_\-\-V\-R\-A\-M}!sf2d.\-h@{sf2d.\-h}}\index{sf2d.\-h@{sf2d.\-h}!S\-F2\-D\-\_\-\-P\-L\-A\-C\-E\-\_\-\-V\-R\-A\-M@{S\-F2\-D\-\_\-\-P\-L\-A\-C\-E\-\_\-\-V\-R\-A\-M}}\item[{\em 
+\hypertarget{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaae4d62813738d1fec4a10cef2405d8b3d}{S\-F2\-D\-\_\-\-P\-L\-A\-C\-E\-\_\-\-V\-R\-A\-M}\label{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaae4d62813738d1fec4a10cef2405d8b3d}
+}]V\-R\-A\-M allocated \index{S\-F2\-D\-\_\-\-P\-L\-A\-C\-E\-\_\-\-T\-E\-M\-P@{S\-F2\-D\-\_\-\-P\-L\-A\-C\-E\-\_\-\-T\-E\-M\-P}!sf2d.\-h@{sf2d.\-h}}\index{sf2d.\-h@{sf2d.\-h}!S\-F2\-D\-\_\-\-P\-L\-A\-C\-E\-\_\-\-T\-E\-M\-P@{S\-F2\-D\-\_\-\-P\-L\-A\-C\-E\-\_\-\-T\-E\-M\-P}}\item[{\em 
+\hypertarget{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaa70138ec78a57f02178621e5917b2358d}{S\-F2\-D\-\_\-\-P\-L\-A\-C\-E\-\_\-\-T\-E\-M\-P}\label{sf2d_8h_a07951fad547d423a4cf6521c2e5171eaa70138ec78a57f02178621e5917b2358d}
 }]Temporary memory pool allocated \end{description}
 \end{Desc}
 
 
 \subsection{Function Documentation}
-\hypertarget{sf2d_8h_a5acbbcbe3d4aae913976d01302951e93}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+bind\+\_\+texture@{sf2d\+\_\+bind\+\_\+texture}}
-\index{sf2d\+\_\+bind\+\_\+texture@{sf2d\+\_\+bind\+\_\+texture}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+bind\+\_\+texture}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+bind\+\_\+texture (
+\hypertarget{sf2d_8h_a5acbbcbe3d4aae913976d01302951e93}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-bind\-\_\-texture@{sf2d\-\_\-bind\-\_\-texture}}
+\index{sf2d\-\_\-bind\-\_\-texture@{sf2d\-\_\-bind\-\_\-texture}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-bind\-\_\-texture}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-bind\-\_\-texture (
 \begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
-\item[{G\+P\+U\+\_\+\+T\+E\+X\+U\+N\+I\+T}]{unit}
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
+\item[{G\-P\-U\-\_\-\-T\-E\-X\-U\-N\-I\-T}]{unit}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a5acbbcbe3d4aae913976d01302951e93}
+)}}\label{sf2d_8h_a5acbbcbe3d4aae913976d01302951e93}
 
 
-Binds a texture to a G\+P\+U texture unit. 
+Binds a texture to a G\-P\-U texture unit. 
 
 
 \begin{DoxyParams}{Parameters}
 {\em texture} & the texture to bind \\
 \hline
-{\em unit} & G\+P\+U texture unit to bind to \\
+{\em unit} & G\-P\-U texture unit to bind to \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_a479621a55bb749362151bf71db8d0b8d}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+bind\+\_\+texture\+\_\+color@{sf2d\+\_\+bind\+\_\+texture\+\_\+color}}
-\index{sf2d\+\_\+bind\+\_\+texture\+\_\+color@{sf2d\+\_\+bind\+\_\+texture\+\_\+color}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+bind\+\_\+texture\+\_\+color}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+bind\+\_\+texture\+\_\+color (
+\hypertarget{sf2d_8h_a479621a55bb749362151bf71db8d0b8d}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-bind\-\_\-texture\-\_\-color@{sf2d\-\_\-bind\-\_\-texture\-\_\-color}}
+\index{sf2d\-\_\-bind\-\_\-texture\-\_\-color@{sf2d\-\_\-bind\-\_\-texture\-\_\-color}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-bind\-\_\-texture\-\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-bind\-\_\-texture\-\_\-color (
 \begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
-\item[{G\+P\+U\+\_\+\+T\+E\+X\+U\+N\+I\+T}]{unit, }
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
+\item[{G\-P\-U\-\_\-\-T\-E\-X\-U\-N\-I\-T}]{unit, }
 \item[{u32}]{color}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a479621a55bb749362151bf71db8d0b8d}
+)}}\label{sf2d_8h_a479621a55bb749362151bf71db8d0b8d}
 
 
-Binds a texture to a G\+P\+U texture unit with a constant color. 
+Binds a texture to a G\-P\-U texture unit with a constant color. 
 
 
 \begin{DoxyParams}{Parameters}
 {\em texture} & the texture to bind \\
 \hline
-{\em unit} & G\+P\+U texture unit to bind to \\
+{\em unit} & G\-P\-U texture unit to bind to \\
 \hline
 {\em color} & the color the bind with the texture \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_abddce09e31ba9365ea1b3f22cb46b752}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+bind\+\_\+texture\+\_\+parameters@{sf2d\+\_\+bind\+\_\+texture\+\_\+parameters}}
-\index{sf2d\+\_\+bind\+\_\+texture\+\_\+parameters@{sf2d\+\_\+bind\+\_\+texture\+\_\+parameters}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+bind\+\_\+texture\+\_\+parameters}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+bind\+\_\+texture\+\_\+parameters (
+\hypertarget{sf2d_8h_abddce09e31ba9365ea1b3f22cb46b752}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-bind\-\_\-texture\-\_\-parameters@{sf2d\-\_\-bind\-\_\-texture\-\_\-parameters}}
+\index{sf2d\-\_\-bind\-\_\-texture\-\_\-parameters@{sf2d\-\_\-bind\-\_\-texture\-\_\-parameters}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-bind\-\_\-texture\-\_\-parameters}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-bind\-\_\-texture\-\_\-parameters (
 \begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
-\item[{G\+P\+U\+\_\+\+T\+E\+X\+U\+N\+I\+T}]{unit, }
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
+\item[{G\-P\-U\-\_\-\-T\-E\-X\-U\-N\-I\-T}]{unit, }
 \item[{unsigned int}]{params}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_abddce09e31ba9365ea1b3f22cb46b752}
+)}}\label{sf2d_8h_abddce09e31ba9365ea1b3f22cb46b752}
 
 
-Binds a texture to a G\+P\+U texture unit with custom parameters. 
+Binds a texture to a G\-P\-U texture unit with custom parameters. 
 
 
 \begin{DoxyParams}{Parameters}
 {\em texture} & the texture to bind \\
 \hline
-{\em unit} & G\+P\+U texture unit to bind to \\
+{\em unit} & G\-P\-U texture unit to bind to \\
 \hline
 {\em params} & the parameters the bind with the texture \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_a8f1e8dd266bab09c9e18371bc4b937f3}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+create\+\_\+texture@{sf2d\+\_\+create\+\_\+texture}}
-\index{sf2d\+\_\+create\+\_\+texture@{sf2d\+\_\+create\+\_\+texture}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+create\+\_\+texture}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sf2d\+\_\+texture}$\ast$ sf2d\+\_\+create\+\_\+texture (
+\hypertarget{sf2d_8h_a8f1e8dd266bab09c9e18371bc4b937f3}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-create\-\_\-texture@{sf2d\-\_\-create\-\_\-texture}}
+\index{sf2d\-\_\-create\-\_\-texture@{sf2d\-\_\-create\-\_\-texture}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-create\-\_\-texture}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sf2d\-\_\-texture}$\ast$ sf2d\-\_\-create\-\_\-texture (
 \begin{DoxyParamCaption}
 \item[{int}]{width, }
 \item[{int}]{height, }
-\item[{{\bf sf2d\+\_\+texfmt}}]{pixel\+\_\+format, }
-\item[{{\bf sf2d\+\_\+place}}]{place}
+\item[{{\bf sf2d\-\_\-texfmt}}]{pixel\-\_\-format, }
+\item[{{\bf sf2d\-\_\-place}}]{place}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a8f1e8dd266bab09c9e18371bc4b937f3}
+)}}\label{sf2d_8h_a8f1e8dd266bab09c9e18371bc4b937f3}
 
 
 Creates an empty texture. The returned texture has the data allocated, this means that the raw pixel data can be filled just after the return. 
@@ -311,7 +313,7 @@ Creates an empty texture. The returned texture has the data allocated, this mean
 \hline
 {\em height} & the height of the texture \\
 \hline
-{\em pixel\+\_\+format} & the pixel\+\_\+format of the texture \\
+{\em pixel\-\_\-format} & the pixel\-\_\-format of the texture \\
 \hline
 {\em place} & where to allocate the texture \\
 \hline
@@ -320,32 +322,32 @@ Creates an empty texture. The returned texture has the data allocated, this mean
 a pointer to the newly created texture 
 \end{DoxyReturn}
 \begin{DoxyNote}{Note}
-Before drawing the texture, it needs to be tiled by calling sf2d\+\_\+texture\+\_\+tile32. 
+Before drawing the texture, it needs to be tiled by calling sf2d\-\_\-texture\-\_\-tile32. The default filters are both min and mag G\-P\-U\-\_\-\-N\-E\-A\-R\-E\-S\-T. 
 \end{DoxyNote}
-\hypertarget{sf2d_8h_a3ff172fa92634b777545f50b1d8a5a5d}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8@{sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8}}
-\index{sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8@{sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sf2d\+\_\+texture}$\ast$ sf2d\+\_\+create\+\_\+texture\+\_\+mem\+\_\+\+R\+G\+B\+A8 (
+\hypertarget{sf2d_8h_a3ff172fa92634b777545f50b1d8a5a5d}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-create\-\_\-texture\-\_\-mem\-\_\-\-R\-G\-B\-A8@{sf2d\-\_\-create\-\_\-texture\-\_\-mem\-\_\-\-R\-G\-B\-A8}}
+\index{sf2d\-\_\-create\-\_\-texture\-\_\-mem\-\_\-\-R\-G\-B\-A8@{sf2d\-\_\-create\-\_\-texture\-\_\-mem\-\_\-\-R\-G\-B\-A8}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-create\-\_\-texture\-\_\-mem\-\_\-\-R\-G\-B\-A8}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sf2d\-\_\-texture}$\ast$ sf2d\-\_\-create\-\_\-texture\-\_\-mem\-\_\-\-R\-G\-B\-A8 (
 \begin{DoxyParamCaption}
-\item[{const void $\ast$}]{src\+\_\+buffer, }
-\item[{int}]{src\+\_\+w, }
-\item[{int}]{src\+\_\+h, }
-\item[{{\bf sf2d\+\_\+texfmt}}]{pixel\+\_\+format, }
-\item[{{\bf sf2d\+\_\+place}}]{place}
+\item[{const void $\ast$}]{src\-\_\-buffer, }
+\item[{int}]{src\-\_\-w, }
+\item[{int}]{src\-\_\-h, }
+\item[{{\bf sf2d\-\_\-texfmt}}]{pixel\-\_\-format, }
+\item[{{\bf sf2d\-\_\-place}}]{place}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a3ff172fa92634b777545f50b1d8a5a5d}
+)}}\label{sf2d_8h_a3ff172fa92634b777545f50b1d8a5a5d}
 
 
-Creates a texture and fills it from a R\+G\+B\+A8 memory source. The returned texture is already tiled. 
+Creates a texture and fills it from a R\-G\-B\-A8 memory source. The returned texture is already tiled. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em src\+\_\+buffer} & pointer to the R\+G\+B\+A8 data to fill from \\
+{\em src\-\_\-buffer} & pointer to the R\-G\-B\-A8 data to fill from \\
 \hline
-{\em src\+\_\+w} & width (in pixels) of the R\+G\+A\+B8 source \\
+{\em src\-\_\-w} & width (in pixels) of the R\-G\-A\-B8 source \\
 \hline
-{\em src\+\_\+h} & height (in pixels) of the R\+G\+A\+B8 source \\
+{\em src\-\_\-h} & height (in pixels) of the R\-G\-A\-B8 source \\
 \hline
-{\em pixel\+\_\+format} & the pixel\+\_\+format of the texture to create \\
+{\em pixel\-\_\-format} & the pixel\-\_\-format of the texture to create \\
 \hline
 {\em place} & where to allocate the texture \\
 \hline
@@ -353,16 +355,16 @@ Creates a texture and fills it from a R\+G\+B\+A8 memory source. The returned te
 \begin{DoxyReturn}{Returns}
 a pointer to the newly created, filled, and tiled texture 
 \end{DoxyReturn}
-\hypertarget{sf2d_8h_a06ed18ade4b709c334858ba1764e1660}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+fill\+\_\+circle@{sf2d\+\_\+draw\+\_\+fill\+\_\+circle}}
-\index{sf2d\+\_\+draw\+\_\+fill\+\_\+circle@{sf2d\+\_\+draw\+\_\+fill\+\_\+circle}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+fill\+\_\+circle}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+fill\+\_\+circle (
+\hypertarget{sf2d_8h_a06ed18ade4b709c334858ba1764e1660}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-fill\-\_\-circle@{sf2d\-\_\-draw\-\_\-fill\-\_\-circle}}
+\index{sf2d\-\_\-draw\-\_\-fill\-\_\-circle@{sf2d\-\_\-draw\-\_\-fill\-\_\-circle}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-fill\-\_\-circle}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-fill\-\_\-circle (
 \begin{DoxyParamCaption}
 \item[{int}]{x, }
 \item[{int}]{y, }
 \item[{int}]{radius, }
 \item[{u32}]{color}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a06ed18ade4b709c334858ba1764e1660}
+)}}\label{sf2d_8h_a06ed18ade4b709c334858ba1764e1660}
 
 
 Draws a filled circle. 
@@ -378,9 +380,9 @@ Draws a filled circle.
 {\em color} & the color to draw the circle \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_ace95578f2bfe9f2e8b1753bdd816d96b}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+line@{sf2d\+\_\+draw\+\_\+line}}
-\index{sf2d\+\_\+draw\+\_\+line@{sf2d\+\_\+draw\+\_\+line}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+line}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+line (
+\hypertarget{sf2d_8h_ace95578f2bfe9f2e8b1753bdd816d96b}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-line@{sf2d\-\_\-draw\-\_\-line}}
+\index{sf2d\-\_\-draw\-\_\-line@{sf2d\-\_\-draw\-\_\-line}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-line}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-line (
 \begin{DoxyParamCaption}
 \item[{int}]{x0, }
 \item[{int}]{y0, }
@@ -388,7 +390,7 @@ Draws a filled circle.
 \item[{int}]{y1, }
 \item[{u32}]{color}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_ace95578f2bfe9f2e8b1753bdd816d96b}
+)}}\label{sf2d_8h_ace95578f2bfe9f2e8b1753bdd816d96b}
 
 
 Draws a line. 
@@ -406,11 +408,11 @@ Draws a line.
 {\em color} & the color to draw the line \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_a8c862ee1a542092da7970b3b65e3374e}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+quad\+\_\+uv@{sf2d\+\_\+draw\+\_\+quad\+\_\+uv}}
-\index{sf2d\+\_\+draw\+\_\+quad\+\_\+uv@{sf2d\+\_\+draw\+\_\+quad\+\_\+uv}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+quad\+\_\+uv}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+quad\+\_\+uv (
+\hypertarget{sf2d_8h_a8c862ee1a542092da7970b3b65e3374e}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-quad\-\_\-uv@{sf2d\-\_\-draw\-\_\-quad\-\_\-uv}}
+\index{sf2d\-\_\-draw\-\_\-quad\-\_\-uv@{sf2d\-\_\-draw\-\_\-quad\-\_\-uv}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-quad\-\_\-uv}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-quad\-\_\-uv (
 \begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
 \item[{float}]{left, }
 \item[{float}]{top, }
 \item[{float}]{right, }
@@ -421,7 +423,7 @@ Draws a line.
 \item[{float}]{v1, }
 \item[{unsigned int}]{params}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a8c862ee1a542092da7970b3b65e3374e}
+)}}\label{sf2d_8h_a8c862ee1a542092da7970b3b65e3374e}
 
 
 Draws a texture using custom texture coordinates and parameters. 
@@ -449,9 +451,9 @@ Draws a texture using custom texture coordinates and parameters.
 {\em params} & the parameters to draw the texture with \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_aec970054d30e326ab9bc616ecab6aff9}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+rectangle@{sf2d\+\_\+draw\+\_\+rectangle}}
-\index{sf2d\+\_\+draw\+\_\+rectangle@{sf2d\+\_\+draw\+\_\+rectangle}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+rectangle}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+rectangle (
+\hypertarget{sf2d_8h_aec970054d30e326ab9bc616ecab6aff9}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-rectangle@{sf2d\-\_\-draw\-\_\-rectangle}}
+\index{sf2d\-\_\-draw\-\_\-rectangle@{sf2d\-\_\-draw\-\_\-rectangle}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-rectangle}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-rectangle (
 \begin{DoxyParamCaption}
 \item[{int}]{x, }
 \item[{int}]{y, }
@@ -459,7 +461,7 @@ Draws a texture using custom texture coordinates and parameters.
 \item[{int}]{h, }
 \item[{u32}]{color}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_aec970054d30e326ab9bc616ecab6aff9}
+)}}\label{sf2d_8h_aec970054d30e326ab9bc616ecab6aff9}
 
 
 Draws a rectangle. 
@@ -477,9 +479,9 @@ Draws a rectangle.
 {\em color} & the color to draw the rectangle \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_a8c7a8d299f8e9577fbdecf792e7b4b5b}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+rectangle\+\_\+rotate@{sf2d\+\_\+draw\+\_\+rectangle\+\_\+rotate}}
-\index{sf2d\+\_\+draw\+\_\+rectangle\+\_\+rotate@{sf2d\+\_\+draw\+\_\+rectangle\+\_\+rotate}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+rectangle\+\_\+rotate}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+rectangle\+\_\+rotate (
+\hypertarget{sf2d_8h_a8c7a8d299f8e9577fbdecf792e7b4b5b}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-rectangle\-\_\-rotate@{sf2d\-\_\-draw\-\_\-rectangle\-\_\-rotate}}
+\index{sf2d\-\_\-draw\-\_\-rectangle\-\_\-rotate@{sf2d\-\_\-draw\-\_\-rectangle\-\_\-rotate}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-rectangle\-\_\-rotate}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-rectangle\-\_\-rotate (
 \begin{DoxyParamCaption}
 \item[{int}]{x, }
 \item[{int}]{y, }
@@ -488,7 +490,7 @@ Draws a rectangle.
 \item[{u32}]{color, }
 \item[{float}]{rad}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a8c7a8d299f8e9577fbdecf792e7b4b5b}
+)}}\label{sf2d_8h_a8c7a8d299f8e9577fbdecf792e7b4b5b}
 
 
 Draws a rotated rectangle. 
@@ -508,15 +510,15 @@ Draws a rotated rectangle.
 {\em rad} & rotation (in radians) to draw the rectangle \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_a09501d8d7c5319db00a39709f0cd18fa}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture@{sf2d\+\_\+draw\+\_\+texture}}
-\index{sf2d\+\_\+draw\+\_\+texture@{sf2d\+\_\+draw\+\_\+texture}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+texture}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture (
+\hypertarget{sf2d_8h_a09501d8d7c5319db00a39709f0cd18fa}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture@{sf2d\-\_\-draw\-\_\-texture}}
+\index{sf2d\-\_\-draw\-\_\-texture@{sf2d\-\_\-draw\-\_\-texture}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-texture}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-texture (
 \begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
 \item[{int}]{x, }
 \item[{int}]{y}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a09501d8d7c5319db00a39709f0cd18fa}
+)}}\label{sf2d_8h_a09501d8d7c5319db00a39709f0cd18fa}
 
 
 Draws a texture. 
@@ -530,16 +532,16 @@ Draws a texture.
 {\em y} & the y coordinate to draw the texture to \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_a211cd71f8cd5fe774b7df176b50e7873}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+blend}}
-\index{sf2d\+\_\+draw\+\_\+texture\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+blend}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+blend (
+\hypertarget{sf2d_8h_a211cd71f8cd5fe774b7df176b50e7873}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-blend@{sf2d\-\_\-draw\-\_\-texture\-\_\-blend}}
+\index{sf2d\-\_\-draw\-\_\-texture\-\_\-blend@{sf2d\-\_\-draw\-\_\-texture\-\_\-blend}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-texture\-\_\-blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-texture\-\_\-blend (
 \begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
 \item[{int}]{x, }
 \item[{int}]{y, }
 \item[{u32}]{color}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a211cd71f8cd5fe774b7df176b50e7873}
+)}}\label{sf2d_8h_a211cd71f8cd5fe774b7df176b50e7873}
 
 
 Draws a texture blended with a color. 
@@ -555,16 +557,16 @@ Draws a texture blended with a color.
 {\em color} & the color to blend with the texture \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_a593059994abb6b9e8604cdd689d6b7e7}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+depth@{sf2d\+\_\+draw\+\_\+texture\+\_\+depth}}
-\index{sf2d\+\_\+draw\+\_\+texture\+\_\+depth@{sf2d\+\_\+draw\+\_\+texture\+\_\+depth}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+depth}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+depth (
+\hypertarget{sf2d_8h_a593059994abb6b9e8604cdd689d6b7e7}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-depth@{sf2d\-\_\-draw\-\_\-texture\-\_\-depth}}
+\index{sf2d\-\_\-draw\-\_\-texture\-\_\-depth@{sf2d\-\_\-draw\-\_\-texture\-\_\-depth}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-texture\-\_\-depth}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-texture\-\_\-depth (
 \begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
 \item[{int}]{x, }
 \item[{int}]{y, }
 \item[{signed short}]{z}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a593059994abb6b9e8604cdd689d6b7e7}
+)}}\label{sf2d_8h_a593059994abb6b9e8604cdd689d6b7e7}
 
 
 Draws a texture blended in a certain depth. 
@@ -581,19 +583,19 @@ Draws a texture blended in a certain depth.
 \hline
 \end{DoxyParams}
 \begin{DoxyNote}{Note}
-The z parameter is a value in the \mbox{[}-\/32768, +32767\mbox{]} range, where -\/32768 is the deepest and +32767 the toppest. By default, the textures are drawn at z = 0. Keep in mind that this function won\textquotesingle{}t do Order-\/independent transparency (O\+I\+T), so you should use fully opaque textures to get good results. 
+The z parameter is a value in the \mbox{[}-\/32768, +32767\mbox{]} range, where -\/32768 is the deepest and +32767 the toppest. By default, the textures are drawn at z = 0. Keep in mind that this function won't do Order-\/independent transparency (O\-I\-T), so you should use fully opaque textures to get good results. 
 \end{DoxyNote}
-\hypertarget{sf2d_8h_a3c2a92d08773b50f6fff6e3b9dec2d1f}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+depth\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+depth\+\_\+blend}}
-\index{sf2d\+\_\+draw\+\_\+texture\+\_\+depth\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+depth\+\_\+blend}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+depth\+\_\+blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+depth\+\_\+blend (
+\hypertarget{sf2d_8h_a3c2a92d08773b50f6fff6e3b9dec2d1f}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-depth\-\_\-blend@{sf2d\-\_\-draw\-\_\-texture\-\_\-depth\-\_\-blend}}
+\index{sf2d\-\_\-draw\-\_\-texture\-\_\-depth\-\_\-blend@{sf2d\-\_\-draw\-\_\-texture\-\_\-depth\-\_\-blend}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-texture\-\_\-depth\-\_\-blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-texture\-\_\-depth\-\_\-blend (
 \begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
 \item[{int}]{x, }
 \item[{int}]{y, }
 \item[{signed short}]{z, }
 \item[{u32}]{color}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a3c2a92d08773b50f6fff6e3b9dec2d1f}
+)}}\label{sf2d_8h_a3c2a92d08773b50f6fff6e3b9dec2d1f}
 
 
 Draws a texture blended in a certain depth. 
@@ -612,21 +614,21 @@ Draws a texture blended in a certain depth.
 \hline
 \end{DoxyParams}
 \begin{DoxyNote}{Note}
-The z parameter is a value in the \mbox{[}-\/32768, +32767\mbox{]} range, where -\/32768 is the deepest and +32767 the toppest. By default, the textures are drawn at z = 0. Keep in mind that this function won\textquotesingle{}t do Order-\/independent transparency (O\+I\+T), so you should use fully opaque textures to get good results. 
+The z parameter is a value in the \mbox{[}-\/32768, +32767\mbox{]} range, where -\/32768 is the deepest and +32767 the toppest. By default, the textures are drawn at z = 0. Keep in mind that this function won't do Order-\/independent transparency (O\-I\-T), so you should use fully opaque textures to get good results. 
 \end{DoxyNote}
-\hypertarget{sf2d_8h_abdfae56c564b94d07bf7a1b54bd11453}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+part@{sf2d\+\_\+draw\+\_\+texture\+\_\+part}}
-\index{sf2d\+\_\+draw\+\_\+texture\+\_\+part@{sf2d\+\_\+draw\+\_\+texture\+\_\+part}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+part}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+part (
+\hypertarget{sf2d_8h_abdfae56c564b94d07bf7a1b54bd11453}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-part@{sf2d\-\_\-draw\-\_\-texture\-\_\-part}}
+\index{sf2d\-\_\-draw\-\_\-texture\-\_\-part@{sf2d\-\_\-draw\-\_\-texture\-\_\-part}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-texture\-\_\-part}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-texture\-\_\-part (
 \begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
 \item[{int}]{x, }
 \item[{int}]{y, }
-\item[{int}]{tex\+\_\+x, }
-\item[{int}]{tex\+\_\+y, }
-\item[{int}]{tex\+\_\+w, }
-\item[{int}]{tex\+\_\+h}
+\item[{int}]{tex\-\_\-x, }
+\item[{int}]{tex\-\_\-y, }
+\item[{int}]{tex\-\_\-w, }
+\item[{int}]{tex\-\_\-h}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_abdfae56c564b94d07bf7a1b54bd11453}
+)}}\label{sf2d_8h_abdfae56c564b94d07bf7a1b54bd11453}
 
 
 Draws a part of a texture. 
@@ -639,29 +641,29 @@ Draws a part of a texture.
 \hline
 {\em y} & the y coordinate to draw the texture to \\
 \hline
-{\em tex\+\_\+x} & the starting point (x coordinate) where to start drawing \\
+{\em tex\-\_\-x} & the starting point (x coordinate) where to start drawing \\
 \hline
-{\em tex\+\_\+y} & the starting point (y coordinate) where to start drawing \\
+{\em tex\-\_\-y} & the starting point (y coordinate) where to start drawing \\
 \hline
-{\em tex\+\_\+w} & the width to draw from the starting point \\
+{\em tex\-\_\-w} & the width to draw from the starting point \\
 \hline
-{\em tex\+\_\+h} & the height to draw from the starting point \\
+{\em tex\-\_\-h} & the height to draw from the starting point \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_a57101cdd022be92ae6c6ac5ec1feb014}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+blend}}
-\index{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+blend}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+blend (
+\hypertarget{sf2d_8h_a57101cdd022be92ae6c6ac5ec1feb014}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-blend@{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-blend}}
+\index{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-blend@{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-blend}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-blend (
 \begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
 \item[{int}]{x, }
 \item[{int}]{y, }
-\item[{int}]{tex\+\_\+x, }
-\item[{int}]{tex\+\_\+y, }
-\item[{int}]{tex\+\_\+w, }
-\item[{int}]{tex\+\_\+h, }
+\item[{int}]{tex\-\_\-x, }
+\item[{int}]{tex\-\_\-y, }
+\item[{int}]{tex\-\_\-w, }
+\item[{int}]{tex\-\_\-h, }
 \item[{u32}]{color}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a57101cdd022be92ae6c6ac5ec1feb014}
+)}}\label{sf2d_8h_a57101cdd022be92ae6c6ac5ec1feb014}
 
 
 Draws a part of a texture with color. 
@@ -674,33 +676,33 @@ Draws a part of a texture with color.
 \hline
 {\em y} & the y coordinate to draw the texture to \\
 \hline
-{\em tex\+\_\+x} & the starting point (x coordinate) where to start drawing \\
+{\em tex\-\_\-x} & the starting point (x coordinate) where to start drawing \\
 \hline
-{\em tex\+\_\+y} & the starting point (y coordinate) where to start drawing \\
+{\em tex\-\_\-y} & the starting point (y coordinate) where to start drawing \\
 \hline
-{\em tex\+\_\+w} & the width to draw from the starting point \\
+{\em tex\-\_\-w} & the width to draw from the starting point \\
 \hline
-{\em tex\+\_\+h} & the height to draw from the starting point \\
+{\em tex\-\_\-h} & the height to draw from the starting point \\
 \hline
 {\em color} & the color to blend with the texture \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_ac1f7df5f248e36c4fe6a7ac483efcfab}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale@{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale}}
-\index{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale@{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale (
+\hypertarget{sf2d_8h_ac1f7df5f248e36c4fe6a7ac483efcfab}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-rotate\-\_\-scale@{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-rotate\-\_\-scale}}
+\index{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-rotate\-\_\-scale@{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-rotate\-\_\-scale}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-rotate\-\_\-scale}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-rotate\-\_\-scale (
 \begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
 \item[{int}]{x, }
 \item[{int}]{y, }
 \item[{float}]{rad, }
-\item[{int}]{tex\+\_\+x, }
-\item[{int}]{tex\+\_\+y, }
-\item[{int}]{tex\+\_\+w, }
-\item[{int}]{tex\+\_\+h, }
-\item[{float}]{x\+\_\+scale, }
-\item[{float}]{y\+\_\+scale}
+\item[{int}]{tex\-\_\-x, }
+\item[{int}]{tex\-\_\-y, }
+\item[{int}]{tex\-\_\-w, }
+\item[{int}]{tex\-\_\-h, }
+\item[{float}]{x\-\_\-scale, }
+\item[{float}]{y\-\_\-scale}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_ac1f7df5f248e36c4fe6a7ac483efcfab}
+)}}\label{sf2d_8h_ac1f7df5f248e36c4fe6a7ac483efcfab}
 
 
 Draws a part of a texture, with rotation and scaling. 
@@ -715,36 +717,36 @@ Draws a part of a texture, with rotation and scaling.
 \hline
 {\em rad} & rotation (in radians) to draw the texture \\
 \hline
-{\em tex\+\_\+x} & the starting point (x coordinate) where to start drawing \\
+{\em tex\-\_\-x} & the starting point (x coordinate) where to start drawing \\
 \hline
-{\em tex\+\_\+y} & the starting point (y coordinate) where to start drawing \\
+{\em tex\-\_\-y} & the starting point (y coordinate) where to start drawing \\
 \hline
-{\em tex\+\_\+w} & the width to draw from the starting point \\
+{\em tex\-\_\-w} & the width to draw from the starting point \\
 \hline
-{\em tex\+\_\+h} & the height to draw from the starting point \\
+{\em tex\-\_\-h} & the height to draw from the starting point \\
 \hline
-{\em x\+\_\+scale} & the x scale \\
+{\em x\-\_\-scale} & the x scale \\
 \hline
-{\em y\+\_\+scale} & the y scale \\
+{\em y\-\_\-scale} & the y scale \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_a0bcea7388de7b703e965e9186cc518fd}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale\+\_\+blend}}
-\index{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale\+\_\+blend}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale\+\_\+blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+rotate\+\_\+scale\+\_\+blend (
+\hypertarget{sf2d_8h_a0bcea7388de7b703e965e9186cc518fd}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-rotate\-\_\-scale\-\_\-blend@{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-rotate\-\_\-scale\-\_\-blend}}
+\index{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-rotate\-\_\-scale\-\_\-blend@{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-rotate\-\_\-scale\-\_\-blend}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-rotate\-\_\-scale\-\_\-blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-rotate\-\_\-scale\-\_\-blend (
 \begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
 \item[{int}]{x, }
 \item[{int}]{y, }
 \item[{float}]{rad, }
-\item[{int}]{tex\+\_\+x, }
-\item[{int}]{tex\+\_\+y, }
-\item[{int}]{tex\+\_\+w, }
-\item[{int}]{tex\+\_\+h, }
-\item[{float}]{x\+\_\+scale, }
-\item[{float}]{y\+\_\+scale, }
+\item[{int}]{tex\-\_\-x, }
+\item[{int}]{tex\-\_\-y, }
+\item[{int}]{tex\-\_\-w, }
+\item[{int}]{tex\-\_\-h, }
+\item[{float}]{x\-\_\-scale, }
+\item[{float}]{y\-\_\-scale, }
 \item[{u32}]{color}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a0bcea7388de7b703e965e9186cc518fd}
+)}}\label{sf2d_8h_a0bcea7388de7b703e965e9186cc518fd}
 
 
 Draws a part of a texture, with rotation, scaling and color. 
@@ -759,36 +761,36 @@ Draws a part of a texture, with rotation, scaling and color.
 \hline
 {\em rad} & rotation (in radians) to draw the texture \\
 \hline
-{\em tex\+\_\+x} & the starting point (x coordinate) where to start drawing \\
+{\em tex\-\_\-x} & the starting point (x coordinate) where to start drawing \\
 \hline
-{\em tex\+\_\+y} & the starting point (y coordinate) where to start drawing \\
+{\em tex\-\_\-y} & the starting point (y coordinate) where to start drawing \\
 \hline
-{\em tex\+\_\+w} & the width to draw from the starting point \\
+{\em tex\-\_\-w} & the width to draw from the starting point \\
 \hline
-{\em tex\+\_\+h} & the height to draw from the starting point \\
+{\em tex\-\_\-h} & the height to draw from the starting point \\
 \hline
-{\em x\+\_\+scale} & the x scale \\
+{\em x\-\_\-scale} & the x scale \\
 \hline
-{\em y\+\_\+scale} & the y scale \\
+{\em y\-\_\-scale} & the y scale \\
 \hline
 {\em color} & the color to blend with the texture \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_aa68c942cb5c3abd0e316036a21d03199}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale@{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale}}
-\index{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale@{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale (
+\hypertarget{sf2d_8h_aa68c942cb5c3abd0e316036a21d03199}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-scale@{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-scale}}
+\index{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-scale@{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-scale}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-scale}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-scale (
 \begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
 \item[{float}]{x, }
 \item[{float}]{y, }
-\item[{float}]{tex\+\_\+x, }
-\item[{float}]{tex\+\_\+y, }
-\item[{float}]{tex\+\_\+w, }
-\item[{float}]{tex\+\_\+h, }
-\item[{float}]{x\+\_\+scale, }
-\item[{float}]{y\+\_\+scale}
+\item[{float}]{tex\-\_\-x, }
+\item[{float}]{tex\-\_\-y, }
+\item[{float}]{tex\-\_\-w, }
+\item[{float}]{tex\-\_\-h, }
+\item[{float}]{x\-\_\-scale, }
+\item[{float}]{y\-\_\-scale}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_aa68c942cb5c3abd0e316036a21d03199}
+)}}\label{sf2d_8h_aa68c942cb5c3abd0e316036a21d03199}
 
 
 Draws a part of a texture, with scaling. 
@@ -801,35 +803,35 @@ Draws a part of a texture, with scaling.
 \hline
 {\em y} & the y coordinate to draw the texture to \\
 \hline
-{\em tex\+\_\+x} & the starting point (x coordinate) where to start drawing \\
+{\em tex\-\_\-x} & the starting point (x coordinate) where to start drawing \\
 \hline
-{\em tex\+\_\+y} & the starting point (y coordinate) where to start drawing \\
+{\em tex\-\_\-y} & the starting point (y coordinate) where to start drawing \\
 \hline
-{\em tex\+\_\+w} & the width to draw from the starting point \\
+{\em tex\-\_\-w} & the width to draw from the starting point \\
 \hline
-{\em tex\+\_\+h} & the height to draw from the starting point \\
+{\em tex\-\_\-h} & the height to draw from the starting point \\
 \hline
-{\em x\+\_\+scale} & the x scale \\
+{\em x\-\_\-scale} & the x scale \\
 \hline
-{\em y\+\_\+scale} & the y scale \\
+{\em y\-\_\-scale} & the y scale \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_ad84def91854cbe24fba4f58f053dad91}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale\+\_\+blend}}
-\index{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale\+\_\+blend}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale\+\_\+blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+part\+\_\+scale\+\_\+blend (
+\hypertarget{sf2d_8h_ad84def91854cbe24fba4f58f053dad91}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-scale\-\_\-blend@{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-scale\-\_\-blend}}
+\index{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-scale\-\_\-blend@{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-scale\-\_\-blend}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-scale\-\_\-blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-texture\-\_\-part\-\_\-scale\-\_\-blend (
 \begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
 \item[{float}]{x, }
 \item[{float}]{y, }
-\item[{float}]{tex\+\_\+x, }
-\item[{float}]{tex\+\_\+y, }
-\item[{float}]{tex\+\_\+w, }
-\item[{float}]{tex\+\_\+h, }
-\item[{float}]{x\+\_\+scale, }
-\item[{float}]{y\+\_\+scale, }
+\item[{float}]{tex\-\_\-x, }
+\item[{float}]{tex\-\_\-y, }
+\item[{float}]{tex\-\_\-w, }
+\item[{float}]{tex\-\_\-h, }
+\item[{float}]{x\-\_\-scale, }
+\item[{float}]{y\-\_\-scale, }
 \item[{u32}]{color}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_ad84def91854cbe24fba4f58f053dad91}
+)}}\label{sf2d_8h_ad84def91854cbe24fba4f58f053dad91}
 
 
 Draws a part of a texture, with scaling, with color. 
@@ -842,31 +844,31 @@ Draws a part of a texture, with scaling, with color.
 \hline
 {\em y} & the y coordinate to draw the texture to \\
 \hline
-{\em tex\+\_\+x} & the starting point (x coordinate) where to start drawing \\
+{\em tex\-\_\-x} & the starting point (x coordinate) where to start drawing \\
 \hline
-{\em tex\+\_\+y} & the starting point (y coordinate) where to start drawing \\
+{\em tex\-\_\-y} & the starting point (y coordinate) where to start drawing \\
 \hline
-{\em tex\+\_\+w} & the width to draw from the starting point \\
+{\em tex\-\_\-w} & the width to draw from the starting point \\
 \hline
-{\em tex\+\_\+h} & the height to draw from the starting point \\
+{\em tex\-\_\-h} & the height to draw from the starting point \\
 \hline
-{\em x\+\_\+scale} & the x scale \\
+{\em x\-\_\-scale} & the x scale \\
 \hline
-{\em y\+\_\+scale} & the y scale \\
+{\em y\-\_\-scale} & the y scale \\
 \hline
 {\em color} & the color to blend with the texture \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_affc6cf46e403ae0837ec2901c85b4464}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+rotate@{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate}}
-\index{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate@{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+rotate (
+\hypertarget{sf2d_8h_affc6cf46e403ae0837ec2901c85b4464}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-rotate@{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate}}
+\index{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate@{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-texture\-\_\-rotate (
 \begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
 \item[{int}]{x, }
 \item[{int}]{y, }
 \item[{float}]{rad}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_affc6cf46e403ae0837ec2901c85b4464}
+)}}\label{sf2d_8h_affc6cf46e403ae0837ec2901c85b4464}
 
 
 Draws a texture with rotation around its center. 
@@ -882,17 +884,17 @@ Draws a texture with rotation around its center.
 {\em rad} & rotation (in radians) to draw the texture \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_ab8ff0c8e0d6fdb7579ff55c41fd8b4f4}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+blend}}
-\index{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+blend}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+blend (
+\hypertarget{sf2d_8h_ab8ff0c8e0d6fdb7579ff55c41fd8b4f4}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-blend@{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-blend}}
+\index{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-blend@{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-blend}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-blend (
 \begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
 \item[{int}]{x, }
 \item[{int}]{y, }
 \item[{float}]{rad, }
 \item[{u32}]{color}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_ab8ff0c8e0d6fdb7579ff55c41fd8b4f4}
+)}}\label{sf2d_8h_ab8ff0c8e0d6fdb7579ff55c41fd8b4f4}
 
 
 Draws a texture with rotation around its center with color. 
@@ -910,18 +912,18 @@ Draws a texture with rotation around its center with color.
 {\em color} & the color to blend with the texture \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_a9e377d6fb0e939c33acd0bd362b35bf9}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot@{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot}}
-\index{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot@{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot (
+\hypertarget{sf2d_8h_a9e377d6fb0e939c33acd0bd362b35bf9}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-hotspot@{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-hotspot}}
+\index{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-hotspot@{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-hotspot}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-hotspot}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-hotspot (
 \begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
 \item[{int}]{x, }
 \item[{int}]{y, }
 \item[{float}]{rad, }
-\item[{float}]{center\+\_\+x, }
-\item[{float}]{center\+\_\+y}
+\item[{float}]{center\-\_\-x, }
+\item[{float}]{center\-\_\-y}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a9e377d6fb0e939c33acd0bd362b35bf9}
+)}}\label{sf2d_8h_a9e377d6fb0e939c33acd0bd362b35bf9}
 
 
 Draws a texture with rotation around a hotspot. 
@@ -936,24 +938,24 @@ Draws a texture with rotation around a hotspot.
 \hline
 {\em rad} & rotation (in radians) to draw the texture \\
 \hline
-{\em center\+\_\+x} & the x position of the hotspot \\
+{\em center\-\_\-x} & the x position of the hotspot \\
 \hline
-{\em center\+\_\+y} & the y position of the hotspot \\
+{\em center\-\_\-y} & the y position of the hotspot \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_a498f9fb5a5ad0c2943fe4712423f3734}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot\+\_\+blend}}
-\index{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot\+\_\+blend}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot\+\_\+blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+rotate\+\_\+hotspot\+\_\+blend (
+\hypertarget{sf2d_8h_a498f9fb5a5ad0c2943fe4712423f3734}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-hotspot\-\_\-blend@{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-hotspot\-\_\-blend}}
+\index{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-hotspot\-\_\-blend@{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-hotspot\-\_\-blend}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-hotspot\-\_\-blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-texture\-\_\-rotate\-\_\-hotspot\-\_\-blend (
 \begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
 \item[{int}]{x, }
 \item[{int}]{y, }
 \item[{float}]{rad, }
-\item[{float}]{center\+\_\+x, }
-\item[{float}]{center\+\_\+y, }
+\item[{float}]{center\-\_\-x, }
+\item[{float}]{center\-\_\-y, }
 \item[{u32}]{color}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a498f9fb5a5ad0c2943fe4712423f3734}
+)}}\label{sf2d_8h_a498f9fb5a5ad0c2943fe4712423f3734}
 
 
 Draws a texture with rotation around a hotspot with a color. 
@@ -968,24 +970,24 @@ Draws a texture with rotation around a hotspot with a color.
 \hline
 {\em rad} & rotation (in radians) to draw the texture \\
 \hline
-{\em center\+\_\+x} & the x position of the hotspot \\
+{\em center\-\_\-x} & the x position of the hotspot \\
 \hline
-{\em center\+\_\+y} & the y position of the hotspot \\
+{\em center\-\_\-y} & the y position of the hotspot \\
 \hline
 {\em color} & the color to blend with the texture \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_aed7b8a897e01f5f5465d820cde08ab24}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+scale@{sf2d\+\_\+draw\+\_\+texture\+\_\+scale}}
-\index{sf2d\+\_\+draw\+\_\+texture\+\_\+scale@{sf2d\+\_\+draw\+\_\+texture\+\_\+scale}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+scale}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+scale (
+\hypertarget{sf2d_8h_aed7b8a897e01f5f5465d820cde08ab24}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-scale@{sf2d\-\_\-draw\-\_\-texture\-\_\-scale}}
+\index{sf2d\-\_\-draw\-\_\-texture\-\_\-scale@{sf2d\-\_\-draw\-\_\-texture\-\_\-scale}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-texture\-\_\-scale}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-texture\-\_\-scale (
 \begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
 \item[{int}]{x, }
 \item[{int}]{y, }
-\item[{float}]{x\+\_\+scale, }
-\item[{float}]{y\+\_\+scale}
+\item[{float}]{x\-\_\-scale, }
+\item[{float}]{y\-\_\-scale}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_aed7b8a897e01f5f5465d820cde08ab24}
+)}}\label{sf2d_8h_aed7b8a897e01f5f5465d820cde08ab24}
 
 
 Draws a texture with scaling. 
@@ -998,23 +1000,23 @@ Draws a texture with scaling.
 \hline
 {\em y} & the y coordinate to draw the texture to \\
 \hline
-{\em x\+\_\+scale} & the x scale \\
+{\em x\-\_\-scale} & the x scale \\
 \hline
-{\em y\+\_\+scale} & the y scale \\
+{\em y\-\_\-scale} & the y scale \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_a5e283b6dd16eae580b4e4504039c9ae6}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+draw\+\_\+texture\+\_\+scale\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+scale\+\_\+blend}}
-\index{sf2d\+\_\+draw\+\_\+texture\+\_\+scale\+\_\+blend@{sf2d\+\_\+draw\+\_\+texture\+\_\+scale\+\_\+blend}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+draw\+\_\+texture\+\_\+scale\+\_\+blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+draw\+\_\+texture\+\_\+scale\+\_\+blend (
+\hypertarget{sf2d_8h_a5e283b6dd16eae580b4e4504039c9ae6}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-draw\-\_\-texture\-\_\-scale\-\_\-blend@{sf2d\-\_\-draw\-\_\-texture\-\_\-scale\-\_\-blend}}
+\index{sf2d\-\_\-draw\-\_\-texture\-\_\-scale\-\_\-blend@{sf2d\-\_\-draw\-\_\-texture\-\_\-scale\-\_\-blend}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-draw\-\_\-texture\-\_\-scale\-\_\-blend}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-draw\-\_\-texture\-\_\-scale\-\_\-blend (
 \begin{DoxyParamCaption}
-\item[{const {\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture, }
 \item[{int}]{x, }
 \item[{int}]{y, }
-\item[{float}]{x\+\_\+scale, }
-\item[{float}]{y\+\_\+scale, }
+\item[{float}]{x\-\_\-scale, }
+\item[{float}]{y\-\_\-scale, }
 \item[{u32}]{color}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a5e283b6dd16eae580b4e4504039c9ae6}
+)}}\label{sf2d_8h_a5e283b6dd16eae580b4e4504039c9ae6}
 
 
 Draws a texture with scaling with color. 
@@ -1027,45 +1029,45 @@ Draws a texture with scaling with color.
 \hline
 {\em y} & the y coordinate to draw the texture to \\
 \hline
-{\em x\+\_\+scale} & the x scale \\
+{\em x\-\_\-scale} & the x scale \\
 \hline
-{\em y\+\_\+scale} & the y scale \\
+{\em y\-\_\-scale} & the y scale \\
 \hline
 {\em color} & the color to blend with the texture \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_ac06fd9ba922f84e9f50cac3ac0e5b5a4}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+fill\+\_\+texture\+\_\+from\+\_\+\+R\+G\+B\+A8@{sf2d\+\_\+fill\+\_\+texture\+\_\+from\+\_\+\+R\+G\+B\+A8}}
-\index{sf2d\+\_\+fill\+\_\+texture\+\_\+from\+\_\+\+R\+G\+B\+A8@{sf2d\+\_\+fill\+\_\+texture\+\_\+from\+\_\+\+R\+G\+B\+A8}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+fill\+\_\+texture\+\_\+from\+\_\+\+R\+G\+B\+A8}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+fill\+\_\+texture\+\_\+from\+\_\+\+R\+G\+B\+A8 (
+\hypertarget{sf2d_8h_ac06fd9ba922f84e9f50cac3ac0e5b5a4}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-fill\-\_\-texture\-\_\-from\-\_\-\-R\-G\-B\-A8@{sf2d\-\_\-fill\-\_\-texture\-\_\-from\-\_\-\-R\-G\-B\-A8}}
+\index{sf2d\-\_\-fill\-\_\-texture\-\_\-from\-\_\-\-R\-G\-B\-A8@{sf2d\-\_\-fill\-\_\-texture\-\_\-from\-\_\-\-R\-G\-B\-A8}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-fill\-\_\-texture\-\_\-from\-\_\-\-R\-G\-B\-A8}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-fill\-\_\-texture\-\_\-from\-\_\-\-R\-G\-B\-A8 (
 \begin{DoxyParamCaption}
-\item[{{\bf sf2d\+\_\+texture} $\ast$}]{dst, }
+\item[{{\bf sf2d\-\_\-texture} $\ast$}]{dst, }
 \item[{const void $\ast$}]{rgba8, }
-\item[{int}]{source\+\_\+w, }
-\item[{int}]{source\+\_\+h}
+\item[{int}]{source\-\_\-w, }
+\item[{int}]{source\-\_\-h}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_ac06fd9ba922f84e9f50cac3ac0e5b5a4}
+)}}\label{sf2d_8h_ac06fd9ba922f84e9f50cac3ac0e5b5a4}
 
 
-Fills an already allocated texture from a R\+G\+B\+A8 source. 
+Fills an already allocated texture from a R\-G\-B\-A8 source. 
 
 
 \begin{DoxyParams}{Parameters}
 {\em dst} & pointer to the destination texture to fill \\
 \hline
-{\em rgba8} & pointer to the R\+G\+B\+A8 data to fill from \\
+{\em rgba8} & pointer to the R\-G\-B\-A8 data to fill from \\
 \hline
-{\em source\+\_\+w} & width (in pixels) of the R\+G\+A\+B8 source \\
+{\em source\-\_\-w} & width (in pixels) of the R\-G\-A\-B8 source \\
 \hline
-{\em source\+\_\+h} & height (in pixels) of the R\+G\+A\+B8 source \\
+{\em source\-\_\-h} & height (in pixels) of the R\-G\-A\-B8 source \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_a322d93586a0d8dd3e0ccd5e23352e8e8}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+fini@{sf2d\+\_\+fini}}
-\index{sf2d\+\_\+fini@{sf2d\+\_\+fini}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+fini}]{\setlength{\rightskip}{0pt plus 5cm}int sf2d\+\_\+fini (
+\hypertarget{sf2d_8h_a322d93586a0d8dd3e0ccd5e23352e8e8}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-fini@{sf2d\-\_\-fini}}
+\index{sf2d\-\_\-fini@{sf2d\-\_\-fini}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-fini}]{\setlength{\rightskip}{0pt plus 5cm}int sf2d\-\_\-fini (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a322d93586a0d8dd3e0ccd5e23352e8e8}
+)}}\label{sf2d_8h_a322d93586a0d8dd3e0ccd5e23352e8e8}
 
 
 Finishes the library. 
@@ -1073,13 +1075,13 @@ Finishes the library.
 \begin{DoxyReturn}{Returns}
 Whether the finalization has been successful or not 
 \end{DoxyReturn}
-\hypertarget{sf2d_8h_a7cda3052688d26cdf0b238d4da1be74a}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+free\+\_\+texture@{sf2d\+\_\+free\+\_\+texture}}
-\index{sf2d\+\_\+free\+\_\+texture@{sf2d\+\_\+free\+\_\+texture}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+free\+\_\+texture}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+free\+\_\+texture (
+\hypertarget{sf2d_8h_a7cda3052688d26cdf0b238d4da1be74a}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-free\-\_\-texture@{sf2d\-\_\-free\-\_\-texture}}
+\index{sf2d\-\_\-free\-\_\-texture@{sf2d\-\_\-free\-\_\-texture}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-free\-\_\-texture}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-free\-\_\-texture (
 \begin{DoxyParamCaption}
-\item[{{\bf sf2d\+\_\+texture} $\ast$}]{texture}
+\item[{{\bf sf2d\-\_\-texture} $\ast$}]{texture}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a7cda3052688d26cdf0b238d4da1be74a}
+)}}\label{sf2d_8h_a7cda3052688d26cdf0b238d4da1be74a}
 
 
 Frees a texture. 
@@ -1089,57 +1091,57 @@ Frees a texture.
 {\em texture} & pointer to the texture to freeze \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_a910c9294fd3826c2a10a8f4c8ea454fe}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+get\+\_\+current\+\_\+screen@{sf2d\+\_\+get\+\_\+current\+\_\+screen}}
-\index{sf2d\+\_\+get\+\_\+current\+\_\+screen@{sf2d\+\_\+get\+\_\+current\+\_\+screen}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+get\+\_\+current\+\_\+screen}]{\setlength{\rightskip}{0pt plus 5cm}gfx\+Screen\+\_\+t sf2d\+\_\+get\+\_\+current\+\_\+screen (
+\hypertarget{sf2d_8h_a910c9294fd3826c2a10a8f4c8ea454fe}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-get\-\_\-current\-\_\-screen@{sf2d\-\_\-get\-\_\-current\-\_\-screen}}
+\index{sf2d\-\_\-get\-\_\-current\-\_\-screen@{sf2d\-\_\-get\-\_\-current\-\_\-screen}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-get\-\_\-current\-\_\-screen}]{\setlength{\rightskip}{0pt plus 5cm}gfx\-Screen\-\_\-t sf2d\-\_\-get\-\_\-current\-\_\-screen (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a910c9294fd3826c2a10a8f4c8ea454fe}
+)}}\label{sf2d_8h_a910c9294fd3826c2a10a8f4c8ea454fe}
 
 
-Returns the current screen (latest call to sf2d\+\_\+start\+\_\+frame) 
+Returns the current screen (latest call to sf2d\-\_\-start\-\_\-frame) 
 
 \begin{DoxyNote}{Note}
-The returned value can be G\+F\+X\+\_\+\+T\+O\+P or G\+F\+X\+\_\+\+B\+O\+T\+T\+O\+M. 
+The returned value can be G\-F\-X\-\_\-\-T\-O\-P or G\-F\-X\-\_\-\-B\-O\-T\-T\-O\-M. 
 \end{DoxyNote}
-\hypertarget{sf2d_8h_aaaafb63f20b898fe363a95d15b5a152a}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+get\+\_\+current\+\_\+side@{sf2d\+\_\+get\+\_\+current\+\_\+side}}
-\index{sf2d\+\_\+get\+\_\+current\+\_\+side@{sf2d\+\_\+get\+\_\+current\+\_\+side}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+get\+\_\+current\+\_\+side}]{\setlength{\rightskip}{0pt plus 5cm}gfx3d\+Side\+\_\+t sf2d\+\_\+get\+\_\+current\+\_\+side (
+\hypertarget{sf2d_8h_aaaafb63f20b898fe363a95d15b5a152a}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-get\-\_\-current\-\_\-side@{sf2d\-\_\-get\-\_\-current\-\_\-side}}
+\index{sf2d\-\_\-get\-\_\-current\-\_\-side@{sf2d\-\_\-get\-\_\-current\-\_\-side}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-get\-\_\-current\-\_\-side}]{\setlength{\rightskip}{0pt plus 5cm}gfx3d\-Side\-\_\-t sf2d\-\_\-get\-\_\-current\-\_\-side (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_aaaafb63f20b898fe363a95d15b5a152a}
+)}}\label{sf2d_8h_aaaafb63f20b898fe363a95d15b5a152a}
 
 
-Returns the current screen side (latest call to sf2d\+\_\+start\+\_\+frame) 
+Returns the current screen side (latest call to sf2d\-\_\-start\-\_\-frame) 
 
 \begin{DoxyNote}{Note}
-The returned value can be G\+F\+X\+\_\+\+L\+E\+F\+T or G\+F\+X\+\_\+\+R\+I\+G\+H\+T. 
+The returned value can be G\-F\-X\-\_\-\-L\-E\-F\-T or G\-F\-X\-\_\-\-R\-I\-G\-H\-T. 
 \end{DoxyNote}
-\hypertarget{sf2d_8h_a64f6d65b15e00a60967bd189a94bf1d0}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+get\+\_\+fps@{sf2d\+\_\+get\+\_\+fps}}
-\index{sf2d\+\_\+get\+\_\+fps@{sf2d\+\_\+get\+\_\+fps}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+get\+\_\+fps}]{\setlength{\rightskip}{0pt plus 5cm}float sf2d\+\_\+get\+\_\+fps (
+\hypertarget{sf2d_8h_a64f6d65b15e00a60967bd189a94bf1d0}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-get\-\_\-fps@{sf2d\-\_\-get\-\_\-fps}}
+\index{sf2d\-\_\-get\-\_\-fps@{sf2d\-\_\-get\-\_\-fps}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-get\-\_\-fps}]{\setlength{\rightskip}{0pt plus 5cm}float sf2d\-\_\-get\-\_\-fps (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a64f6d65b15e00a60967bd189a94bf1d0}
+)}}\label{sf2d_8h_a64f6d65b15e00a60967bd189a94bf1d0}
 
 
-Returns the F\+P\+S (frames per second) 
+Returns the F\-P\-S (frames per second) 
 
 \begin{DoxyReturn}{Returns}
-the current F\+P\+S 
+the current F\-P\-S 
 \end{DoxyReturn}
-\hypertarget{sf2d_8h_a5de4ef9dc5260cce7a35423f10d7904b}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+get\+\_\+pixel@{sf2d\+\_\+get\+\_\+pixel}}
-\index{sf2d\+\_\+get\+\_\+pixel@{sf2d\+\_\+get\+\_\+pixel}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+get\+\_\+pixel}]{\setlength{\rightskip}{0pt plus 5cm}u32 sf2d\+\_\+get\+\_\+pixel (
+\hypertarget{sf2d_8h_a5de4ef9dc5260cce7a35423f10d7904b}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-get\-\_\-pixel@{sf2d\-\_\-get\-\_\-pixel}}
+\index{sf2d\-\_\-get\-\_\-pixel@{sf2d\-\_\-get\-\_\-pixel}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-get\-\_\-pixel}]{\setlength{\rightskip}{0pt plus 5cm}u32 sf2d\-\_\-get\-\_\-pixel (
 \begin{DoxyParamCaption}
-\item[{{\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{{\bf sf2d\-\_\-texture} $\ast$}]{texture, }
 \item[{int}]{x, }
 \item[{int}]{y}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a5de4ef9dc5260cce7a35423f10d7904b}
+)}}\label{sf2d_8h_a5de4ef9dc5260cce7a35423f10d7904b}
 
 
 Gets a pixel of the texture. 
@@ -1156,13 +1158,13 @@ Gets a pixel of the texture.
 \begin{DoxyReturn}{Returns}
 the pixel at (x, y) 
 \end{DoxyReturn}
-\hypertarget{sf2d_8h_aa14ff4b0b0b65e43d45bb838f90ff64e}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+init@{sf2d\+\_\+init}}
-\index{sf2d\+\_\+init@{sf2d\+\_\+init}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}int sf2d\+\_\+init (
+\hypertarget{sf2d_8h_aa14ff4b0b0b65e43d45bb838f90ff64e}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-init@{sf2d\-\_\-init}}
+\index{sf2d\-\_\-init@{sf2d\-\_\-init}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}int sf2d\-\_\-init (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_aa14ff4b0b0b65e43d45bb838f90ff64e}
+)}}\label{sf2d_8h_aa14ff4b0b0b65e43d45bb838f90ff64e}
 
 
 Initializates the library. 
@@ -1170,55 +1172,55 @@ Initializates the library.
 \begin{DoxyReturn}{Returns}
 Whether the initialization has been successful or not 
 \end{DoxyReturn}
-\hypertarget{sf2d_8h_a625850a797c090dca02468becc5859f0}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+init\+\_\+advanced@{sf2d\+\_\+init\+\_\+advanced}}
-\index{sf2d\+\_\+init\+\_\+advanced@{sf2d\+\_\+init\+\_\+advanced}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+init\+\_\+advanced}]{\setlength{\rightskip}{0pt plus 5cm}int sf2d\+\_\+init\+\_\+advanced (
+\hypertarget{sf2d_8h_a625850a797c090dca02468becc5859f0}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-init\-\_\-advanced@{sf2d\-\_\-init\-\_\-advanced}}
+\index{sf2d\-\_\-init\-\_\-advanced@{sf2d\-\_\-init\-\_\-advanced}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-init\-\_\-advanced}]{\setlength{\rightskip}{0pt plus 5cm}int sf2d\-\_\-init\-\_\-advanced (
 \begin{DoxyParamCaption}
-\item[{int}]{gpucmd\+\_\+size, }
-\item[{int}]{temppool\+\_\+size}
+\item[{int}]{gpucmd\-\_\-size, }
+\item[{int}]{temppool\-\_\-size}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a625850a797c090dca02468becc5859f0}
+)}}\label{sf2d_8h_a625850a797c090dca02468becc5859f0}
 
 
 Initializates the library (with advanced settings) 
 
 
 \begin{DoxyParams}{Parameters}
-{\em gpucmd\+\_\+size} & the size of the G\+P\+U F\+I\+F\+O \\
+{\em gpucmd\-\_\-size} & the size of the G\-P\-U F\-I\-F\-O \\
 \hline
-{\em temppool\+\_\+size} & the size of the temporary pool \\
+{\em temppool\-\_\-size} & the size of the temporary pool \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Whether the initialization has been successful or not 
 \end{DoxyReturn}
-\hypertarget{sf2d_8h_a62fe88879d163c0c69095944bd29a1b3}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+pool\+\_\+malloc@{sf2d\+\_\+pool\+\_\+malloc}}
-\index{sf2d\+\_\+pool\+\_\+malloc@{sf2d\+\_\+pool\+\_\+malloc}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+pool\+\_\+malloc}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ sf2d\+\_\+pool\+\_\+malloc (
+\hypertarget{sf2d_8h_a62fe88879d163c0c69095944bd29a1b3}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-pool\-\_\-malloc@{sf2d\-\_\-pool\-\_\-malloc}}
+\index{sf2d\-\_\-pool\-\_\-malloc@{sf2d\-\_\-pool\-\_\-malloc}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-pool\-\_\-malloc}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ sf2d\-\_\-pool\-\_\-malloc (
 \begin{DoxyParamCaption}
 \item[{u32}]{size}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a62fe88879d163c0c69095944bd29a1b3}
+)}}\label{sf2d_8h_a62fe88879d163c0c69095944bd29a1b3}
 
 
-Allocates memory from a temporary pool. The pool will be emptied after a sf2d\+\_\+swapbuffers call. 
+Allocates memory from a temporary pool. The pool will be emptied after a sf2d\-\_\-swapbuffers call. 
 
 
 \begin{DoxyParams}{Parameters}
 {\em size} & the number of bytes to allocate \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_a0d73cc225df3c071ef63dc4cb2a68edc}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+pool\+\_\+memalign@{sf2d\+\_\+pool\+\_\+memalign}}
-\index{sf2d\+\_\+pool\+\_\+memalign@{sf2d\+\_\+pool\+\_\+memalign}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+pool\+\_\+memalign}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ sf2d\+\_\+pool\+\_\+memalign (
+\hypertarget{sf2d_8h_a0d73cc225df3c071ef63dc4cb2a68edc}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-pool\-\_\-memalign@{sf2d\-\_\-pool\-\_\-memalign}}
+\index{sf2d\-\_\-pool\-\_\-memalign@{sf2d\-\_\-pool\-\_\-memalign}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-pool\-\_\-memalign}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ sf2d\-\_\-pool\-\_\-memalign (
 \begin{DoxyParamCaption}
 \item[{u32}]{size, }
 \item[{u32}]{alignment}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a0d73cc225df3c071ef63dc4cb2a68edc}
+)}}\label{sf2d_8h_a0d73cc225df3c071ef63dc4cb2a68edc}
 
 
-Allocates aligned memory from a temporary pool. Works as sf2d\+\_\+pool\+\_\+malloc. 
+Allocates aligned memory from a temporary pool. Works as sf2d\-\_\-pool\-\_\-malloc. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -1227,43 +1229,43 @@ Allocates aligned memory from a temporary pool. Works as sf2d\+\_\+pool\+\_\+mal
 {\em alignment} & the alignment to where allocate the memory \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_aef14b8c67493e1e4f8682bafee458890}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+pool\+\_\+space\+\_\+free@{sf2d\+\_\+pool\+\_\+space\+\_\+free}}
-\index{sf2d\+\_\+pool\+\_\+space\+\_\+free@{sf2d\+\_\+pool\+\_\+space\+\_\+free}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+pool\+\_\+space\+\_\+free}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int sf2d\+\_\+pool\+\_\+space\+\_\+free (
+\hypertarget{sf2d_8h_aef14b8c67493e1e4f8682bafee458890}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-pool\-\_\-space\-\_\-free@{sf2d\-\_\-pool\-\_\-space\-\_\-free}}
+\index{sf2d\-\_\-pool\-\_\-space\-\_\-free@{sf2d\-\_\-pool\-\_\-space\-\_\-free}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-pool\-\_\-space\-\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int sf2d\-\_\-pool\-\_\-space\-\_\-free (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_aef14b8c67493e1e4f8682bafee458890}
+)}}\label{sf2d_8h_aef14b8c67493e1e4f8682bafee458890}
 
 
-Returns the temporary pool\textquotesingle{}s free space. 
+Returns the temporary pool's free space. 
 
 \begin{DoxyReturn}{Returns}
-the temporary pool\textquotesingle{}s free space 
+the temporary pool's free space 
 \end{DoxyReturn}
-\hypertarget{sf2d_8h_a76aa41b3f67dbf7e96d958ef488c732e}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+set\+\_\+3\+D@{sf2d\+\_\+set\+\_\+3\+D}}
-\index{sf2d\+\_\+set\+\_\+3\+D@{sf2d\+\_\+set\+\_\+3\+D}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+set\+\_\+3\+D}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+set\+\_\+3\+D (
+\hypertarget{sf2d_8h_a76aa41b3f67dbf7e96d958ef488c732e}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-set\-\_\-3\-D@{sf2d\-\_\-set\-\_\-3\-D}}
+\index{sf2d\-\_\-set\-\_\-3\-D@{sf2d\-\_\-set\-\_\-3\-D}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-set\-\_\-3\-D}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-set\-\_\-3\-D (
 \begin{DoxyParamCaption}
 \item[{int}]{enable}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a76aa41b3f67dbf7e96d958ef488c732e}
+)}}\label{sf2d_8h_a76aa41b3f67dbf7e96d958ef488c732e}
 
 
-Enables or disables the 3\+D. 
+Enables or disables the 3\-D. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em enable} & whether to enable or disable the 3\+D \\
+{\em enable} & whether to enable or disable the 3\-D \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_a21914ce31f435615df6c743f129d7221}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+set\+\_\+clear\+\_\+color@{sf2d\+\_\+set\+\_\+clear\+\_\+color}}
-\index{sf2d\+\_\+set\+\_\+clear\+\_\+color@{sf2d\+\_\+set\+\_\+clear\+\_\+color}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+set\+\_\+clear\+\_\+color}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+set\+\_\+clear\+\_\+color (
+\hypertarget{sf2d_8h_a21914ce31f435615df6c743f129d7221}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-set\-\_\-clear\-\_\-color@{sf2d\-\_\-set\-\_\-clear\-\_\-color}}
+\index{sf2d\-\_\-set\-\_\-clear\-\_\-color@{sf2d\-\_\-set\-\_\-clear\-\_\-color}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-set\-\_\-clear\-\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-set\-\_\-clear\-\_\-color (
 \begin{DoxyParamCaption}
 \item[{u32}]{color}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a21914ce31f435615df6c743f129d7221}
+)}}\label{sf2d_8h_a21914ce31f435615df6c743f129d7221}
 
 
 Sets the screen clear color. 
@@ -1273,16 +1275,16 @@ Sets the screen clear color.
 {\em color} & the color \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_ac5cb9ef4a97b5e7ee4bfbabf6e77e565}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+set\+\_\+pixel@{sf2d\+\_\+set\+\_\+pixel}}
-\index{sf2d\+\_\+set\+\_\+pixel@{sf2d\+\_\+set\+\_\+pixel}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+set\+\_\+pixel}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+set\+\_\+pixel (
+\hypertarget{sf2d_8h_ac5cb9ef4a97b5e7ee4bfbabf6e77e565}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-set\-\_\-pixel@{sf2d\-\_\-set\-\_\-pixel}}
+\index{sf2d\-\_\-set\-\_\-pixel@{sf2d\-\_\-set\-\_\-pixel}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-set\-\_\-pixel}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-set\-\_\-pixel (
 \begin{DoxyParamCaption}
-\item[{{\bf sf2d\+\_\+texture} $\ast$}]{texture, }
+\item[{{\bf sf2d\-\_\-texture} $\ast$}]{texture, }
 \item[{int}]{x, }
 \item[{int}]{y, }
-\item[{u32}]{new\+\_\+color}
+\item[{u32}]{new\-\_\-color}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_ac5cb9ef4a97b5e7ee4bfbabf6e77e565}
+)}}\label{sf2d_8h_ac5cb9ef4a97b5e7ee4bfbabf6e77e565}
 
 
 Changes a pixel of the texture. 
@@ -1295,20 +1297,20 @@ Changes a pixel of the texture.
 \hline
 {\em y} & the y coordinate to change the pixel \\
 \hline
-{\em new\+\_\+color} & the new color to set to the pixel at (x, y) \\
+{\em new\-\_\-color} & the new color to set to the pixel at (x, y) \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_a8a6c72fe9cb76fa7eb851058ae9fc773}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+set\+\_\+scissor\+\_\+test@{sf2d\+\_\+set\+\_\+scissor\+\_\+test}}
-\index{sf2d\+\_\+set\+\_\+scissor\+\_\+test@{sf2d\+\_\+set\+\_\+scissor\+\_\+test}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+set\+\_\+scissor\+\_\+test}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+set\+\_\+scissor\+\_\+test (
+\hypertarget{sf2d_8h_a8a6c72fe9cb76fa7eb851058ae9fc773}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-set\-\_\-scissor\-\_\-test@{sf2d\-\_\-set\-\_\-scissor\-\_\-test}}
+\index{sf2d\-\_\-set\-\_\-scissor\-\_\-test@{sf2d\-\_\-set\-\_\-scissor\-\_\-test}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-set\-\_\-scissor\-\_\-test}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-set\-\_\-scissor\-\_\-test (
 \begin{DoxyParamCaption}
-\item[{G\+P\+U\+\_\+\+S\+C\+I\+S\+S\+O\+R\+M\+O\+D\+E}]{mode, }
+\item[{G\-P\-U\-\_\-\-S\-C\-I\-S\-S\-O\-R\-M\-O\-D\-E}]{mode, }
 \item[{u32}]{x, }
 \item[{u32}]{y, }
 \item[{u32}]{w, }
 \item[{u32}]{h}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_a8a6c72fe9cb76fa7eb851058ae9fc773}
+)}}\label{sf2d_8h_a8a6c72fe9cb76fa7eb851058ae9fc773}
 
 
 Sets the scissor test. 
@@ -1327,32 +1329,32 @@ Sets the scissor test.
 \hline
 \end{DoxyParams}
 \begin{DoxyNote}{Note}
-This function should be called after sf2d\+\_\+start\+\_\+frame. The scissor will remain active until the sf2d\+\_\+end\+\_\+frame call. 
+This function should be called after sf2d\-\_\-start\-\_\-frame. The scissor will remain active until the sf2d\-\_\-end\-\_\-frame call. 
 \end{DoxyNote}
-\hypertarget{sf2d_8h_ac73776c4b7107cc201656ccdcf4c94b3}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+set\+\_\+vblank\+\_\+wait@{sf2d\+\_\+set\+\_\+vblank\+\_\+wait}}
-\index{sf2d\+\_\+set\+\_\+vblank\+\_\+wait@{sf2d\+\_\+set\+\_\+vblank\+\_\+wait}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+set\+\_\+vblank\+\_\+wait}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+set\+\_\+vblank\+\_\+wait (
+\hypertarget{sf2d_8h_ac73776c4b7107cc201656ccdcf4c94b3}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-set\-\_\-vblank\-\_\-wait@{sf2d\-\_\-set\-\_\-vblank\-\_\-wait}}
+\index{sf2d\-\_\-set\-\_\-vblank\-\_\-wait@{sf2d\-\_\-set\-\_\-vblank\-\_\-wait}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-set\-\_\-vblank\-\_\-wait}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-set\-\_\-vblank\-\_\-wait (
 \begin{DoxyParamCaption}
 \item[{int}]{enable}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_ac73776c4b7107cc201656ccdcf4c94b3}
+)}}\label{sf2d_8h_ac73776c4b7107cc201656ccdcf4c94b3}
 
 
-Enables or disables the V\+Blank waiting. 
+Enables or disables the V\-Blank waiting. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em enable} & whether to enable or disable the V\+Blank waiting \\
+{\em enable} & whether to enable or disable the V\-Blank waiting \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_aebf0bffc5ec4230ba44ba6daeddcd040}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+start\+\_\+frame@{sf2d\+\_\+start\+\_\+frame}}
-\index{sf2d\+\_\+start\+\_\+frame@{sf2d\+\_\+start\+\_\+frame}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+start\+\_\+frame}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+start\+\_\+frame (
+\hypertarget{sf2d_8h_aebf0bffc5ec4230ba44ba6daeddcd040}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-start\-\_\-frame@{sf2d\-\_\-start\-\_\-frame}}
+\index{sf2d\-\_\-start\-\_\-frame@{sf2d\-\_\-start\-\_\-frame}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-start\-\_\-frame}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-start\-\_\-frame (
 \begin{DoxyParamCaption}
-\item[{gfx\+Screen\+\_\+t}]{screen, }
-\item[{gfx3d\+Side\+\_\+t}]{side}
+\item[{gfx\-Screen\-\_\-t}]{screen, }
+\item[{gfx3d\-Side\-\_\-t}]{side}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_aebf0bffc5ec4230ba44ba6daeddcd040}
+)}}\label{sf2d_8h_aebf0bffc5ec4230ba44ba6daeddcd040}
 
 
 Starts a frame. 
@@ -1364,13 +1366,51 @@ Starts a frame.
 {\em side} & target eye (only for top screen) \\
 \hline
 \end{DoxyParams}
-\hypertarget{sf2d_8h_ab485210364f2285c265ec161196695b9}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+texture\+\_\+tile32@{sf2d\+\_\+texture\+\_\+tile32}}
-\index{sf2d\+\_\+texture\+\_\+tile32@{sf2d\+\_\+texture\+\_\+tile32}!sf2d.\+h@{sf2d.\+h}}
-\subsubsection[{sf2d\+\_\+texture\+\_\+tile32}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\+\_\+texture\+\_\+tile32 (
+\hypertarget{sf2d_8h_a27b718bf7453cf681b4df92375016ec8}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-texture\-\_\-get\-\_\-tex\-\_\-filters@{sf2d\-\_\-texture\-\_\-get\-\_\-tex\-\_\-filters}}
+\index{sf2d\-\_\-texture\-\_\-get\-\_\-tex\-\_\-filters@{sf2d\-\_\-texture\-\_\-get\-\_\-tex\-\_\-filters}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-texture\-\_\-get\-\_\-tex\-\_\-filters}]{\setlength{\rightskip}{0pt plus 5cm}int sf2d\-\_\-texture\-\_\-get\-\_\-tex\-\_\-filters (
 \begin{DoxyParamCaption}
-\item[{{\bf sf2d\+\_\+texture} $\ast$}]{texture}
+\item[{const {\bf sf2d\-\_\-texture} $\ast$}]{texture}
 \end{DoxyParamCaption}
-)}\label{sf2d_8h_ab485210364f2285c265ec161196695b9}
+)}}\label{sf2d_8h_a27b718bf7453cf681b4df92375016ec8}
+
+
+Returns the texture min and mag filters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to get the filters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the current texture filters of texture 
+\end{DoxyReturn}
+\hypertarget{sf2d_8h_a0013c9599a3b0b63ba2eb65c670a5f59}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-texture\-\_\-set\-\_\-tex\-\_\-filters@{sf2d\-\_\-texture\-\_\-set\-\_\-tex\-\_\-filters}}
+\index{sf2d\-\_\-texture\-\_\-set\-\_\-tex\-\_\-filters@{sf2d\-\_\-texture\-\_\-set\-\_\-tex\-\_\-filters}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-texture\-\_\-set\-\_\-tex\-\_\-filters}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-texture\-\_\-set\-\_\-tex\-\_\-filters (
+\begin{DoxyParamCaption}
+\item[{{\bf sf2d\-\_\-texture} $\ast$}]{texture, }
+\item[{int}]{filters}
+\end{DoxyParamCaption}
+)}}\label{sf2d_8h_a0013c9599a3b0b63ba2eb65c670a5f59}
+
+
+Changes the texture min and mag filters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & the texture to change the filters \\
+\hline
+{\em filters} & the new texture filters to use. You can use the G\-P\-U\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\mbox{[}M\-I\-N,M\-A\-G\mbox{]}\-\_\-\-F\-I\-L\-T\-E\-R macros as helpers. \\
+\hline
+\end{DoxyParams}
+\hypertarget{sf2d_8h_ab485210364f2285c265ec161196695b9}{\index{sf2d.\-h@{sf2d.\-h}!sf2d\-\_\-texture\-\_\-tile32@{sf2d\-\_\-texture\-\_\-tile32}}
+\index{sf2d\-\_\-texture\-\_\-tile32@{sf2d\-\_\-texture\-\_\-tile32}!sf2d.h@{sf2d.\-h}}
+\subsubsection[{sf2d\-\_\-texture\-\_\-tile32}]{\setlength{\rightskip}{0pt plus 5cm}void sf2d\-\_\-texture\-\_\-tile32 (
+\begin{DoxyParamCaption}
+\item[{{\bf sf2d\-\_\-texture} $\ast$}]{texture}
+\end{DoxyParamCaption}
+)}}\label{sf2d_8h_ab485210364f2285c265ec161196695b9}
 
 
 Tiles a texture. 

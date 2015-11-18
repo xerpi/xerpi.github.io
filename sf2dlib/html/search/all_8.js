@@ -57,6 +57,8 @@ var searchData=
   ['sf2d_5ftemppool_5fdefault_5fsize',['SF2D_TEMPPOOL_DEFAULT_SIZE',['../sf2d_8h.html#a7a140f18ef19959a8f7f41ac3b160a07',1,'sf2d.h']]],
   ['sf2d_5ftexfmt',['sf2d_texfmt',['../sf2d_8h.html#a159c44ac8ef84cd08235063d4e220244',1,'sf2d.h']]],
   ['sf2d_5ftexture',['sf2d_texture',['../structsf2d__texture.html',1,'']]],
+  ['sf2d_5ftexture_5fget_5ftex_5ffilters',['sf2d_texture_get_tex_filters',['../sf2d_8h.html#a27b718bf7453cf681b4df92375016ec8',1,'sf2d.h']]],
+  ['sf2d_5ftexture_5fset_5ftex_5ffilters',['sf2d_texture_set_tex_filters',['../sf2d_8h.html#a0013c9599a3b0b63ba2eb65c670a5f59',1,'sf2d.h']]],
   ['sf2d_5ftexture_5ftile32',['sf2d_texture_tile32',['../sf2d_8h.html#ab485210364f2285c265ec161196695b9',1,'sf2d.h']]],
   ['sf2d_5fvector_5f2f',['sf2d_vector_2f',['../structsf2d__vector__2f.html',1,'']]],
   ['sf2d_5fvector_5f3f',['sf2d_vector_3f',['../structsf2d__vector__3f.html',1,'']]],
