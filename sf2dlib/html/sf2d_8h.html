@@ -109,11 +109,11 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf2d__vector__3f.html">sf2d_vector_3f</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a three dimensional float vector.  <a href="structsf2d__vector__3f.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf2d__vector__4f.html">sf2d_vector_4f</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a four dimensional float vector.  <a href="structsf2d__vector__4f.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf2d__vector__4uc.html">sf2d_vector_4uc</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a four dimensional unsigned char vector.  <a href="structsf2d__vector__4uc.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf2d__vertex__pos__col.html">sf2d_vertex_pos_col</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a vertex containing position and color attributes.  <a href="structsf2d__vertex__pos__col.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a vertex containing position (float) and color (unsigned char)  <a href="structsf2d__vertex__pos__col.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf2d__vertex__pos__tex.html">sf2d_vertex_pos_tex</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a vertex containing position and texture coordinates.  <a href="structsf2d__vertex__pos__tex.html#details">More...</a><br /></td></tr>
@@ -124,9 +124,21 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ada252b0d1c54c165a668d3bb1bee06c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#ada252b0d1c54c165a668d3bb1bee06c1">RGBA8</a>(r,  g,  b,  a)&#160;&#160;&#160;((((r)&amp;0xFF)&lt;&lt;24) | (((g)&amp;0xFF)&lt;&lt;16) | (((b)&amp;0xFF)&lt;&lt;8) | (((a)&amp;0xFF)&lt;&lt;0))</td></tr>
+<tr class="memitem:ada252b0d1c54c165a668d3bb1bee06c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#ada252b0d1c54c165a668d3bb1bee06c1">RGBA8</a>(r,  g,  b,  a)&#160;&#160;&#160;((((a)&amp;0xFF)&lt;&lt;24) | (((b)&amp;0xFF)&lt;&lt;16) | (((g)&amp;0xFF)&lt;&lt;8) | (((r)&amp;0xFF)&lt;&lt;0))</td></tr>
 <tr class="memdesc:ada252b0d1c54c165a668d3bb1bee06c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new RGBA8 color.  <a href="#ada252b0d1c54c165a668d3bb1bee06c1">More...</a><br /></td></tr>
 <tr class="separator:ada252b0d1c54c165a668d3bb1bee06c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6fbcfbd4d7415f4c4b52f2aee12bc00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6fbcfbd4d7415f4c4b52f2aee12bc00"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RGBA8_GET_R</b>(c)&#160;&#160;&#160;(((c) &gt;&gt;  0) &amp; 0xFF)</td></tr>
+<tr class="separator:ad6fbcfbd4d7415f4c4b52f2aee12bc00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e854d450d289eec3f57951a22a9e40"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5e854d450d289eec3f57951a22a9e40"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RGBA8_GET_G</b>(c)&#160;&#160;&#160;(((c) &gt;&gt;  8) &amp; 0xFF)</td></tr>
+<tr class="separator:ab5e854d450d289eec3f57951a22a9e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d104b9a3c1324dadb286113eb581a4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d104b9a3c1324dadb286113eb581a4b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RGBA8_GET_B</b>(c)&#160;&#160;&#160;(((c) &gt;&gt; 16) &amp; 0xFF)</td></tr>
+<tr class="separator:a3d104b9a3c1324dadb286113eb581a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a675e3aa52fdbb3f5778ca0aaadca08fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a675e3aa52fdbb3f5778ca0aaadca08fb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RGBA8_GET_A</b>(c)&#160;&#160;&#160;(((c) &gt;&gt; 24) &amp; 0xFF)</td></tr>
+<tr class="separator:a675e3aa52fdbb3f5778ca0aaadca08fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a059a42cbd6522d3116ddc5716f1fbe27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a059a42cbd6522d3116ddc5716f1fbe27"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a059a42cbd6522d3116ddc5716f1fbe27">SF2D_GPUCMD_DEFAULT_SIZE</a>&#160;&#160;&#160;0x80000</td></tr>
 <tr class="memdesc:a059a42cbd6522d3116ddc5716f1fbe27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default size of the GPU commands FIFO buffer. <br /></td></tr>
@@ -207,6 +219,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 <tr class="memitem:a0d73cc225df3c071ef63dc4cb2a68edc"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#a0d73cc225df3c071ef63dc4cb2a68edc">sf2d_pool_memalign</a> (u32 size, u32 alignment)</td></tr>
 <tr class="memdesc:a0d73cc225df3c071ef63dc4cb2a68edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates aligned memory from a temporary pool. Works as sf2d_pool_malloc.  <a href="#a0d73cc225df3c071ef63dc4cb2a68edc">More...</a><br /></td></tr>
 <tr class="separator:a0d73cc225df3c071ef63dc4cb2a68edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab4f77280be8f38b556ce748d062093f"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#aab4f77280be8f38b556ce748d062093f">sf2d_pool_calloc</a> (u32 nmemb, u32 size)</td></tr>
+<tr class="memdesc:aab4f77280be8f38b556ce748d062093f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates aligned memory for an array from a temporary pool. Works as sf2d_pool_malloc.  <a href="#aab4f77280be8f38b556ce748d062093f">More...</a><br /></td></tr>
+<tr class="separator:aab4f77280be8f38b556ce748d062093f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef14b8c67493e1e4f8682bafee458890"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d_8h.html#aef14b8c67493e1e4f8682bafee458890">sf2d_pool_space_free</a> ()</td></tr>
 <tr class="memdesc:aef14b8c67493e1e4f8682bafee458890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the temporary pool's free space.  <a href="#aef14b8c67493e1e4f8682bafee458890">More...</a><br /></td></tr>
 <tr class="separator:aef14b8c67493e1e4f8682bafee458890"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -362,7 +377,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((((r)&amp;0xFF)&lt;&lt;24) | (((g)&amp;0xFF)&lt;&lt;16) | (((b)&amp;0xFF)&lt;&lt;8) | (((a)&amp;0xFF)&lt;&lt;0))</td>
+          <td></td><td>&#160;&#160;&#160;((((a)&amp;0xFF)&lt;&lt;24) | (((b)&amp;0xFF)&lt;&lt;16) | (((g)&amp;0xFF)&lt;&lt;8) | (((r)&amp;0xFF)&lt;&lt;0))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2257,6 +2272,42 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 
 </div>
 </div>
+<a class="anchor" id="aab4f77280be8f38b556ce748d062093f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* sf2d_pool_calloc </td>
+          <td>(</td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>nmemb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocates aligned memory for an array from a temporary pool. Works as sf2d_pool_malloc. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nmemb</td><td>the number of elements to allocate </td></tr>
+    <tr><td class="paramname">size</td><td>the size (and alignment) of each element to allocate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Unlike libc's calloc, this function does not initialize to 0, and returns a pointer aligned to size. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a62fe88879d163c0c69095944bd29a1b3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2634,7 +2685,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sf2d
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 18 2015 22:40:58 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 6 2015 13:09:25 for sf2dlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

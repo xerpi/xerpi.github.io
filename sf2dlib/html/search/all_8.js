@@ -43,6 +43,7 @@ var searchData=
   ['sf2d_5fplace_5fram',['SF2D_PLACE_RAM',['../sf2d_8h.html#a07951fad547d423a4cf6521c2e5171eaa4e481aa581f839137a4b1fd0708666fb',1,'sf2d.h']]],
   ['sf2d_5fplace_5ftemp',['SF2D_PLACE_TEMP',['../sf2d_8h.html#a07951fad547d423a4cf6521c2e5171eaa70138ec78a57f02178621e5917b2358d',1,'sf2d.h']]],
   ['sf2d_5fplace_5fvram',['SF2D_PLACE_VRAM',['../sf2d_8h.html#a07951fad547d423a4cf6521c2e5171eaae4d62813738d1fec4a10cef2405d8b3d',1,'sf2d.h']]],
+  ['sf2d_5fpool_5fcalloc',['sf2d_pool_calloc',['../sf2d_8h.html#aab4f77280be8f38b556ce748d062093f',1,'sf2d.h']]],
   ['sf2d_5fpool_5fmalloc',['sf2d_pool_malloc',['../sf2d_8h.html#a62fe88879d163c0c69095944bd29a1b3',1,'sf2d.h']]],
   ['sf2d_5fpool_5fmemalign',['sf2d_pool_memalign',['../sf2d_8h.html#a0d73cc225df3c071ef63dc4cb2a68edc',1,'sf2d.h']]],
   ['sf2d_5fpool_5freset',['sf2d_pool_reset',['../sf2d_8h.html#aaaf6fc32b6d321adbffb78300c7df51e',1,'sf2d.h']]],
@@ -62,7 +63,7 @@ var searchData=
   ['sf2d_5ftexture_5ftile32',['sf2d_texture_tile32',['../sf2d_8h.html#ab485210364f2285c265ec161196695b9',1,'sf2d.h']]],
   ['sf2d_5fvector_5f2f',['sf2d_vector_2f',['../structsf2d__vector__2f.html',1,'']]],
   ['sf2d_5fvector_5f3f',['sf2d_vector_3f',['../structsf2d__vector__3f.html',1,'']]],
-  ['sf2d_5fvector_5f4f',['sf2d_vector_4f',['../structsf2d__vector__4f.html',1,'']]],
+  ['sf2d_5fvector_5f4uc',['sf2d_vector_4uc',['../structsf2d__vector__4uc.html',1,'']]],
   ['sf2d_5fvertex_5fpos_5fcol',['sf2d_vertex_pos_col',['../structsf2d__vertex__pos__col.html',1,'']]],
   ['sf2d_5fvertex_5fpos_5ftex',['sf2d_vertex_pos_tex',['../structsf2d__vertex__pos__tex.html',1,'']]]
 ];

@@ -36,6 +36,7 @@ var searchData=
   ['sf2d_5fget_5fpixel',['sf2d_get_pixel',['../sf2d_8h.html#a5de4ef9dc5260cce7a35423f10d7904b',1,'sf2d.h']]],
   ['sf2d_5finit',['sf2d_init',['../sf2d_8h.html#aa14ff4b0b0b65e43d45bb838f90ff64e',1,'sf2d.h']]],
   ['sf2d_5finit_5fadvanced',['sf2d_init_advanced',['../sf2d_8h.html#a625850a797c090dca02468becc5859f0',1,'sf2d.h']]],
+  ['sf2d_5fpool_5fcalloc',['sf2d_pool_calloc',['../sf2d_8h.html#aab4f77280be8f38b556ce748d062093f',1,'sf2d.h']]],
   ['sf2d_5fpool_5fmalloc',['sf2d_pool_malloc',['../sf2d_8h.html#a62fe88879d163c0c69095944bd29a1b3',1,'sf2d.h']]],
   ['sf2d_5fpool_5fmemalign',['sf2d_pool_memalign',['../sf2d_8h.html#a0d73cc225df3c071ef63dc4cb2a68edc',1,'sf2d.h']]],
   ['sf2d_5fpool_5freset',['sf2d_pool_reset',['../sf2d_8h.html#aaaf6fc32b6d321adbffb78300c7df51e',1,'sf2d.h']]],

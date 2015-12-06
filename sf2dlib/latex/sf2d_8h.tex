@@ -13,10 +13,10 @@ struct \hyperlink{structsf2d__vector__2f}{sf2d\+\_\+vector\+\_\+2f}
 \begin{DoxyCompactList}\small\item\em Represents a two dimensional float vector. \end{DoxyCompactList}\item 
 struct \hyperlink{structsf2d__vector__3f}{sf2d\+\_\+vector\+\_\+3f}
 \begin{DoxyCompactList}\small\item\em Represents a three dimensional float vector. \end{DoxyCompactList}\item 
-struct \hyperlink{structsf2d__vector__4f}{sf2d\+\_\+vector\+\_\+4f}
-\begin{DoxyCompactList}\small\item\em Represents a four dimensional float vector. \end{DoxyCompactList}\item 
+struct \hyperlink{structsf2d__vector__4uc}{sf2d\+\_\+vector\+\_\+4uc}
+\begin{DoxyCompactList}\small\item\em Represents a four dimensional unsigned char vector. \end{DoxyCompactList}\item 
 struct \hyperlink{structsf2d__vertex__pos__col}{sf2d\+\_\+vertex\+\_\+pos\+\_\+col}
-\begin{DoxyCompactList}\small\item\em Represents a vertex containing position and color attributes. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Represents a vertex containing position (float) and color (unsigned char) \end{DoxyCompactList}\item 
 struct \hyperlink{structsf2d__vertex__pos__tex}{sf2d\+\_\+vertex\+\_\+pos\+\_\+tex}
 \begin{DoxyCompactList}\small\item\em Represents a vertex containing position and texture coordinates. \end{DoxyCompactList}\item 
 struct \hyperlink{structsf2d__texture}{sf2d\+\_\+texture}
@@ -24,8 +24,20 @@ struct \hyperlink{structsf2d__texture}{sf2d\+\_\+texture}
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \hyperlink{sf2d_8h_ada252b0d1c54c165a668d3bb1bee06c1}{R\+G\+B\+A8}(r,  g,  b,  a)~((((r)\&0x\+F\+F)$<$$<$24) $\vert$ (((g)\&0x\+F\+F)$<$$<$16) $\vert$ (((b)\&0x\+F\+F)$<$$<$8) $\vert$ (((a)\&0x\+F\+F)$<$$<$0))
+\#define \hyperlink{sf2d_8h_ada252b0d1c54c165a668d3bb1bee06c1}{R\+G\+B\+A8}(r,  g,  b,  a)~((((a)\&0x\+F\+F)$<$$<$24) $\vert$ (((b)\&0x\+F\+F)$<$$<$16) $\vert$ (((g)\&0x\+F\+F)$<$$<$8) $\vert$ (((r)\&0x\+F\+F)$<$$<$0))
 \begin{DoxyCompactList}\small\item\em Creates a new R\+G\+B\+A8 color. \end{DoxyCompactList}\item 
+\hypertarget{sf2d_8h_ad6fbcfbd4d7415f4c4b52f2aee12bc00}{}\#define {\bfseries R\+G\+B\+A8\+\_\+\+G\+E\+T\+\_\+\+R}(c)~(((c) $>$$>$  0) \& 0x\+F\+F)\label{sf2d_8h_ad6fbcfbd4d7415f4c4b52f2aee12bc00}
+
+\item 
+\hypertarget{sf2d_8h_ab5e854d450d289eec3f57951a22a9e40}{}\#define {\bfseries R\+G\+B\+A8\+\_\+\+G\+E\+T\+\_\+\+G}(c)~(((c) $>$$>$  8) \& 0x\+F\+F)\label{sf2d_8h_ab5e854d450d289eec3f57951a22a9e40}
+
+\item 
+\hypertarget{sf2d_8h_a3d104b9a3c1324dadb286113eb581a4b}{}\#define {\bfseries R\+G\+B\+A8\+\_\+\+G\+E\+T\+\_\+\+B}(c)~(((c) $>$$>$ 16) \& 0x\+F\+F)\label{sf2d_8h_a3d104b9a3c1324dadb286113eb581a4b}
+
+\item 
+\hypertarget{sf2d_8h_a675e3aa52fdbb3f5778ca0aaadca08fb}{}\#define {\bfseries R\+G\+B\+A8\+\_\+\+G\+E\+T\+\_\+\+A}(c)~(((c) $>$$>$ 24) \& 0x\+F\+F)\label{sf2d_8h_a675e3aa52fdbb3f5778ca0aaadca08fb}
+
+\item 
 \hypertarget{sf2d_8h_a059a42cbd6522d3116ddc5716f1fbe27}{}\#define \hyperlink{sf2d_8h_a059a42cbd6522d3116ddc5716f1fbe27}{S\+F2\+D\+\_\+\+G\+P\+U\+C\+M\+D\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+I\+Z\+E}~0x80000\label{sf2d_8h_a059a42cbd6522d3116ddc5716f1fbe27}
 
 \begin{DoxyCompactList}\small\item\em Default size of the G\+P\+U commands F\+I\+F\+O buffer. \end{DoxyCompactList}\item 
@@ -90,6 +102,8 @@ void $\ast$ \hyperlink{sf2d_8h_a62fe88879d163c0c69095944bd29a1b3}{sf2d\+\_\+pool
 \begin{DoxyCompactList}\small\item\em Allocates memory from a temporary pool. The pool will be emptied after a sf2d\+\_\+swapbuffers call. \end{DoxyCompactList}\item 
 void $\ast$ \hyperlink{sf2d_8h_a0d73cc225df3c071ef63dc4cb2a68edc}{sf2d\+\_\+pool\+\_\+memalign} (u32 size, u32 alignment)
 \begin{DoxyCompactList}\small\item\em Allocates aligned memory from a temporary pool. Works as sf2d\+\_\+pool\+\_\+malloc. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{sf2d_8h_aab4f77280be8f38b556ce748d062093f}{sf2d\+\_\+pool\+\_\+calloc} (u32 nmemb, u32 size)
+\begin{DoxyCompactList}\small\item\em Allocates aligned memory for an array from a temporary pool. Works as sf2d\+\_\+pool\+\_\+malloc. \end{DoxyCompactList}\item 
 unsigned int \hyperlink{sf2d_8h_aef14b8c67493e1e4f8682bafee458890}{sf2d\+\_\+pool\+\_\+space\+\_\+free} ()
 \begin{DoxyCompactList}\small\item\em Returns the temporary pool\textquotesingle{}s free space. \end{DoxyCompactList}\item 
 \hypertarget{sf2d_8h_aaaf6fc32b6d321adbffb78300c7df51e}{}void \hyperlink{sf2d_8h_aaaf6fc32b6d321adbffb78300c7df51e}{sf2d\+\_\+pool\+\_\+reset} ()\label{sf2d_8h_aaaf6fc32b6d321adbffb78300c7df51e}
@@ -192,7 +206,7 @@ Sergi Granell (xerpi)
 \item[{}]{b, }
 \item[{}]{a}
 \end{DoxyParamCaption}
-)~((((r)\&0x\+F\+F)$<$$<$24) $\vert$ (((g)\&0x\+F\+F)$<$$<$16) $\vert$ (((b)\&0x\+F\+F)$<$$<$8) $\vert$ (((a)\&0x\+F\+F)$<$$<$0))}\label{sf2d_8h_ada252b0d1c54c165a668d3bb1bee06c1}
+)~((((a)\&0x\+F\+F)$<$$<$24) $\vert$ (((b)\&0x\+F\+F)$<$$<$16) $\vert$ (((g)\&0x\+F\+F)$<$$<$8) $\vert$ (((r)\&0x\+F\+F)$<$$<$0))}\label{sf2d_8h_ada252b0d1c54c165a668d3bb1bee06c1}
 
 
 Creates a new R\+G\+B\+A8 color. 
@@ -1196,6 +1210,28 @@ Initializates the library (with advanced settings)
 \begin{DoxyReturn}{Returns}
 Whether the initialization has been successful or not 
 \end{DoxyReturn}
+\hypertarget{sf2d_8h_aab4f77280be8f38b556ce748d062093f}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+pool\+\_\+calloc@{sf2d\+\_\+pool\+\_\+calloc}}
+\index{sf2d\+\_\+pool\+\_\+calloc@{sf2d\+\_\+pool\+\_\+calloc}!sf2d.\+h@{sf2d.\+h}}
+\subsubsection[{sf2d\+\_\+pool\+\_\+calloc(u32 nmemb, u32 size)}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ sf2d\+\_\+pool\+\_\+calloc (
+\begin{DoxyParamCaption}
+\item[{u32}]{nmemb, }
+\item[{u32}]{size}
+\end{DoxyParamCaption}
+)}\label{sf2d_8h_aab4f77280be8f38b556ce748d062093f}
+
+
+Allocates aligned memory for an array from a temporary pool. Works as sf2d\+\_\+pool\+\_\+malloc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nmemb} & the number of elements to allocate \\
+\hline
+{\em size} & the size (and alignment) of each element to allocate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Unlike libc\textquotesingle{}s calloc, this function does not initialize to 0, and returns a pointer aligned to size. 
+\end{DoxyNote}
 \hypertarget{sf2d_8h_a62fe88879d163c0c69095944bd29a1b3}{}\index{sf2d.\+h@{sf2d.\+h}!sf2d\+\_\+pool\+\_\+malloc@{sf2d\+\_\+pool\+\_\+malloc}}
 \index{sf2d\+\_\+pool\+\_\+malloc@{sf2d\+\_\+pool\+\_\+malloc}!sf2d.\+h@{sf2d.\+h}}
 \subsubsection[{sf2d\+\_\+pool\+\_\+malloc(u32 size)}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ sf2d\+\_\+pool\+\_\+malloc (
